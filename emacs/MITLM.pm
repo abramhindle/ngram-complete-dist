@@ -5,7 +5,7 @@ use IPC::Open3;
 use Data::Dumper;
 use IO::Handle;
 
-has 'corpus' => (is =>'ro', isa => 'Str', default => "$ENV{HOME}/projects/ngrams-complete-dist/data/lucene-split");
+has 'corpus' => (is =>'ro', isa => 'Str', default => "$ENV{HOME}/projects/ngram-complete-dist/data/lucene-split");
 has 'order'  => (is =>'ro', isa => 'Int', default => 3);
 has 'pid'    => (is =>'rw', default => undef);
 has 'child_in'    => (is =>'rw', default => undef);
