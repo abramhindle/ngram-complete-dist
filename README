@@ -1,0 +1,31 @@
+The first attempt at packaging the emacs n-gram completer.
+
+Must be installed to ~/projects/ngram-complete-dist
+
+Currently hardcoded for java
+
+Require a modified version of MITLM https://github.com/abramhindle/MIT-Language-Modeling-Toolkit
+
+put into ~/projects/mitlm 
+
+Assume GPL2+ for a license unless otherwise specified.
+
+Assume this default license:
+
+    Copyright 2010,2011,2012 Abram Hindle, Prem Devanbu, Earl T. Barr, Daryl Posnett
+
+    This file is part of ngram-complete
+
+    ngram-complete is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+
