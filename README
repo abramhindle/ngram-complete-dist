@@ -8,6 +8,48 @@ Require a modified version of MITLM https://github.com/abramhindle/MIT-Language-
 
 put into ~/projects/mitlm 
 
+
+== Installation
+
+Get jzmq http://www.zeromq.org/bindings:java
+	git clone https://github.com/zeromq/jzmq.git
+	cd jzmq
+	autogen.sh
+	./configure
+	make
+	sudo make install
+
+Get modified mitlm  https://github.com/abramhindle/MIT-Language-Modeling-Toolkit
+	git clone  https://github.com/abramhindle/MIT-Language-Modeling-Toolkit.git mitlm
+	cd mitlm
+	./autogen.sh
+	make
+	
+get antlr3
+	sudo apt-get install antlr3
+
+build antlr stuff
+	cd ngram-complete-dist/antlr
+	make
+
+install perl reqs:
+	sudo aptitude install  libmoosex-singleton-perl  libmoosex-yaml-perl  libmoose-perl  libany-moose-perl  libmoose-autobox-perl libzeromq-perl
+
+== Running	
+
+	cd ngram-complete-dist/emacs
+	make run-java-lexer
+	perl ngram-completer -server 1
+
+then you can run
+	perl ngram-completer -client 1
+And type in text to complete
+	
+In emacs you can eval ngrams.elisp to get code completion added
+
+
+== LICENSING
+
 Assume GPL2+ for a license unless otherwise specified.
 
 Assume this default license:
