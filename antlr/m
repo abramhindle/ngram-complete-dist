@@ -1,0 +1,9 @@
+rm *class
+rm JavaLexer.java
+rm Java.tokens
+antlr3 Java.g
+javac -cp /usr/share/java/antlr3.jar:. JavaLexer.java 
+javac -cp /usr/share/java/antlr3.jar:. Halstead.java
+javac -cp /usr/share/java/antlr3.jar:. HalsteadCounter.java
+javac -cp /usr/share/java/antlr3.jar:. JStyle.java 
+

@@ -1,0 +1,165 @@
+
+(setq ngram-completer-buffer-name "*ngram-completer*")
+
+(defun ngram-get-current-line-prefix () 
+  (buffer-substring (save-excursion 
+                      (forward-line 0) 
+                      (point)) 
+                    (point)))
+
+
+
+(defun ngram-get-text-at-cursor ()
+  (ngram-get-current-line-prefix))
+;     (thing-at-point 'line))
+
+(defun ngram-erase-buffer ()
+  (interactive)
+  (set-buffer ngram-completer-buffer-name)
+  (erase-buffer))
+  
+
+
+(defun ngram-results (str)
+  "run ngram-completer on a string and put the output in that region ngram-results-buffer"
+    (unwind-protect
+         (save-excursion
+           (let ((our-buffer (get-buffer-create
+                              "*ngram-results-buffer*")))
+             (set-buffer "*ngram-results-buffer*")
+             ;(switch-to-buffer "ngram-results-buffer")
+             (erase-buffer)
+             (insert str)
+             (mark-whole-buffer)
+             (goto-char (point-min))                      
+             (shell-command-on-region (point-min) (point-max) "~/projects/ngrams/emacs/ngram-completer -client" nil t)
+             (buffer-substring (point-min) (point-max))))))
+
+(defun ngram-updater (str)
+  "given a string suggest possible completions for and split the screen to setup the buffer"
+  (interactive)
+  (let ((origbuffer (current-buffer)))
+    (save-excursion
+      (let ((res (ngram-results str))
+            (our-buffer (get-buffer-create
+                         ngram-completer-buffer-name)))
+        (set-buffer ngram-completer-buffer-name)
+                                        ;(switch-to-buffer "ngram-completer")
+        (erase-buffer)
+        (filter-buffer-substring (point-min) (point-max) 't)
+        (setq major-mode 'org-mode)
+        (org-mode)  
+        (insert res)
+        (goto-char 0)
+        (switch-to-buffer-other-window ngram-completer-buffer-name)
+        (switch-to-buffer-other-window origbuffer)
+        ))))
+  
+(defun ngram-suggestion ()
+  (interactive)
+  (ngram-updater (ngram-get-text-at-cursor)))
+
+
+;global-set-key [f9] 'ngram-suggestion)
+
+;;; Set keymaps to choose from the list
+(defvar ngram-keymap nil
+  "Primary keymap used by ngram completion ")
+(define-prefix-command 'ngram-prefix-command 'ngram-keymap )
+(global-set-key [f8] 'ngram-prefix-command)
+(define-key ngram-keymap [f8] 'ngram-suggestion)
+; times like these I wish emacs had lexical scope
+(dotimes (number 10 '())
+  (let ((n (if (= 9 number)
+                       "0"
+                       (number-to-string (+ 1 number)))))
+    (let ((nsym (intern (concat "ngram-insert-" n))))
+      (eval `(defun ,nsym () (interactive) (ngram-insert ,number)))
+      (define-key ngram-keymap n nsym))))
+
+(defun ngram-get-current-line () 
+  (buffer-substring (save-excursion 
+                      (forward-line 0) 
+                      (point)) 
+                    (save-excursion
+                      (forward-line 1)
+                      (forward-char -1)
+                      (point))))
+
+
+   
+
+(defun ngram-insert (n) 
+       (interactive)
+       (let (ret)
+         (let ((cbuffer (current-buffer)))
+           (save-excursion
+             (let ((our-buffer (get-buffer-create ngram-completer-buffer-name)))
+               (set-buffer ngram-completer-buffer-name)
+               (goto-line (+ n 2))
+               (let ((str (ngram-get-current-line)))
+                 (set-buffer cbuffer)             
+                 
+                 (let ((stri (string-match "\t" str)))
+                   (if stri
+                       (save-excursion 
+                         ; delete to the point
+                         (delete-region (save-excursion
+                                          (forward-line 0)
+                                          (point))
+                                        (point))
+   ;                                    (save-excursion
+   ;                                      (forward-line 1)
+   ;                                      (point)))
+                         (setq ret (substring str (+ 1 stri)))
+                         (insert ret)))))))
+             ;(forward-line 1)
+           )
+         (forward-char (length ret))
+         ret))
+
+
+(setq ngram-tab-last-call "")
+(setq ngram-tab-last-call-count 0)
+(defun ngram-tab ()
+  (let ((nstr (ngram-get-text-at-cursor)))
+    (if (not (equal nstr ngram-tab-last-call))
+        (progn 
+          (ngram-suggestion)
+          (setq ngram-tab-last-call-count 0)))
+    (setq ngram-tab-last-call
+          (ngram-insert ngram-tab-last-call-count))
+    (setq ngram-tab-last-call-count (+ 1 ngram-tab-last-call-count))))
+  
+
+
+          
+(defun smart-tab (prefix)
+  "Needs `transient-mark-mode' to be on. This smart tab is
+minibuffer compliant: it acts as usual in the minibuffer.
+
+In all other buffers: if PREFIX is \\[universal-argument], calls
+`smart-indent'. Else if point is at the end of a symbol,
+expands it. Else calls `smart-indent'."
+  (interactive "P")
+  (labels ((smart-tab-must-expand (&optional prefix)
+                                  (unless (or (consp prefix)
+                                              mark-active)
+                                    (looking-at "\\_>"))))
+    (cond ((minibufferp)
+           (minibuffer-complete))
+          ((smart-tab-must-expand prefix)
+           (ngram-tab))
+          ;(dabbrev-expand nil))
+          ((smart-indent)))))
+
+(defun smart-indent ()
+  "Indents region if mark is active, or current line otherwise."
+  (interactive)
+  (if mark-active
+    (indent-region (region-beginning)
+                   (region-end))
+    (indent-for-tab-command)))
+(global-set-key [f9] 'smart-tab)
+(defun ngram-tab-p () (interactive) (ngram-tab))
+(global-set-key [f9] 'ngram-tab-p)

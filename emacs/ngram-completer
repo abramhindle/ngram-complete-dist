@@ -1,0 +1,129 @@
+#!/usr/bin/perl
+use strict;
+use Term::ANSIColor;
+use ZeroMQ qw/:all/;
+use Getopt::Long;
+
+
+my $corpus = "$ENV{HOME}/projects/ngrams/data/lucene-split";
+
+my $SERVER_PORT = 28673;
+
+$|=1;
+#sub lex { return @_[0]; }
+
+# put some logic here to start a server
+my $client = 1;
+my $server = 0;
+my $order  = 3;
+my $result = GetOptions (
+                         "corpus",\$corpus,
+                         "server",\$server,
+                         "client",\$client,
+                         "order=s",\$order,
+);
+$server = $server || !$client;
+
+if ($server) {
+    server();
+} else {
+    client();
+}
+
+sub server {
+    require MITLM;
+    my $mitlm = MITLM->new( corpus => $corpus, order => $order);
+    #$mitlm->send("for ( i");
+
+    my $ctxt;
+    my $socket;
+    
+    warn color("blue"),"Enabling ZeroMQ",color("reset");
+
+    $ctxt = ZeroMQ::Context->new();    
+    $socket = ZeroMQ::Socket->new( $ctxt, ZMQ_REQ );
+    $socket->connect( "tcp://127.0.0.1:32132" ); # java parser
+
+    warn color("blue"),"Java Lexer Connected",color("reset");
+
+    my $server_socket = ZeroMQ::Socket->new( $ctxt, ZMQ_REP );
+    $server_socket->bind("tcp://127.0.0.1:${SERVER_PORT}");
+
+    warn color("blue"),"Sockets Done",color("reset");
+
+    sub javaCommentHack {
+        my ($text) = @_;
+        my @a = $text=~ m/(\*\/|\/\*)/igm;
+        my %h = ();
+        foreach my $a (@a) {
+            $h{$a}++;
+        }
+        if ($h{"/*"} < $h{"*/"}) {
+            $text =~ s#^.*\*/##;
+        }
+        return $text;
+    };
+
+    sub lex {
+        my @in = @_;
+        # note it says java here
+        $socket->send( "-comments +code +java$/" . javaCommentHack(join("", @in)  ));
+        my $msg = $socket->recv();
+        my $out = $msg->data();
+        $out =~ s/[\r\n]/ /g;
+        # by clearing up excessive whitespace we seem to lex better
+        $out =~ s/  */ /g;
+        #$out =~ s/; /;\n/g;
+        return $out;
+    };
+    warn color("blue"),"ZeroMQ Enabled",color("reset");
+
+
+    while( my $msg = $server_socket->recv() ) {
+        my $line = $msg->data();
+        chomp( $line );
+        warn color("blue"),"Got Line [$line]",color("reset");
+
+        if ($line =~ /^CHANGE MITLM CORPUS:\s+(.*)\s+(.*)\s+$/) {
+            ($order, $corpus) = ($1, $2);            
+            $mitlm->close();
+            $mitlm = undef; #GC it
+            $mitlm = MITLM->new( corpus => $corpus, order => $order);
+        }
+
+        my $lex = lex( $line );
+        warn color("green"),"Lexed [$lex]",color("reset");
+        my @out = $mitlm->send( $lex );
+        #$server_socket->send(join("",@out));
+        $server_socket->send(join($/,@out));
+    }
+    $mitlm->close();
+    $server_socket->close();
+    $socket->close();
+    $ctxt->term();
+}
+
+
+sub client {
+    my $ctxt;
+    my $socket;
+    
+    $ctxt = ZeroMQ::Context->new();    
+    $socket = ZeroMQ::Socket->new( $ctxt, ZMQ_REQ );
+    $socket->connect( "tcp://127.0.0.1:${SERVER_PORT}" );
+
+    my @lines = <STDIN>;
+    chomp(@lines);
+    
+    $socket->send( join("\n", map { trim($_) } @lines) );
+    my $msg = $socket->recv();
+    my $out = $msg->data();
+    print $out.$/;
+}
+sub trim {
+    my ($str) = @_;
+    $str =~ s/\s+$//g;
+    return $str;
+}
+##!/bin/sh
+#awk '{print PROCINFO["pid"] " " NR " " $0}'
