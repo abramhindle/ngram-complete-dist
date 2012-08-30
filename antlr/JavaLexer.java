@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 Java.g 2011-01-06 12:35:36
+// $ANTLR !Unknown version! Java.g 2012-08-29 21:43:48
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -159,7 +159,6 @@ public class JavaLexer extends Lexer {
     public static final int SHORT=89;
     public static final int INSTANCEOF=76;
     public static final int MINUS=30;
-    public static final int Tokens=183;
     public static final int SEMI=44;
     public static final int TRUE=99;
     public static final int EXTENDS_CLAUSE=128;
@@ -199,1891 +198,2100 @@ public class JavaLexer extends Lexer {
      */
     public boolean preserveWhitespacesAndComments = false;
 
+
+    // delegates
+    // delegators
+
     public JavaLexer() {;} 
     public JavaLexer(CharStream input) {
-        super(input);
+        this(input, new RecognizerSharedState());
+    }
+    public JavaLexer(CharStream input, RecognizerSharedState state) {
+        super(input,state);
+
     }
     public String getGrammarFileName() { return "Java.g"; }
 
-    // $ANTLR start AND
+    // $ANTLR start "AND"
     public final void mAND() throws RecognitionException {
         try {
             int _type = AND;
-            // Java.g:15:5: ( '&' )
-            // Java.g:15:7: '&'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:16:5: ( '&' )
+            // Java.g:16:7: '&'
             {
             match('&'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end AND
+    // $ANTLR end "AND"
 
-    // $ANTLR start AND_ASSIGN
+    // $ANTLR start "AND_ASSIGN"
     public final void mAND_ASSIGN() throws RecognitionException {
         try {
             int _type = AND_ASSIGN;
-            // Java.g:16:12: ( '&=' )
-            // Java.g:16:14: '&='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:17:12: ( '&=' )
+            // Java.g:17:14: '&='
             {
             match("&="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end AND_ASSIGN
+    // $ANTLR end "AND_ASSIGN"
 
-    // $ANTLR start ASSIGN
+    // $ANTLR start "ASSIGN"
     public final void mASSIGN() throws RecognitionException {
         try {
             int _type = ASSIGN;
-            // Java.g:17:8: ( '=' )
-            // Java.g:17:10: '='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:18:8: ( '=' )
+            // Java.g:18:10: '='
             {
             match('='); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ASSIGN
+    // $ANTLR end "ASSIGN"
 
-    // $ANTLR start AT
+    // $ANTLR start "AT"
     public final void mAT() throws RecognitionException {
         try {
             int _type = AT;
-            // Java.g:18:4: ( '@' )
-            // Java.g:18:6: '@'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:19:4: ( '@' )
+            // Java.g:19:6: '@'
             {
             match('@'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end AT
+    // $ANTLR end "AT"
 
-    // $ANTLR start BIT_SHIFT_RIGHT
+    // $ANTLR start "BIT_SHIFT_RIGHT"
     public final void mBIT_SHIFT_RIGHT() throws RecognitionException {
         try {
             int _type = BIT_SHIFT_RIGHT;
-            // Java.g:19:17: ( '>>>' )
-            // Java.g:19:19: '>>>'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:20:17: ( '>>>' )
+            // Java.g:20:19: '>>>'
             {
             match(">>>"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end BIT_SHIFT_RIGHT
+    // $ANTLR end "BIT_SHIFT_RIGHT"
 
-    // $ANTLR start BIT_SHIFT_RIGHT_ASSIGN
+    // $ANTLR start "BIT_SHIFT_RIGHT_ASSIGN"
     public final void mBIT_SHIFT_RIGHT_ASSIGN() throws RecognitionException {
         try {
             int _type = BIT_SHIFT_RIGHT_ASSIGN;
-            // Java.g:20:24: ( '>>>=' )
-            // Java.g:20:26: '>>>='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:21:24: ( '>>>=' )
+            // Java.g:21:26: '>>>='
             {
             match(">>>="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end BIT_SHIFT_RIGHT_ASSIGN
+    // $ANTLR end "BIT_SHIFT_RIGHT_ASSIGN"
 
-    // $ANTLR start COLON
+    // $ANTLR start "COLON"
     public final void mCOLON() throws RecognitionException {
         try {
             int _type = COLON;
-            // Java.g:21:7: ( ':' )
-            // Java.g:21:9: ':'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:22:7: ( ':' )
+            // Java.g:22:9: ':'
             {
             match(':'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COLON
+    // $ANTLR end "COLON"
 
-    // $ANTLR start COMMA
+    // $ANTLR start "COMMA"
     public final void mCOMMA() throws RecognitionException {
         try {
             int _type = COMMA;
-            // Java.g:22:7: ( ',' )
-            // Java.g:22:9: ','
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:23:7: ( ',' )
+            // Java.g:23:9: ','
             {
             match(','); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COMMA
+    // $ANTLR end "COMMA"
 
-    // $ANTLR start DEC
+    // $ANTLR start "DEC"
     public final void mDEC() throws RecognitionException {
         try {
             int _type = DEC;
-            // Java.g:23:5: ( '--' )
-            // Java.g:23:7: '--'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:24:5: ( '--' )
+            // Java.g:24:7: '--'
             {
             match("--"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DEC
+    // $ANTLR end "DEC"
 
-    // $ANTLR start DIV
+    // $ANTLR start "DIV"
     public final void mDIV() throws RecognitionException {
         try {
             int _type = DIV;
-            // Java.g:24:5: ( '/' )
-            // Java.g:24:7: '/'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:25:5: ( '/' )
+            // Java.g:25:7: '/'
             {
             match('/'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DIV
+    // $ANTLR end "DIV"
 
-    // $ANTLR start DIV_ASSIGN
+    // $ANTLR start "DIV_ASSIGN"
     public final void mDIV_ASSIGN() throws RecognitionException {
         try {
             int _type = DIV_ASSIGN;
-            // Java.g:25:12: ( '/=' )
-            // Java.g:25:14: '/='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:26:12: ( '/=' )
+            // Java.g:26:14: '/='
             {
             match("/="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DIV_ASSIGN
+    // $ANTLR end "DIV_ASSIGN"
 
-    // $ANTLR start DOT
+    // $ANTLR start "DOT"
     public final void mDOT() throws RecognitionException {
         try {
             int _type = DOT;
-            // Java.g:26:5: ( '.' )
-            // Java.g:26:7: '.'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:27:5: ( '.' )
+            // Java.g:27:7: '.'
             {
             match('.'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOT
+    // $ANTLR end "DOT"
 
-    // $ANTLR start DOTSTAR
+    // $ANTLR start "DOTSTAR"
     public final void mDOTSTAR() throws RecognitionException {
         try {
             int _type = DOTSTAR;
-            // Java.g:27:9: ( '.*' )
-            // Java.g:27:11: '.*'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:28:9: ( '.*' )
+            // Java.g:28:11: '.*'
             {
             match(".*"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOTSTAR
+    // $ANTLR end "DOTSTAR"
 
-    // $ANTLR start ELLIPSIS
+    // $ANTLR start "ELLIPSIS"
     public final void mELLIPSIS() throws RecognitionException {
         try {
             int _type = ELLIPSIS;
-            // Java.g:28:10: ( '...' )
-            // Java.g:28:12: '...'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:29:10: ( '...' )
+            // Java.g:29:12: '...'
             {
             match("..."); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ELLIPSIS
+    // $ANTLR end "ELLIPSIS"
 
-    // $ANTLR start EQUAL
+    // $ANTLR start "EQUAL"
     public final void mEQUAL() throws RecognitionException {
         try {
             int _type = EQUAL;
-            // Java.g:29:7: ( '==' )
-            // Java.g:29:9: '=='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:30:7: ( '==' )
+            // Java.g:30:9: '=='
             {
             match("=="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end EQUAL
+    // $ANTLR end "EQUAL"
 
-    // $ANTLR start GREATER_OR_EQUAL
+    // $ANTLR start "GREATER_OR_EQUAL"
     public final void mGREATER_OR_EQUAL() throws RecognitionException {
         try {
             int _type = GREATER_OR_EQUAL;
-            // Java.g:30:18: ( '>=' )
-            // Java.g:30:20: '>='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:31:18: ( '>=' )
+            // Java.g:31:20: '>='
             {
             match(">="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end GREATER_OR_EQUAL
+    // $ANTLR end "GREATER_OR_EQUAL"
 
-    // $ANTLR start GREATER_THAN
+    // $ANTLR start "GREATER_THAN"
     public final void mGREATER_THAN() throws RecognitionException {
         try {
             int _type = GREATER_THAN;
-            // Java.g:31:14: ( '>' )
-            // Java.g:31:16: '>'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:32:14: ( '>' )
+            // Java.g:32:16: '>'
             {
             match('>'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end GREATER_THAN
+    // $ANTLR end "GREATER_THAN"
 
-    // $ANTLR start INC
+    // $ANTLR start "INC"
     public final void mINC() throws RecognitionException {
         try {
             int _type = INC;
-            // Java.g:32:5: ( '++' )
-            // Java.g:32:7: '++'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:33:5: ( '++' )
+            // Java.g:33:7: '++'
             {
             match("++"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end INC
+    // $ANTLR end "INC"
 
-    // $ANTLR start LBRACK
+    // $ANTLR start "LBRACK"
     public final void mLBRACK() throws RecognitionException {
         try {
             int _type = LBRACK;
-            // Java.g:33:8: ( '[' )
-            // Java.g:33:10: '['
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:34:8: ( '[' )
+            // Java.g:34:10: '['
             {
             match('['); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LBRACK
+    // $ANTLR end "LBRACK"
 
-    // $ANTLR start LCURLY
+    // $ANTLR start "LCURLY"
     public final void mLCURLY() throws RecognitionException {
         try {
             int _type = LCURLY;
-            // Java.g:34:8: ( '{' )
-            // Java.g:34:10: '{'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:35:8: ( '{' )
+            // Java.g:35:10: '{'
             {
             match('{'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LCURLY
+    // $ANTLR end "LCURLY"
 
-    // $ANTLR start LESS_OR_EQUAL
+    // $ANTLR start "LESS_OR_EQUAL"
     public final void mLESS_OR_EQUAL() throws RecognitionException {
         try {
             int _type = LESS_OR_EQUAL;
-            // Java.g:35:15: ( '<=' )
-            // Java.g:35:17: '<='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:36:15: ( '<=' )
+            // Java.g:36:17: '<='
             {
             match("<="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LESS_OR_EQUAL
+    // $ANTLR end "LESS_OR_EQUAL"
 
-    // $ANTLR start LESS_THAN
+    // $ANTLR start "LESS_THAN"
     public final void mLESS_THAN() throws RecognitionException {
         try {
             int _type = LESS_THAN;
-            // Java.g:36:11: ( '<' )
-            // Java.g:36:13: '<'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:37:11: ( '<' )
+            // Java.g:37:13: '<'
             {
             match('<'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LESS_THAN
+    // $ANTLR end "LESS_THAN"
 
-    // $ANTLR start LOGICAL_AND
+    // $ANTLR start "LOGICAL_AND"
     public final void mLOGICAL_AND() throws RecognitionException {
         try {
             int _type = LOGICAL_AND;
-            // Java.g:37:13: ( '&&' )
-            // Java.g:37:15: '&&'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:38:13: ( '&&' )
+            // Java.g:38:15: '&&'
             {
             match("&&"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LOGICAL_AND
+    // $ANTLR end "LOGICAL_AND"
 
-    // $ANTLR start LOGICAL_NOT
+    // $ANTLR start "LOGICAL_NOT"
     public final void mLOGICAL_NOT() throws RecognitionException {
         try {
             int _type = LOGICAL_NOT;
-            // Java.g:38:13: ( '!' )
-            // Java.g:38:15: '!'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:39:13: ( '!' )
+            // Java.g:39:15: '!'
             {
             match('!'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LOGICAL_NOT
+    // $ANTLR end "LOGICAL_NOT"
 
-    // $ANTLR start LOGICAL_OR
+    // $ANTLR start "LOGICAL_OR"
     public final void mLOGICAL_OR() throws RecognitionException {
         try {
             int _type = LOGICAL_OR;
-            // Java.g:39:12: ( '||' )
-            // Java.g:39:14: '||'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:40:12: ( '||' )
+            // Java.g:40:14: '||'
             {
             match("||"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LOGICAL_OR
+    // $ANTLR end "LOGICAL_OR"
 
-    // $ANTLR start LPAREN
+    // $ANTLR start "LPAREN"
     public final void mLPAREN() throws RecognitionException {
         try {
             int _type = LPAREN;
-            // Java.g:40:8: ( '(' )
-            // Java.g:40:10: '('
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:41:8: ( '(' )
+            // Java.g:41:10: '('
             {
             match('('); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LPAREN
+    // $ANTLR end "LPAREN"
 
-    // $ANTLR start MINUS
+    // $ANTLR start "MINUS"
     public final void mMINUS() throws RecognitionException {
         try {
             int _type = MINUS;
-            // Java.g:41:7: ( '-' )
-            // Java.g:41:9: '-'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:42:7: ( '-' )
+            // Java.g:42:9: '-'
             {
             match('-'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end MINUS
+    // $ANTLR end "MINUS"
 
-    // $ANTLR start MINUS_ASSIGN
+    // $ANTLR start "MINUS_ASSIGN"
     public final void mMINUS_ASSIGN() throws RecognitionException {
         try {
             int _type = MINUS_ASSIGN;
-            // Java.g:42:14: ( '-=' )
-            // Java.g:42:16: '-='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:43:14: ( '-=' )
+            // Java.g:43:16: '-='
             {
             match("-="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end MINUS_ASSIGN
+    // $ANTLR end "MINUS_ASSIGN"
 
-    // $ANTLR start MOD
+    // $ANTLR start "MOD"
     public final void mMOD() throws RecognitionException {
         try {
             int _type = MOD;
-            // Java.g:43:5: ( '%' )
-            // Java.g:43:7: '%'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:44:5: ( '%' )
+            // Java.g:44:7: '%'
             {
             match('%'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end MOD
+    // $ANTLR end "MOD"
 
-    // $ANTLR start MOD_ASSIGN
+    // $ANTLR start "MOD_ASSIGN"
     public final void mMOD_ASSIGN() throws RecognitionException {
         try {
             int _type = MOD_ASSIGN;
-            // Java.g:44:12: ( '%=' )
-            // Java.g:44:14: '%='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:45:12: ( '%=' )
+            // Java.g:45:14: '%='
             {
             match("%="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end MOD_ASSIGN
+    // $ANTLR end "MOD_ASSIGN"
 
-    // $ANTLR start NOT
+    // $ANTLR start "NOT"
     public final void mNOT() throws RecognitionException {
         try {
             int _type = NOT;
-            // Java.g:45:5: ( '~' )
-            // Java.g:45:7: '~'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:46:5: ( '~' )
+            // Java.g:46:7: '~'
             {
             match('~'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NOT
+    // $ANTLR end "NOT"
 
-    // $ANTLR start NOT_EQUAL
+    // $ANTLR start "NOT_EQUAL"
     public final void mNOT_EQUAL() throws RecognitionException {
         try {
             int _type = NOT_EQUAL;
-            // Java.g:46:11: ( '!=' )
-            // Java.g:46:13: '!='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:47:11: ( '!=' )
+            // Java.g:47:13: '!='
             {
             match("!="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NOT_EQUAL
+    // $ANTLR end "NOT_EQUAL"
 
-    // $ANTLR start OR
+    // $ANTLR start "OR"
     public final void mOR() throws RecognitionException {
         try {
             int _type = OR;
-            // Java.g:47:4: ( '|' )
-            // Java.g:47:6: '|'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:48:4: ( '|' )
+            // Java.g:48:6: '|'
             {
             match('|'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end OR
+    // $ANTLR end "OR"
 
-    // $ANTLR start OR_ASSIGN
+    // $ANTLR start "OR_ASSIGN"
     public final void mOR_ASSIGN() throws RecognitionException {
         try {
             int _type = OR_ASSIGN;
-            // Java.g:48:11: ( '|=' )
-            // Java.g:48:13: '|='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:49:11: ( '|=' )
+            // Java.g:49:13: '|='
             {
             match("|="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end OR_ASSIGN
+    // $ANTLR end "OR_ASSIGN"
 
-    // $ANTLR start PLUS
+    // $ANTLR start "PLUS"
     public final void mPLUS() throws RecognitionException {
         try {
             int _type = PLUS;
-            // Java.g:49:6: ( '+' )
-            // Java.g:49:8: '+'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:50:6: ( '+' )
+            // Java.g:50:8: '+'
             {
             match('+'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PLUS
+    // $ANTLR end "PLUS"
 
-    // $ANTLR start PLUS_ASSIGN
+    // $ANTLR start "PLUS_ASSIGN"
     public final void mPLUS_ASSIGN() throws RecognitionException {
         try {
             int _type = PLUS_ASSIGN;
-            // Java.g:50:13: ( '+=' )
-            // Java.g:50:15: '+='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:51:13: ( '+=' )
+            // Java.g:51:15: '+='
             {
             match("+="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PLUS_ASSIGN
+    // $ANTLR end "PLUS_ASSIGN"
 
-    // $ANTLR start QUESTION
+    // $ANTLR start "QUESTION"
     public final void mQUESTION() throws RecognitionException {
         try {
             int _type = QUESTION;
-            // Java.g:51:10: ( '?' )
-            // Java.g:51:12: '?'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:52:10: ( '?' )
+            // Java.g:52:12: '?'
             {
             match('?'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end QUESTION
+    // $ANTLR end "QUESTION"
 
-    // $ANTLR start RBRACK
+    // $ANTLR start "RBRACK"
     public final void mRBRACK() throws RecognitionException {
         try {
             int _type = RBRACK;
-            // Java.g:52:8: ( ']' )
-            // Java.g:52:10: ']'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:53:8: ( ']' )
+            // Java.g:53:10: ']'
             {
             match(']'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RBRACK
+    // $ANTLR end "RBRACK"
 
-    // $ANTLR start RCURLY
+    // $ANTLR start "RCURLY"
     public final void mRCURLY() throws RecognitionException {
         try {
             int _type = RCURLY;
-            // Java.g:53:8: ( '}' )
-            // Java.g:53:10: '}'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:54:8: ( '}' )
+            // Java.g:54:10: '}'
             {
             match('}'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RCURLY
+    // $ANTLR end "RCURLY"
 
-    // $ANTLR start RPAREN
+    // $ANTLR start "RPAREN"
     public final void mRPAREN() throws RecognitionException {
         try {
             int _type = RPAREN;
-            // Java.g:54:8: ( ')' )
-            // Java.g:54:10: ')'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:55:8: ( ')' )
+            // Java.g:55:10: ')'
             {
             match(')'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RPAREN
+    // $ANTLR end "RPAREN"
 
-    // $ANTLR start SEMI
+    // $ANTLR start "SEMI"
     public final void mSEMI() throws RecognitionException {
         try {
             int _type = SEMI;
-            // Java.g:55:6: ( ';' )
-            // Java.g:55:8: ';'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:56:6: ( ';' )
+            // Java.g:56:8: ';'
             {
             match(';'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SEMI
+    // $ANTLR end "SEMI"
 
-    // $ANTLR start SHIFT_LEFT
+    // $ANTLR start "SHIFT_LEFT"
     public final void mSHIFT_LEFT() throws RecognitionException {
         try {
             int _type = SHIFT_LEFT;
-            // Java.g:56:12: ( '<<' )
-            // Java.g:56:14: '<<'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:57:12: ( '<<' )
+            // Java.g:57:14: '<<'
             {
             match("<<"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SHIFT_LEFT
+    // $ANTLR end "SHIFT_LEFT"
 
-    // $ANTLR start SHIFT_LEFT_ASSIGN
+    // $ANTLR start "SHIFT_LEFT_ASSIGN"
     public final void mSHIFT_LEFT_ASSIGN() throws RecognitionException {
         try {
             int _type = SHIFT_LEFT_ASSIGN;
-            // Java.g:57:19: ( '<<=' )
-            // Java.g:57:21: '<<='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:58:19: ( '<<=' )
+            // Java.g:58:21: '<<='
             {
             match("<<="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SHIFT_LEFT_ASSIGN
+    // $ANTLR end "SHIFT_LEFT_ASSIGN"
 
-    // $ANTLR start SHIFT_RIGHT
+    // $ANTLR start "SHIFT_RIGHT"
     public final void mSHIFT_RIGHT() throws RecognitionException {
         try {
             int _type = SHIFT_RIGHT;
-            // Java.g:58:13: ( '>>' )
-            // Java.g:58:15: '>>'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:59:13: ( '>>' )
+            // Java.g:59:15: '>>'
             {
             match(">>"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SHIFT_RIGHT
+    // $ANTLR end "SHIFT_RIGHT"
 
-    // $ANTLR start SHIFT_RIGHT_ASSIGN
+    // $ANTLR start "SHIFT_RIGHT_ASSIGN"
     public final void mSHIFT_RIGHT_ASSIGN() throws RecognitionException {
         try {
             int _type = SHIFT_RIGHT_ASSIGN;
-            // Java.g:59:20: ( '>>=' )
-            // Java.g:59:22: '>>='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:60:20: ( '>>=' )
+            // Java.g:60:22: '>>='
             {
             match(">>="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SHIFT_RIGHT_ASSIGN
+    // $ANTLR end "SHIFT_RIGHT_ASSIGN"
 
-    // $ANTLR start STAR
+    // $ANTLR start "STAR"
     public final void mSTAR() throws RecognitionException {
         try {
             int _type = STAR;
-            // Java.g:60:6: ( '*' )
-            // Java.g:60:8: '*'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:61:6: ( '*' )
+            // Java.g:61:8: '*'
             {
             match('*'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STAR
+    // $ANTLR end "STAR"
 
-    // $ANTLR start STAR_ASSIGN
+    // $ANTLR start "STAR_ASSIGN"
     public final void mSTAR_ASSIGN() throws RecognitionException {
         try {
             int _type = STAR_ASSIGN;
-            // Java.g:61:13: ( '*=' )
-            // Java.g:61:15: '*='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:62:13: ( '*=' )
+            // Java.g:62:15: '*='
             {
             match("*="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STAR_ASSIGN
+    // $ANTLR end "STAR_ASSIGN"
 
-    // $ANTLR start XOR
+    // $ANTLR start "XOR"
     public final void mXOR() throws RecognitionException {
         try {
             int _type = XOR;
-            // Java.g:62:5: ( '^' )
-            // Java.g:62:7: '^'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:63:5: ( '^' )
+            // Java.g:63:7: '^'
             {
             match('^'); 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end XOR
+    // $ANTLR end "XOR"
 
-    // $ANTLR start XOR_ASSIGN
+    // $ANTLR start "XOR_ASSIGN"
     public final void mXOR_ASSIGN() throws RecognitionException {
         try {
             int _type = XOR_ASSIGN;
-            // Java.g:63:12: ( '^=' )
-            // Java.g:63:14: '^='
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:64:12: ( '^=' )
+            // Java.g:64:14: '^='
             {
             match("^="); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end XOR_ASSIGN
+    // $ANTLR end "XOR_ASSIGN"
 
-    // $ANTLR start ABSTRACT
+    // $ANTLR start "ABSTRACT"
     public final void mABSTRACT() throws RecognitionException {
         try {
             int _type = ABSTRACT;
-            // Java.g:64:10: ( 'abstract' )
-            // Java.g:64:12: 'abstract'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:65:10: ( 'abstract' )
+            // Java.g:65:12: 'abstract'
             {
             match("abstract"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ABSTRACT
+    // $ANTLR end "ABSTRACT"
 
-    // $ANTLR start ASSERT
+    // $ANTLR start "ASSERT"
     public final void mASSERT() throws RecognitionException {
         try {
             int _type = ASSERT;
-            // Java.g:65:8: ( 'assert' )
-            // Java.g:65:10: 'assert'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:66:8: ( 'assert' )
+            // Java.g:66:10: 'assert'
             {
             match("assert"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ASSERT
+    // $ANTLR end "ASSERT"
 
-    // $ANTLR start BOOLEAN
+    // $ANTLR start "BOOLEAN"
     public final void mBOOLEAN() throws RecognitionException {
         try {
             int _type = BOOLEAN;
-            // Java.g:66:9: ( 'boolean' )
-            // Java.g:66:11: 'boolean'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:67:9: ( 'boolean' )
+            // Java.g:67:11: 'boolean'
             {
             match("boolean"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end BOOLEAN
+    // $ANTLR end "BOOLEAN"
 
-    // $ANTLR start BREAK
+    // $ANTLR start "BREAK"
     public final void mBREAK() throws RecognitionException {
         try {
             int _type = BREAK;
-            // Java.g:67:7: ( 'break' )
-            // Java.g:67:9: 'break'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:68:7: ( 'break' )
+            // Java.g:68:9: 'break'
             {
             match("break"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end BREAK
+    // $ANTLR end "BREAK"
 
-    // $ANTLR start BYTE
+    // $ANTLR start "BYTE"
     public final void mBYTE() throws RecognitionException {
         try {
             int _type = BYTE;
-            // Java.g:68:6: ( 'byte' )
-            // Java.g:68:8: 'byte'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:69:6: ( 'byte' )
+            // Java.g:69:8: 'byte'
             {
             match("byte"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end BYTE
+    // $ANTLR end "BYTE"
 
-    // $ANTLR start CASE
+    // $ANTLR start "CASE"
     public final void mCASE() throws RecognitionException {
         try {
             int _type = CASE;
-            // Java.g:69:6: ( 'case' )
-            // Java.g:69:8: 'case'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:70:6: ( 'case' )
+            // Java.g:70:8: 'case'
             {
             match("case"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CASE
+    // $ANTLR end "CASE"
 
-    // $ANTLR start CATCH
+    // $ANTLR start "CATCH"
     public final void mCATCH() throws RecognitionException {
         try {
             int _type = CATCH;
-            // Java.g:70:7: ( 'catch' )
-            // Java.g:70:9: 'catch'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:71:7: ( 'catch' )
+            // Java.g:71:9: 'catch'
             {
             match("catch"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CATCH
+    // $ANTLR end "CATCH"
 
-    // $ANTLR start CHAR
+    // $ANTLR start "CHAR"
     public final void mCHAR() throws RecognitionException {
         try {
             int _type = CHAR;
-            // Java.g:71:6: ( 'char' )
-            // Java.g:71:8: 'char'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:72:6: ( 'char' )
+            // Java.g:72:8: 'char'
             {
             match("char"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CHAR
+    // $ANTLR end "CHAR"
 
-    // $ANTLR start CLASS
+    // $ANTLR start "CLASS"
     public final void mCLASS() throws RecognitionException {
         try {
             int _type = CLASS;
-            // Java.g:72:7: ( 'class' )
-            // Java.g:72:9: 'class'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:73:7: ( 'class' )
+            // Java.g:73:9: 'class'
             {
             match("class"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CLASS
+    // $ANTLR end "CLASS"
 
-    // $ANTLR start CONTINUE
+    // $ANTLR start "CONTINUE"
     public final void mCONTINUE() throws RecognitionException {
         try {
             int _type = CONTINUE;
-            // Java.g:73:10: ( 'continue' )
-            // Java.g:73:12: 'continue'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:74:10: ( 'continue' )
+            // Java.g:74:12: 'continue'
             {
             match("continue"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CONTINUE
+    // $ANTLR end "CONTINUE"
 
-    // $ANTLR start DEFAULT
+    // $ANTLR start "DEFAULT"
     public final void mDEFAULT() throws RecognitionException {
         try {
             int _type = DEFAULT;
-            // Java.g:74:9: ( 'default' )
-            // Java.g:74:11: 'default'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:75:9: ( 'default' )
+            // Java.g:75:11: 'default'
             {
             match("default"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DEFAULT
+    // $ANTLR end "DEFAULT"
 
-    // $ANTLR start DO
+    // $ANTLR start "DO"
     public final void mDO() throws RecognitionException {
         try {
             int _type = DO;
-            // Java.g:75:4: ( 'do' )
-            // Java.g:75:6: 'do'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:76:4: ( 'do' )
+            // Java.g:76:6: 'do'
             {
             match("do"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DO
+    // $ANTLR end "DO"
 
-    // $ANTLR start DOUBLE
+    // $ANTLR start "DOUBLE"
     public final void mDOUBLE() throws RecognitionException {
         try {
             int _type = DOUBLE;
-            // Java.g:76:8: ( 'double' )
-            // Java.g:76:10: 'double'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:77:8: ( 'double' )
+            // Java.g:77:10: 'double'
             {
             match("double"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOUBLE
+    // $ANTLR end "DOUBLE"
 
-    // $ANTLR start ELSE
+    // $ANTLR start "ELSE"
     public final void mELSE() throws RecognitionException {
         try {
             int _type = ELSE;
-            // Java.g:77:6: ( 'else' )
-            // Java.g:77:8: 'else'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:78:6: ( 'else' )
+            // Java.g:78:8: 'else'
             {
             match("else"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ELSE
+    // $ANTLR end "ELSE"
 
-    // $ANTLR start ENUM
+    // $ANTLR start "ENUM"
     public final void mENUM() throws RecognitionException {
         try {
             int _type = ENUM;
-            // Java.g:78:6: ( 'enum' )
-            // Java.g:78:8: 'enum'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:79:6: ( 'enum' )
+            // Java.g:79:8: 'enum'
             {
             match("enum"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ENUM
+    // $ANTLR end "ENUM"
 
-    // $ANTLR start EXTENDS
+    // $ANTLR start "EXTENDS"
     public final void mEXTENDS() throws RecognitionException {
         try {
             int _type = EXTENDS;
-            // Java.g:79:9: ( 'extends' )
-            // Java.g:79:11: 'extends'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:80:9: ( 'extends' )
+            // Java.g:80:11: 'extends'
             {
             match("extends"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end EXTENDS
+    // $ANTLR end "EXTENDS"
 
-    // $ANTLR start FALSE
+    // $ANTLR start "FALSE"
     public final void mFALSE() throws RecognitionException {
         try {
             int _type = FALSE;
-            // Java.g:80:7: ( 'false' )
-            // Java.g:80:9: 'false'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:81:7: ( 'false' )
+            // Java.g:81:9: 'false'
             {
             match("false"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FALSE
+    // $ANTLR end "FALSE"
 
-    // $ANTLR start FINAL
+    // $ANTLR start "FINAL"
     public final void mFINAL() throws RecognitionException {
         try {
             int _type = FINAL;
-            // Java.g:81:7: ( 'final' )
-            // Java.g:81:9: 'final'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:82:7: ( 'final' )
+            // Java.g:82:9: 'final'
             {
             match("final"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FINAL
+    // $ANTLR end "FINAL"
 
-    // $ANTLR start FINALLY
+    // $ANTLR start "FINALLY"
     public final void mFINALLY() throws RecognitionException {
         try {
             int _type = FINALLY;
-            // Java.g:82:9: ( 'finally' )
-            // Java.g:82:11: 'finally'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:83:9: ( 'finally' )
+            // Java.g:83:11: 'finally'
             {
             match("finally"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FINALLY
+    // $ANTLR end "FINALLY"
 
-    // $ANTLR start FLOAT
+    // $ANTLR start "FLOAT"
     public final void mFLOAT() throws RecognitionException {
         try {
             int _type = FLOAT;
-            // Java.g:83:7: ( 'float' )
-            // Java.g:83:9: 'float'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:84:7: ( 'float' )
+            // Java.g:84:9: 'float'
             {
             match("float"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FLOAT
+    // $ANTLR end "FLOAT"
 
-    // $ANTLR start FOR
+    // $ANTLR start "FOR"
     public final void mFOR() throws RecognitionException {
         try {
             int _type = FOR;
-            // Java.g:84:5: ( 'for' )
-            // Java.g:84:7: 'for'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:85:5: ( 'for' )
+            // Java.g:85:7: 'for'
             {
             match("for"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FOR
+    // $ANTLR end "FOR"
 
-    // $ANTLR start IF
+    // $ANTLR start "IF"
     public final void mIF() throws RecognitionException {
         try {
             int _type = IF;
-            // Java.g:85:4: ( 'if' )
-            // Java.g:85:6: 'if'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:86:4: ( 'if' )
+            // Java.g:86:6: 'if'
             {
             match("if"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end IF
+    // $ANTLR end "IF"
 
-    // $ANTLR start IMPLEMENTS
+    // $ANTLR start "IMPLEMENTS"
     public final void mIMPLEMENTS() throws RecognitionException {
         try {
             int _type = IMPLEMENTS;
-            // Java.g:86:12: ( 'implements' )
-            // Java.g:86:14: 'implements'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:87:12: ( 'implements' )
+            // Java.g:87:14: 'implements'
             {
             match("implements"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end IMPLEMENTS
+    // $ANTLR end "IMPLEMENTS"
 
-    // $ANTLR start INSTANCEOF
+    // $ANTLR start "INSTANCEOF"
     public final void mINSTANCEOF() throws RecognitionException {
         try {
             int _type = INSTANCEOF;
-            // Java.g:87:12: ( 'instanceof' )
-            // Java.g:87:14: 'instanceof'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:88:12: ( 'instanceof' )
+            // Java.g:88:14: 'instanceof'
             {
             match("instanceof"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end INSTANCEOF
+    // $ANTLR end "INSTANCEOF"
 
-    // $ANTLR start INTERFACE
+    // $ANTLR start "INTERFACE"
     public final void mINTERFACE() throws RecognitionException {
         try {
             int _type = INTERFACE;
-            // Java.g:88:11: ( 'interface' )
-            // Java.g:88:13: 'interface'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:89:11: ( 'interface' )
+            // Java.g:89:13: 'interface'
             {
             match("interface"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end INTERFACE
+    // $ANTLR end "INTERFACE"
 
-    // $ANTLR start IMPORT
+    // $ANTLR start "IMPORT"
     public final void mIMPORT() throws RecognitionException {
         try {
             int _type = IMPORT;
-            // Java.g:89:8: ( 'import' )
-            // Java.g:89:10: 'import'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:90:8: ( 'import' )
+            // Java.g:90:10: 'import'
             {
             match("import"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end IMPORT
+    // $ANTLR end "IMPORT"
 
-    // $ANTLR start INT
+    // $ANTLR start "INT"
     public final void mINT() throws RecognitionException {
         try {
             int _type = INT;
-            // Java.g:90:5: ( 'int' )
-            // Java.g:90:7: 'int'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:91:5: ( 'int' )
+            // Java.g:91:7: 'int'
             {
             match("int"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end INT
+    // $ANTLR end "INT"
 
-    // $ANTLR start LONG
+    // $ANTLR start "LONG"
     public final void mLONG() throws RecognitionException {
         try {
             int _type = LONG;
-            // Java.g:91:6: ( 'long' )
-            // Java.g:91:8: 'long'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:92:6: ( 'long' )
+            // Java.g:92:8: 'long'
             {
             match("long"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LONG
+    // $ANTLR end "LONG"
 
-    // $ANTLR start NATIVE
+    // $ANTLR start "NATIVE"
     public final void mNATIVE() throws RecognitionException {
         try {
             int _type = NATIVE;
-            // Java.g:92:8: ( 'native' )
-            // Java.g:92:10: 'native'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:93:8: ( 'native' )
+            // Java.g:93:10: 'native'
             {
             match("native"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NATIVE
+    // $ANTLR end "NATIVE"
 
-    // $ANTLR start NEW
+    // $ANTLR start "NEW"
     public final void mNEW() throws RecognitionException {
         try {
             int _type = NEW;
-            // Java.g:93:5: ( 'new' )
-            // Java.g:93:7: 'new'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:94:5: ( 'new' )
+            // Java.g:94:7: 'new'
             {
             match("new"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NEW
+    // $ANTLR end "NEW"
 
-    // $ANTLR start NULL
+    // $ANTLR start "NULL"
     public final void mNULL() throws RecognitionException {
         try {
             int _type = NULL;
-            // Java.g:94:6: ( 'null' )
-            // Java.g:94:8: 'null'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:95:6: ( 'null' )
+            // Java.g:95:8: 'null'
             {
             match("null"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NULL
+    // $ANTLR end "NULL"
 
-    // $ANTLR start PACKAGE
+    // $ANTLR start "PACKAGE"
     public final void mPACKAGE() throws RecognitionException {
         try {
             int _type = PACKAGE;
-            // Java.g:95:9: ( 'package' )
-            // Java.g:95:11: 'package'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:96:9: ( 'package' )
+            // Java.g:96:11: 'package'
             {
             match("package"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PACKAGE
+    // $ANTLR end "PACKAGE"
 
-    // $ANTLR start PRIVATE
+    // $ANTLR start "PRIVATE"
     public final void mPRIVATE() throws RecognitionException {
         try {
             int _type = PRIVATE;
-            // Java.g:96:9: ( 'private' )
-            // Java.g:96:11: 'private'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:97:9: ( 'private' )
+            // Java.g:97:11: 'private'
             {
             match("private"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PRIVATE
+    // $ANTLR end "PRIVATE"
 
-    // $ANTLR start PROTECTED
+    // $ANTLR start "PROTECTED"
     public final void mPROTECTED() throws RecognitionException {
         try {
             int _type = PROTECTED;
-            // Java.g:97:11: ( 'protected' )
-            // Java.g:97:13: 'protected'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:98:11: ( 'protected' )
+            // Java.g:98:13: 'protected'
             {
             match("protected"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PROTECTED
+    // $ANTLR end "PROTECTED"
 
-    // $ANTLR start PUBLIC
+    // $ANTLR start "PUBLIC"
     public final void mPUBLIC() throws RecognitionException {
         try {
             int _type = PUBLIC;
-            // Java.g:98:8: ( 'public' )
-            // Java.g:98:10: 'public'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:99:8: ( 'public' )
+            // Java.g:99:10: 'public'
             {
             match("public"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PUBLIC
+    // $ANTLR end "PUBLIC"
 
-    // $ANTLR start RETURN
+    // $ANTLR start "RETURN"
     public final void mRETURN() throws RecognitionException {
         try {
             int _type = RETURN;
-            // Java.g:99:8: ( 'return' )
-            // Java.g:99:10: 'return'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:100:8: ( 'return' )
+            // Java.g:100:10: 'return'
             {
             match("return"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RETURN
+    // $ANTLR end "RETURN"
 
-    // $ANTLR start SHORT
+    // $ANTLR start "SHORT"
     public final void mSHORT() throws RecognitionException {
         try {
             int _type = SHORT;
-            // Java.g:100:7: ( 'short' )
-            // Java.g:100:9: 'short'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:101:7: ( 'short' )
+            // Java.g:101:9: 'short'
             {
             match("short"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SHORT
+    // $ANTLR end "SHORT"
 
-    // $ANTLR start STATIC
+    // $ANTLR start "STATIC"
     public final void mSTATIC() throws RecognitionException {
         try {
             int _type = STATIC;
-            // Java.g:101:8: ( 'static' )
-            // Java.g:101:10: 'static'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:102:8: ( 'static' )
+            // Java.g:102:10: 'static'
             {
             match("static"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STATIC
+    // $ANTLR end "STATIC"
 
-    // $ANTLR start STRICTFP
+    // $ANTLR start "STRICTFP"
     public final void mSTRICTFP() throws RecognitionException {
         try {
             int _type = STRICTFP;
-            // Java.g:102:10: ( 'strictfp' )
-            // Java.g:102:12: 'strictfp'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:103:10: ( 'strictfp' )
+            // Java.g:103:12: 'strictfp'
             {
             match("strictfp"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STRICTFP
+    // $ANTLR end "STRICTFP"
 
-    // $ANTLR start SUPER
+    // $ANTLR start "SUPER"
     public final void mSUPER() throws RecognitionException {
         try {
             int _type = SUPER;
-            // Java.g:103:7: ( 'super' )
-            // Java.g:103:9: 'super'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:104:7: ( 'super' )
+            // Java.g:104:9: 'super'
             {
             match("super"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SUPER
+    // $ANTLR end "SUPER"
 
-    // $ANTLR start SWITCH
+    // $ANTLR start "SWITCH"
     public final void mSWITCH() throws RecognitionException {
         try {
             int _type = SWITCH;
-            // Java.g:104:8: ( 'switch' )
-            // Java.g:104:10: 'switch'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:105:8: ( 'switch' )
+            // Java.g:105:10: 'switch'
             {
             match("switch"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SWITCH
+    // $ANTLR end "SWITCH"
 
-    // $ANTLR start SYNCHRONIZED
+    // $ANTLR start "SYNCHRONIZED"
     public final void mSYNCHRONIZED() throws RecognitionException {
         try {
             int _type = SYNCHRONIZED;
-            // Java.g:105:14: ( 'synchronized' )
-            // Java.g:105:16: 'synchronized'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:106:14: ( 'synchronized' )
+            // Java.g:106:16: 'synchronized'
             {
             match("synchronized"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SYNCHRONIZED
+    // $ANTLR end "SYNCHRONIZED"
 
-    // $ANTLR start THIS
+    // $ANTLR start "THIS"
     public final void mTHIS() throws RecognitionException {
         try {
             int _type = THIS;
-            // Java.g:106:6: ( 'this' )
-            // Java.g:106:8: 'this'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:107:6: ( 'this' )
+            // Java.g:107:8: 'this'
             {
             match("this"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end THIS
+    // $ANTLR end "THIS"
 
-    // $ANTLR start THROW
+    // $ANTLR start "THROW"
     public final void mTHROW() throws RecognitionException {
         try {
             int _type = THROW;
-            // Java.g:107:7: ( 'throw' )
-            // Java.g:107:9: 'throw'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:108:7: ( 'throw' )
+            // Java.g:108:9: 'throw'
             {
             match("throw"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end THROW
+    // $ANTLR end "THROW"
 
-    // $ANTLR start THROWS
+    // $ANTLR start "THROWS"
     public final void mTHROWS() throws RecognitionException {
         try {
             int _type = THROWS;
-            // Java.g:108:8: ( 'throws' )
-            // Java.g:108:10: 'throws'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:109:8: ( 'throws' )
+            // Java.g:109:10: 'throws'
             {
             match("throws"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end THROWS
+    // $ANTLR end "THROWS"
 
-    // $ANTLR start TRANSIENT
+    // $ANTLR start "TRANSIENT"
     public final void mTRANSIENT() throws RecognitionException {
         try {
             int _type = TRANSIENT;
-            // Java.g:109:11: ( 'transient' )
-            // Java.g:109:13: 'transient'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:110:11: ( 'transient' )
+            // Java.g:110:13: 'transient'
             {
             match("transient"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end TRANSIENT
+    // $ANTLR end "TRANSIENT"
 
-    // $ANTLR start TRUE
+    // $ANTLR start "TRUE"
     public final void mTRUE() throws RecognitionException {
         try {
             int _type = TRUE;
-            // Java.g:110:6: ( 'true' )
-            // Java.g:110:8: 'true'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:111:6: ( 'true' )
+            // Java.g:111:8: 'true'
             {
             match("true"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end TRUE
+    // $ANTLR end "TRUE"
 
-    // $ANTLR start TRY
+    // $ANTLR start "TRY"
     public final void mTRY() throws RecognitionException {
         try {
             int _type = TRY;
-            // Java.g:111:5: ( 'try' )
-            // Java.g:111:7: 'try'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:112:5: ( 'try' )
+            // Java.g:112:7: 'try'
             {
             match("try"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end TRY
+    // $ANTLR end "TRY"
 
-    // $ANTLR start VOID
+    // $ANTLR start "VOID"
     public final void mVOID() throws RecognitionException {
         try {
             int _type = VOID;
-            // Java.g:112:6: ( 'void' )
-            // Java.g:112:8: 'void'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:113:6: ( 'void' )
+            // Java.g:113:8: 'void'
             {
             match("void"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end VOID
+    // $ANTLR end "VOID"
 
-    // $ANTLR start VOLATILE
+    // $ANTLR start "VOLATILE"
     public final void mVOLATILE() throws RecognitionException {
         try {
             int _type = VOLATILE;
-            // Java.g:113:10: ( 'volatile' )
-            // Java.g:113:12: 'volatile'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:114:10: ( 'volatile' )
+            // Java.g:114:12: 'volatile'
             {
             match("volatile"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end VOLATILE
+    // $ANTLR end "VOLATILE"
 
-    // $ANTLR start WHILE
+    // $ANTLR start "WHILE"
     public final void mWHILE() throws RecognitionException {
         try {
             int _type = WHILE;
-            // Java.g:114:7: ( 'while' )
-            // Java.g:114:9: 'while'
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Java.g:115:7: ( 'while' )
+            // Java.g:115:9: 'while'
             {
             match("while"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end WHILE
+    // $ANTLR end "WHILE"
 
-    // $ANTLR start HEX_LITERAL
+    // $ANTLR start "HEX_LITERAL"
     public final void mHEX_LITERAL() throws RecognitionException {
         try {
             int _type = HEX_LITERAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1084:13: ( '0' ( 'x' | 'X' ) ( HEX_DIGIT )+ ( INTEGER_TYPE_SUFFIX )? )
             // Java.g:1084:15: '0' ( 'x' | 'X' ) ( HEX_DIGIT )+ ( INTEGER_TYPE_SUFFIX )?
             {
@@ -2093,10 +2301,9 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
             // Java.g:1084:29: ( HEX_DIGIT )+
             int cnt1=0;
@@ -2149,17 +2356,19 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end HEX_LITERAL
+    // $ANTLR end "HEX_LITERAL"
 
-    // $ANTLR start DECIMAL_LITERAL
+    // $ANTLR start "DECIMAL_LITERAL"
     public final void mDECIMAL_LITERAL() throws RecognitionException {
         try {
             int _type = DECIMAL_LITERAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1086:17: ( ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( INTEGER_TYPE_SUFFIX )? )
             // Java.g:1086:19: ( '0' | '1' .. '9' ( '0' .. '9' )* ) ( INTEGER_TYPE_SUFFIX )?
             {
@@ -2175,7 +2384,7 @@ public class JavaLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1086:19: ( '0' | '1' .. '9' ( '0' .. '9' )* )", 4, 0, input);
+                    new NoViableAltException("", 4, 0, input);
 
                 throw nvae;
             }
@@ -2243,17 +2452,19 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DECIMAL_LITERAL
+    // $ANTLR end "DECIMAL_LITERAL"
 
-    // $ANTLR start OCTAL_LITERAL
+    // $ANTLR start "OCTAL_LITERAL"
     public final void mOCTAL_LITERAL() throws RecognitionException {
         try {
             int _type = OCTAL_LITERAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1088:15: ( '0' ( '0' .. '7' )+ ( INTEGER_TYPE_SUFFIX )? )
             // Java.g:1088:17: '0' ( '0' .. '7' )+ ( INTEGER_TYPE_SUFFIX )?
             {
@@ -2309,14 +2520,15 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end OCTAL_LITERAL
+    // $ANTLR end "OCTAL_LITERAL"
 
-    // $ANTLR start HEX_DIGIT
+    // $ANTLR start "HEX_DIGIT"
     public final void mHEX_DIGIT() throws RecognitionException {
         try {
             // Java.g:1091:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
@@ -2327,10 +2539,9 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2339,9 +2550,9 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end HEX_DIGIT
+    // $ANTLR end "HEX_DIGIT"
 
-    // $ANTLR start INTEGER_TYPE_SUFFIX
+    // $ANTLR start "INTEGER_TYPE_SUFFIX"
     public final void mINTEGER_TYPE_SUFFIX() throws RecognitionException {
         try {
             // Java.g:1094:21: ( ( 'l' | 'L' ) )
@@ -2352,10 +2563,9 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2364,12 +2574,13 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end INTEGER_TYPE_SUFFIX
+    // $ANTLR end "INTEGER_TYPE_SUFFIX"
 
-    // $ANTLR start FLOATING_POINT_LITERAL
+    // $ANTLR start "FLOATING_POINT_LITERAL"
     public final void mFLOATING_POINT_LITERAL() throws RecognitionException {
         try {
             int _type = FLOATING_POINT_LITERAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1097:5: ( ( '0' .. '9' )+ ( DOT ( '0' .. '9' )* ( EXPONENT )? ( FLOAT_TYPE_SUFFIX )? | EXPONENT ( FLOAT_TYPE_SUFFIX )? | FLOAT_TYPE_SUFFIX ) | DOT ( '0' .. '9' )+ ( EXPONENT )? ( FLOAT_TYPE_SUFFIX )? )
             int alt17=2;
             int LA17_0 = input.LA(1);
@@ -2382,7 +2593,7 @@ public class JavaLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1096:1: FLOATING_POINT_LITERAL : ( ( '0' .. '9' )+ ( DOT ( '0' .. '9' )* ( EXPONENT )? ( FLOAT_TYPE_SUFFIX )? | EXPONENT ( FLOAT_TYPE_SUFFIX )? | FLOAT_TYPE_SUFFIX ) | DOT ( '0' .. '9' )+ ( EXPONENT )? ( FLOAT_TYPE_SUFFIX )? );", 17, 0, input);
+                    new NoViableAltException("", 17, 0, input);
 
                 throw nvae;
             }
@@ -2444,7 +2655,7 @@ public class JavaLexer extends Lexer {
                         break;
                     default:
                         NoViableAltException nvae =
-                            new NoViableAltException("1098:9: ( DOT ( '0' .. '9' )* ( EXPONENT )? ( FLOAT_TYPE_SUFFIX )? | EXPONENT ( FLOAT_TYPE_SUFFIX )? | FLOAT_TYPE_SUFFIX )", 13, 0, input);
+                            new NoViableAltException("", 13, 0, input);
 
                         throw nvae;
                     }
@@ -2631,14 +2842,15 @@ public class JavaLexer extends Lexer {
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FLOATING_POINT_LITERAL
+    // $ANTLR end "FLOATING_POINT_LITERAL"
 
-    // $ANTLR start EXPONENT
+    // $ANTLR start "EXPONENT"
     public final void mEXPONENT() throws RecognitionException {
         try {
             // Java.g:1107:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
@@ -2649,10 +2861,9 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
             // Java.g:1107:22: ( '+' | '-' )?
             int alt18=2;
@@ -2670,10 +2881,9 @@ public class JavaLexer extends Lexer {
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
@@ -2718,9 +2928,9 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end EXPONENT
+    // $ANTLR end "EXPONENT"
 
-    // $ANTLR start FLOAT_TYPE_SUFFIX
+    // $ANTLR start "FLOAT_TYPE_SUFFIX"
     public final void mFLOAT_TYPE_SUFFIX() throws RecognitionException {
         try {
             // Java.g:1110:19: ( ( 'f' | 'F' | 'd' | 'D' ) )
@@ -2731,10 +2941,9 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -2743,12 +2952,13 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end FLOAT_TYPE_SUFFIX
+    // $ANTLR end "FLOAT_TYPE_SUFFIX"
 
-    // $ANTLR start CHARACTER_LITERAL
+    // $ANTLR start "CHARACTER_LITERAL"
     public final void mCHARACTER_LITERAL() throws RecognitionException {
         try {
             int _type = CHARACTER_LITERAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1113:5: ( '\\'' ( ESCAPE_SEQUENCE | ~ ( '\\'' | '\\\\' ) ) '\\'' )
             // Java.g:1113:9: '\\'' ( ESCAPE_SEQUENCE | ~ ( '\\'' | '\\\\' ) ) '\\''
             {
@@ -2760,12 +2970,12 @@ public class JavaLexer extends Lexer {
             if ( (LA20_0=='\\') ) {
                 alt20=1;
             }
-            else if ( ((LA20_0>='\u0000' && LA20_0<='&')||(LA20_0>='(' && LA20_0<='[')||(LA20_0>=']' && LA20_0<='\uFFFE')) ) {
+            else if ( ((LA20_0>='\u0000' && LA20_0<='&')||(LA20_0>='(' && LA20_0<='[')||(LA20_0>=']' && LA20_0<='\uFFFF')) ) {
                 alt20=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1113:14: ( ESCAPE_SEQUENCE | ~ ( '\\'' | '\\\\' ) )", 20, 0, input);
+                    new NoViableAltException("", 20, 0, input);
 
                 throw nvae;
             }
@@ -2780,15 +2990,14 @@ public class JavaLexer extends Lexer {
                 case 2 :
                     // Java.g:1113:34: ~ ( '\\'' | '\\\\' )
                     {
-                    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+                    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                         input.consume();
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
@@ -2800,17 +3009,19 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CHARACTER_LITERAL
+    // $ANTLR end "CHARACTER_LITERAL"
 
-    // $ANTLR start STRING_LITERAL
+    // $ANTLR start "STRING_LITERAL"
     public final void mSTRING_LITERAL() throws RecognitionException {
         try {
             int _type = STRING_LITERAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1117:5: ( '\"' ( ESCAPE_SEQUENCE | ~ ( '\\\\' | '\"' ) )* '\"' )
             // Java.g:1117:8: '\"' ( ESCAPE_SEQUENCE | ~ ( '\\\\' | '\"' ) )* '\"'
             {
@@ -2824,7 +3035,7 @@ public class JavaLexer extends Lexer {
                 if ( (LA21_0=='\\') ) {
                     alt21=1;
                 }
-                else if ( ((LA21_0>='\u0000' && LA21_0<='!')||(LA21_0>='#' && LA21_0<='[')||(LA21_0>=']' && LA21_0<='\uFFFE')) ) {
+                else if ( ((LA21_0>='\u0000' && LA21_0<='!')||(LA21_0>='#' && LA21_0<='[')||(LA21_0>=']' && LA21_0<='\uFFFF')) ) {
                     alt21=2;
                 }
 
@@ -2840,15 +3051,14 @@ public class JavaLexer extends Lexer {
             	case 2 :
             	    // Java.g:1117:32: ~ ( '\\\\' | '\"' )
             	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2863,14 +3073,15 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STRING_LITERAL
+    // $ANTLR end "STRING_LITERAL"
 
-    // $ANTLR start ESCAPE_SEQUENCE
+    // $ANTLR start "ESCAPE_SEQUENCE"
     public final void mESCAPE_SEQUENCE() throws RecognitionException {
         try {
             // Java.g:1122:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESCAPE | OCTAL_ESCAPE )
@@ -2879,11 +3090,6 @@ public class JavaLexer extends Lexer {
 
             if ( (LA22_0=='\\') ) {
                 switch ( input.LA(2) ) {
-                case 'u':
-                    {
-                    alt22=2;
-                    }
-                    break;
                 case '\"':
                 case '\'':
                 case '\\':
@@ -2894,6 +3100,11 @@ public class JavaLexer extends Lexer {
                 case 't':
                     {
                     alt22=1;
+                    }
+                    break;
+                case 'u':
+                    {
+                    alt22=2;
                     }
                     break;
                 case '0':
@@ -2910,7 +3121,7 @@ public class JavaLexer extends Lexer {
                     break;
                 default:
                     NoViableAltException nvae =
-                        new NoViableAltException("1120:1: fragment ESCAPE_SEQUENCE : ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESCAPE | OCTAL_ESCAPE );", 22, 1, input);
+                        new NoViableAltException("", 22, 1, input);
 
                     throw nvae;
                 }
@@ -2918,7 +3129,7 @@ public class JavaLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1120:1: fragment ESCAPE_SEQUENCE : ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESCAPE | OCTAL_ESCAPE );", 22, 0, input);
+                    new NoViableAltException("", 22, 0, input);
 
                 throw nvae;
             }
@@ -2932,10 +3143,9 @@ public class JavaLexer extends Lexer {
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
@@ -2960,9 +3170,9 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end ESCAPE_SEQUENCE
+    // $ANTLR end "ESCAPE_SEQUENCE"
 
-    // $ANTLR start OCTAL_ESCAPE
+    // $ANTLR start "OCTAL_ESCAPE"
     public final void mOCTAL_ESCAPE() throws RecognitionException {
         try {
             // Java.g:1129:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
@@ -2998,14 +3208,14 @@ public class JavaLexer extends Lexer {
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("1127:1: fragment OCTAL_ESCAPE : ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) );", 23, 1, input);
+                        new NoViableAltException("", 23, 1, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1127:1: fragment OCTAL_ESCAPE : ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) );", 23, 0, input);
+                    new NoViableAltException("", 23, 0, input);
 
                 throw nvae;
             }
@@ -3079,9 +3289,9 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end OCTAL_ESCAPE
+    // $ANTLR end "OCTAL_ESCAPE"
 
-    // $ANTLR start UNICODE_ESCAPE
+    // $ANTLR start "UNICODE_ESCAPE"
     public final void mUNICODE_ESCAPE() throws RecognitionException {
         try {
             // Java.g:1136:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
@@ -3100,12 +3310,13 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end UNICODE_ESCAPE
+    // $ANTLR end "UNICODE_ESCAPE"
 
-    // $ANTLR start IDENT
+    // $ANTLR start "IDENT"
     public final void mIDENT() throws RecognitionException {
         try {
             int _type = IDENT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1140:5: ( JAVA_ID_START ( JAVA_ID_PART )* )
             // Java.g:1140:9: JAVA_ID_START ( JAVA_ID_PART )*
             {
@@ -3138,14 +3349,15 @@ public class JavaLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end IDENT
+    // $ANTLR end "IDENT"
 
-    // $ANTLR start JAVA_ID_START
+    // $ANTLR start "JAVA_ID_START"
     public final void mJAVA_ID_START() throws RecognitionException {
         try {
             // Java.g:1145:5: ( '\\u0024' | '\\u0041' .. '\\u005a' | '\\u005f' | '\\u0061' .. '\\u007a' | '\\u00c0' .. '\\u00d6' | '\\u00d8' .. '\\u00f6' | '\\u00f8' .. '\\u00ff' | '\\u0100' .. '\\u1fff' | '\\u3040' .. '\\u318f' | '\\u3300' .. '\\u337f' | '\\u3400' .. '\\u3d2d' | '\\u4e00' .. '\\u9fff' | '\\uf900' .. '\\ufaff' )
@@ -3156,10 +3368,9 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -3168,9 +3379,9 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end JAVA_ID_START
+    // $ANTLR end "JAVA_ID_START"
 
-    // $ANTLR start JAVA_ID_PART
+    // $ANTLR start "JAVA_ID_PART"
     public final void mJAVA_ID_PART() throws RecognitionException {
         try {
             // Java.g:1162:5: ( JAVA_ID_START | '\\u0030' .. '\\u0039' )
@@ -3181,10 +3392,9 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
@@ -3193,12 +3403,13 @@ public class JavaLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end JAVA_ID_PART
+    // $ANTLR end "JAVA_ID_PART"
 
-    // $ANTLR start WS
+    // $ANTLR start "WS"
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1166:5: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
             // Java.g:1166:8: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
             {
@@ -3207,32 +3418,33 @@ public class JavaLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
                
                     if (!preserveWhitespacesAndComments) {
                         skip();
                     } else {
-                        channel = HIDDEN;
+                        _channel = HIDDEN;
                     }
                 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end WS
+    // $ANTLR end "WS"
 
-    // $ANTLR start COMMENT
+    // $ANTLR start "COMMENT"
     public final void mCOMMENT() throws RecognitionException {
         try {
             int _type = COMMENT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1177:5: ( '/*' ( options {greedy=false; } : . )* '*/' )
             // Java.g:1177:9: '/*' ( options {greedy=false; } : . )* '*/'
             {
@@ -3250,13 +3462,13 @@ public class JavaLexer extends Lexer {
                     if ( (LA25_1=='/') ) {
                         alt25=2;
                     }
-                    else if ( ((LA25_1>='\u0000' && LA25_1<='.')||(LA25_1>='0' && LA25_1<='\uFFFE')) ) {
+                    else if ( ((LA25_1>='\u0000' && LA25_1<='.')||(LA25_1>='0' && LA25_1<='\uFFFF')) ) {
                         alt25=1;
                     }
 
 
                 }
-                else if ( ((LA25_0>='\u0000' && LA25_0<=')')||(LA25_0>='+' && LA25_0<='\uFFFE')) ) {
+                else if ( ((LA25_0>='\u0000' && LA25_0<=')')||(LA25_0>='+' && LA25_0<='\uFFFF')) ) {
                     alt25=1;
                 }
 
@@ -3281,23 +3493,25 @@ public class JavaLexer extends Lexer {
                     if (!preserveWhitespacesAndComments) {
                         skip();
                     } else {
-                        channel = HIDDEN;
+                        _channel = HIDDEN;
                     }
                 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COMMENT
+    // $ANTLR end "COMMENT"
 
-    // $ANTLR start LINE_COMMENT
+    // $ANTLR start "LINE_COMMENT"
     public final void mLINE_COMMENT() throws RecognitionException {
         try {
             int _type = LINE_COMMENT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Java.g:1188:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
             // Java.g:1188:7: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
             {
@@ -3309,7 +3523,7 @@ public class JavaLexer extends Lexer {
                 int alt26=2;
                 int LA26_0 = input.LA(1);
 
-                if ( ((LA26_0>='\u0000' && LA26_0<='\t')||(LA26_0>='\u000B' && LA26_0<='\f')||(LA26_0>='\u000E' && LA26_0<='\uFFFE')) ) {
+                if ( ((LA26_0>='\u0000' && LA26_0<='\t')||(LA26_0>='\u000B' && LA26_0<='\f')||(LA26_0>='\u000E' && LA26_0<='\uFFFF')) ) {
                     alt26=1;
                 }
 
@@ -3318,15 +3532,14 @@ public class JavaLexer extends Lexer {
             	case 1 :
             	    // Java.g:1188:12: ~ ( '\\n' | '\\r' )
             	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFE') ) {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -3360,18 +3573,19 @@ public class JavaLexer extends Lexer {
                     if (!preserveWhitespacesAndComments) {
                         skip();
                     } else {
-                        channel = HIDDEN;
+                        _channel = HIDDEN;
                     }
                 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LINE_COMMENT
+    // $ANTLR end "LINE_COMMENT"
 
     public void mTokens() throws RecognitionException {
         // Java.g:1:8: ( AND | AND_ASSIGN | ASSIGN | AT | BIT_SHIFT_RIGHT | BIT_SHIFT_RIGHT_ASSIGN | COLON | COMMA | DEC | DIV | DIV_ASSIGN | DOT | DOTSTAR | ELLIPSIS | EQUAL | GREATER_OR_EQUAL | GREATER_THAN | INC | LBRACK | LCURLY | LESS_OR_EQUAL | LESS_THAN | LOGICAL_AND | LOGICAL_NOT | LOGICAL_OR | LPAREN | MINUS | MINUS_ASSIGN | MOD | MOD_ASSIGN | NOT | NOT_EQUAL | OR | OR_ASSIGN | PLUS | PLUS_ASSIGN | QUESTION | RBRACK | RCURLY | RPAREN | SEMI | SHIFT_LEFT | SHIFT_LEFT_ASSIGN | SHIFT_RIGHT | SHIFT_RIGHT_ASSIGN | STAR | STAR_ASSIGN | XOR | XOR_ASSIGN | ABSTRACT | ASSERT | BOOLEAN | BREAK | BYTE | CASE | CATCH | CHAR | CLASS | CONTINUE | DEFAULT | DO | DOUBLE | ELSE | ENUM | EXTENDS | FALSE | FINAL | FINALLY | FLOAT | FOR | IF | IMPLEMENTS | INSTANCEOF | INTERFACE | IMPORT | INT | LONG | NATIVE | NEW | NULL | PACKAGE | PRIVATE | PROTECTED | PUBLIC | RETURN | SHORT | STATIC | STRICTFP | SUPER | SWITCH | SYNCHRONIZED | THIS | THROW | THROWS | TRANSIENT | TRUE | TRY | VOID | VOLATILE | WHILE | HEX_LITERAL | DECIMAL_LITERAL | OCTAL_LITERAL | FLOATING_POINT_LITERAL | CHARACTER_LITERAL | STRING_LITERAL | IDENT | WS | COMMENT | LINE_COMMENT )
@@ -4158,100 +4372,100 @@ public class JavaLexer extends Lexer {
     static final String DFA28_eotS =
         "\1\uffff\1\61\1\63\1\uffff\1\66\2\uffff\1\71\1\75\1\100\1\104\2"+
         "\uffff\1\107\1\111\1\114\1\uffff\1\116\6\uffff\1\120\1\122\17\55"+
-        "\2\172\11\uffff\1\177\21\uffff\1\u0081\14\uffff\11\55\1\u008d\12"+
-        "\55\1\u0099\21\55\2\uffff\1\u00b1\1\172\1\u00b3\4\uffff\13\55\1"+
-        "\uffff\4\55\1\u00c3\3\55\1\u00c8\2\55\1\uffff\1\55\1\u00cd\20\55"+
-        "\1\u00de\4\55\3\uffff\4\55\1\u00e7\2\55\1\u00ea\1\u00eb\3\55\1\u00ef"+
-        "\1\u00f0\1\55\1\uffff\4\55\1\uffff\3\55\1\u00f9\1\uffff\1\u00fa"+
-        "\15\55\1\u0108\1\u0109\1\uffff\2\55\1\u010c\4\55\1\u0111\1\uffff"+
-        "\1\55\1\u0113\2\uffff\1\u0114\2\55\2\uffff\1\55\1\u0118\1\u011a"+
-        "\1\u011b\4\55\2\uffff\7\55\1\u0127\3\55\1\u012b\1\u012d\2\uffff"+
-        "\2\55\1\uffff\1\u0130\1\55\1\u0132\1\55\1\uffff\1\55\2\uffff\1\u0135"+
-        "\2\55\1\uffff\1\55\2\uffff\2\55\1\u013b\1\55\1\u013d\1\u013e\3\55"+
-        "\1\u0142\1\55\1\uffff\1\u0144\1\55\1\u0146\1\uffff\1\u0147\1\uffff"+
-        "\2\55\1\uffff\1\55\1\uffff\1\u014b\1\55\1\uffff\1\u014d\1\u014e"+
-        "\1\u014f\2\55\1\uffff\1\55\2\uffff\1\u0153\1\55\1\u0155\1\uffff"+
-        "\1\55\1\uffff\1\55\2\uffff\2\55\1\u015a\1\uffff\1\u015b\3\uffff"+
-        "\3\55\1\uffff\1\55\1\uffff\1\55\1\u0161\1\55\1\u0163\2\uffff\1\u0164"+
-        "\2\55\1\u0167\1\55\1\uffff\1\u0169\2\uffff\1\u016a\1\u016b\1\uffff"+
-        "\1\55\3\uffff\1\55\1\u016e\1\uffff";
+        "\2\173\11\uffff\1\177\21\uffff\1\u0081\14\uffff\12\55\1\u008e\7"+
+        "\55\1\u0096\23\55\1\uffff\1\u00b1\1\uffff\1\173\1\u00b3\4\uffff"+
+        "\14\55\1\uffff\6\55\1\u00c6\1\uffff\2\55\1\u00cb\2\55\1\u00ce\20"+
+        "\55\1\u00df\3\55\3\uffff\4\55\1\u00e7\1\u00e8\1\55\1\u00ea\4\55"+
+        "\1\u00ef\1\u00f0\4\55\1\uffff\4\55\1\uffff\1\u00f9\1\55\1\uffff"+
+        "\1\u00fb\13\55\1\u0107\2\55\1\u010a\1\uffff\1\u010b\5\55\1\u0111"+
+        "\2\uffff\1\u0112\1\uffff\1\u0113\3\55\2\uffff\1\55\1\u0118\1\u011a"+
+        "\1\u011b\4\55\1\uffff\1\55\1\uffff\5\55\1\u0126\2\55\1\u0129\2\55"+
+        "\1\uffff\1\u012d\1\55\2\uffff\1\55\1\u0130\1\55\1\u0132\1\55\3\uffff"+
+        "\2\55\1\u0136\1\55\1\uffff\1\55\2\uffff\1\55\1\u013a\2\55\1\u013d"+
+        "\3\55\1\u0141\1\u0142\1\uffff\1\u0143\1\55\1\uffff\1\u0145\1\55"+
+        "\1\u0147\1\uffff\2\55\1\uffff\1\55\1\uffff\1\u014b\1\55\1\u014d"+
+        "\1\uffff\1\u014e\1\u014f\1\55\1\uffff\2\55\1\uffff\1\u0153\1\u0154"+
+        "\1\55\3\uffff\1\55\1\uffff\1\55\1\uffff\2\55\1\u015a\1\uffff\1\u015b"+
+        "\3\uffff\3\55\2\uffff\1\55\1\u0160\2\55\1\u0163\2\uffff\2\55\1\u0166"+
+        "\1\u0167\1\uffff\1\55\1\u0169\1\uffff\1\u016a\1\u016b\2\uffff\1"+
+        "\55\3\uffff\1\55\1\u016e\1\uffff";
     static final String DFA28_eofS =
         "\u016f\uffff";
     static final String DFA28_minS =
         "\1\11\1\46\1\75\1\uffff\1\75\2\uffff\1\55\2\52\1\53\2\uffff\1\74"+
         "\2\75\1\uffff\1\75\6\uffff\2\75\1\142\1\157\1\141\1\145\1\154\1"+
         "\141\1\146\1\157\2\141\1\145\2\150\1\157\1\150\2\56\11\uffff\1\75"+
-        "\21\uffff\1\75\14\uffff\2\163\1\157\1\145\1\164\1\156\1\163\2\141"+
-        "\1\44\1\146\1\163\1\165\1\164\1\162\1\157\1\156\1\154\1\163\1\160"+
-        "\1\44\1\156\1\167\1\154\1\164\1\142\1\151\1\143\1\164\1\156\1\160"+
-        "\1\151\1\141\1\157\1\151\1\141\2\151\2\uffff\2\56\1\75\4\uffff\1"+
-        "\164\1\145\1\154\1\141\1\145\1\164\1\143\1\145\1\162\1\163\1\142"+
-        "\1\uffff\1\141\1\145\1\155\1\145\1\44\2\141\1\163\1\44\1\164\1\154"+
-        "\1\uffff\1\147\1\44\1\154\1\151\1\154\1\166\1\164\1\153\1\165\1"+
-        "\143\1\145\1\164\1\151\1\164\1\162\1\157\1\163\1\145\1\44\1\156"+
-        "\1\141\1\144\1\154\3\uffff\2\162\1\145\1\153\1\44\1\151\1\150\2"+
-        "\44\1\163\1\154\1\165\2\44\1\156\1\uffff\1\164\1\154\1\145\1\162"+
-        "\1\uffff\1\141\1\162\1\145\1\44\1\uffff\1\44\1\166\1\151\1\141\1"+
-        "\145\1\141\1\162\1\150\1\162\2\143\1\151\1\164\1\167\2\44\1\uffff"+
-        "\1\163\1\164\1\44\1\145\1\141\1\164\1\141\1\44\1\uffff\1\156\1\44"+
-        "\2\uffff\1\44\1\145\1\154\2\uffff\1\144\3\44\1\146\1\156\1\164\1"+
-        "\155\2\uffff\1\145\1\143\1\164\1\143\1\147\1\156\1\162\1\44\1\150"+
-        "\1\164\1\143\2\44\2\uffff\2\151\1\uffff\1\44\1\143\1\44\1\156\1"+
-        "\uffff\1\165\2\uffff\1\44\1\164\1\163\1\uffff\1\171\2\uffff\1\141"+
-        "\1\143\1\44\1\145\2\44\1\145\1\164\1\145\1\44\1\157\1\uffff\1\44"+
-        "\1\146\1\44\1\uffff\1\44\1\uffff\1\145\1\154\1\uffff\1\164\1\uffff"+
-        "\1\44\1\145\1\uffff\3\44\1\143\1\145\1\uffff\1\156\2\uffff\1\44"+
-        "\1\145\1\44\1\uffff\1\156\1\uffff\1\160\2\uffff\1\156\1\145\1\44"+
-        "\1\uffff\1\44\3\uffff\1\145\1\157\1\164\1\uffff\1\144\1\uffff\1"+
-        "\151\1\44\1\164\1\44\2\uffff\1\44\1\146\1\163\1\44\1\172\1\uffff"+
-        "\1\44\2\uffff\2\44\1\uffff\1\145\3\uffff\1\144\1\44\1\uffff";
+        "\21\uffff\1\75\14\uffff\2\163\1\157\1\145\1\164\1\163\2\141\1\156"+
+        "\1\146\1\44\1\163\1\165\1\164\1\154\1\156\1\157\1\162\1\44\1\160"+
+        "\1\163\1\156\1\164\1\167\1\154\1\143\1\151\1\142\1\164\1\157\1\141"+
+        "\1\160\1\151\1\156\1\151\1\141\2\151\1\uffff\1\56\1\uffff\1\56\1"+
+        "\75\4\uffff\1\164\1\145\1\154\1\141\2\145\1\143\1\162\1\163\1\164"+
+        "\1\141\1\142\1\uffff\1\145\1\155\1\145\1\163\2\141\1\44\1\uffff"+
+        "\1\154\1\164\1\44\1\147\1\151\1\44\1\154\1\153\1\166\1\164\1\154"+
+        "\1\165\1\162\1\164\1\151\1\145\1\164\1\143\1\163\1\157\1\156\1\145"+
+        "\1\44\1\144\1\141\1\154\3\uffff\2\162\1\145\1\153\2\44\1\150\1\44"+
+        "\1\163\1\151\1\165\1\154\2\44\1\156\1\145\1\154\1\164\1\uffff\1"+
+        "\145\1\162\1\141\1\162\1\uffff\1\44\1\166\1\uffff\1\44\2\141\1\145"+
+        "\1\151\1\162\1\164\1\151\1\143\1\162\1\143\1\150\1\44\1\167\1\163"+
+        "\1\44\1\uffff\1\44\1\164\1\145\1\141\1\164\1\141\1\44\2\uffff\1"+
+        "\44\1\uffff\1\44\1\156\1\154\1\145\2\uffff\1\144\3\44\1\155\1\164"+
+        "\1\156\1\146\1\uffff\1\145\1\uffff\1\147\1\164\2\143\1\156\1\44"+
+        "\1\143\1\164\1\44\1\150\1\162\1\uffff\1\44\1\151\2\uffff\1\151\1"+
+        "\44\1\143\1\44\1\156\3\uffff\1\165\1\164\1\44\1\163\1\uffff\1\171"+
+        "\2\uffff\1\145\1\44\1\143\1\141\1\44\2\145\1\164\2\44\1\uffff\1"+
+        "\44\1\146\1\uffff\1\44\1\157\1\44\1\uffff\1\145\1\154\1\uffff\1"+
+        "\164\1\uffff\1\44\1\145\1\44\1\uffff\2\44\1\156\1\uffff\1\145\1"+
+        "\143\1\uffff\2\44\1\145\3\uffff\1\160\1\uffff\1\156\1\uffff\1\156"+
+        "\1\145\1\44\1\uffff\1\44\3\uffff\1\164\1\157\1\145\2\uffff\1\144"+
+        "\1\44\1\151\1\164\1\44\2\uffff\1\163\1\146\2\44\1\uffff\1\172\1"+
+        "\44\1\uffff\2\44\2\uffff\1\145\3\uffff\1\144\1\44\1\uffff";
     static final String DFA28_maxS =
         "\1\ufaff\2\75\1\uffff\1\76\2\uffff\2\75\1\71\1\75\2\uffff\2\75\1"+
         "\174\1\uffff\1\75\6\uffff\2\75\1\163\1\171\2\157\1\170\1\157\1\156"+
         "\1\157\2\165\1\145\1\171\1\162\1\157\1\150\1\170\1\146\11\uffff"+
-        "\1\76\21\uffff\1\75\14\uffff\2\163\1\157\1\145\1\164\1\156\1\164"+
-        "\2\141\1\ufaff\1\146\1\163\1\165\1\164\1\162\1\157\1\156\1\154\1"+
-        "\164\1\160\1\ufaff\1\156\1\167\1\154\1\164\1\142\1\157\1\143\1\164"+
-        "\1\156\1\160\1\151\1\162\1\157\1\162\1\171\1\154\1\151\2\uffff\2"+
-        "\146\1\75\4\uffff\1\164\1\145\1\154\1\141\1\145\1\164\1\143\1\145"+
-        "\1\162\1\163\1\142\1\uffff\1\141\1\145\1\155\1\145\1\ufaff\2\141"+
-        "\1\163\1\ufaff\1\164\1\157\1\uffff\1\147\1\ufaff\1\154\1\151\1\154"+
-        "\1\166\1\164\1\153\1\165\1\143\1\145\1\164\1\151\1\164\1\162\1\157"+
-        "\1\163\1\145\1\ufaff\1\156\1\141\1\144\1\154\3\uffff\2\162\1\145"+
-        "\1\153\1\ufaff\1\151\1\150\2\ufaff\1\163\1\154\1\165\2\ufaff\1\156"+
-        "\1\uffff\1\164\1\154\1\145\1\162\1\uffff\1\141\1\162\1\145\1\ufaff"+
-        "\1\uffff\1\ufaff\1\166\1\151\1\141\1\145\1\141\1\162\1\150\1\162"+
-        "\2\143\1\151\1\164\1\167\2\ufaff\1\uffff\1\163\1\164\1\ufaff\1\145"+
-        "\1\141\1\164\1\141\1\ufaff\1\uffff\1\156\1\ufaff\2\uffff\1\ufaff"+
-        "\1\145\1\154\2\uffff\1\144\3\ufaff\1\146\1\156\1\164\1\155\2\uffff"+
-        "\1\145\1\143\1\164\1\143\1\147\1\156\1\162\1\ufaff\1\150\1\164\1"+
-        "\143\2\ufaff\2\uffff\2\151\1\uffff\1\ufaff\1\143\1\ufaff\1\156\1"+
-        "\uffff\1\165\2\uffff\1\ufaff\1\164\1\163\1\uffff\1\171\2\uffff\1"+
-        "\141\1\143\1\ufaff\1\145\2\ufaff\1\145\1\164\1\145\1\ufaff\1\157"+
-        "\1\uffff\1\ufaff\1\146\1\ufaff\1\uffff\1\ufaff\1\uffff\1\145\1\154"+
-        "\1\uffff\1\164\1\uffff\1\ufaff\1\145\1\uffff\3\ufaff\1\143\1\145"+
-        "\1\uffff\1\156\2\uffff\1\ufaff\1\145\1\ufaff\1\uffff\1\156\1\uffff"+
-        "\1\160\2\uffff\1\156\1\145\1\ufaff\1\uffff\1\ufaff\3\uffff\1\145"+
-        "\1\157\1\164\1\uffff\1\144\1\uffff\1\151\1\ufaff\1\164\1\ufaff\2"+
-        "\uffff\1\ufaff\1\146\1\163\1\ufaff\1\172\1\uffff\1\ufaff\2\uffff"+
-        "\2\ufaff\1\uffff\1\145\3\uffff\1\144\1\ufaff\1\uffff";
+        "\1\76\21\uffff\1\75\14\uffff\2\163\1\157\1\145\2\164\2\141\1\156"+
+        "\1\146\1\ufaff\1\163\1\165\1\164\1\154\1\156\1\157\1\162\1\ufaff"+
+        "\1\160\1\164\1\156\1\164\1\167\1\154\1\143\1\157\1\142\1\164\1\157"+
+        "\1\162\1\160\1\151\1\156\1\162\1\171\1\154\1\151\1\uffff\1\146\1"+
+        "\uffff\1\146\1\75\4\uffff\1\164\1\145\1\154\1\141\2\145\1\143\1"+
+        "\162\1\163\1\164\1\141\1\142\1\uffff\1\145\1\155\1\145\1\163\2\141"+
+        "\1\ufaff\1\uffff\1\157\1\164\1\ufaff\1\147\1\151\1\ufaff\1\154\1"+
+        "\153\1\166\1\164\1\154\1\165\1\162\1\164\1\151\1\145\1\164\1\143"+
+        "\1\163\1\157\1\156\1\145\1\ufaff\1\144\1\141\1\154\3\uffff\2\162"+
+        "\1\145\1\153\2\ufaff\1\150\1\ufaff\1\163\1\151\1\165\1\154\2\ufaff"+
+        "\1\156\1\145\1\154\1\164\1\uffff\1\145\1\162\1\141\1\162\1\uffff"+
+        "\1\ufaff\1\166\1\uffff\1\ufaff\2\141\1\145\1\151\1\162\1\164\1\151"+
+        "\1\143\1\162\1\143\1\150\1\ufaff\1\167\1\163\1\ufaff\1\uffff\1\ufaff"+
+        "\1\164\1\145\1\141\1\164\1\141\1\ufaff\2\uffff\1\ufaff\1\uffff\1"+
+        "\ufaff\1\156\1\154\1\145\2\uffff\1\144\3\ufaff\1\155\1\164\1\156"+
+        "\1\146\1\uffff\1\145\1\uffff\1\147\1\164\2\143\1\156\1\ufaff\1\143"+
+        "\1\164\1\ufaff\1\150\1\162\1\uffff\1\ufaff\1\151\2\uffff\1\151\1"+
+        "\ufaff\1\143\1\ufaff\1\156\3\uffff\1\165\1\164\1\ufaff\1\163\1\uffff"+
+        "\1\171\2\uffff\1\145\1\ufaff\1\143\1\141\1\ufaff\2\145\1\164\2\ufaff"+
+        "\1\uffff\1\ufaff\1\146\1\uffff\1\ufaff\1\157\1\ufaff\1\uffff\1\145"+
+        "\1\154\1\uffff\1\164\1\uffff\1\ufaff\1\145\1\ufaff\1\uffff\2\ufaff"+
+        "\1\156\1\uffff\1\145\1\143\1\uffff\2\ufaff\1\145\3\uffff\1\160\1"+
+        "\uffff\1\156\1\uffff\1\156\1\145\1\ufaff\1\uffff\1\ufaff\3\uffff"+
+        "\1\164\1\157\1\145\2\uffff\1\144\1\ufaff\1\151\1\164\1\ufaff\2\uffff"+
+        "\1\163\1\146\2\ufaff\1\uffff\1\172\1\ufaff\1\uffff\2\ufaff\2\uffff"+
+        "\1\145\3\uffff\1\144\1\ufaff\1\uffff";
     static final String DFA28_acceptS =
         "\3\uffff\1\4\1\uffff\1\7\1\10\4\uffff\1\23\1\24\3\uffff\1\32\1\uffff"+
         "\1\37\1\45\1\46\1\47\1\50\1\51\23\uffff\1\151\1\152\1\153\1\154"+
-        "\1\2\1\27\1\1\1\17\1\3\1\uffff\1\20\1\21\1\11\1\34\1\33\1\155\1"+
-        "\156\1\13\1\12\1\16\1\15\1\14\1\150\1\22\1\44\1\43\1\25\1\uffff"+
-        "\1\26\1\40\1\30\1\31\1\42\1\41\1\36\1\35\1\57\1\56\1\61\1\60\46"+
-        "\uffff\1\145\1\146\3\uffff\1\55\1\54\1\53\1\52\13\uffff\1\75\13"+
-        "\uffff\1\107\27\uffff\1\147\1\6\1\5\17\uffff\1\106\4\uffff\1\114"+
-        "\4\uffff\1\117\20\uffff\1\141\10\uffff\1\66\2\uffff\1\67\1\71\3"+
-        "\uffff\1\77\1\100\10\uffff\1\115\1\120\15\uffff\1\134\1\140\2\uffff"+
-        "\1\142\4\uffff\1\65\1\uffff\1\70\1\72\3\uffff\1\105\1\uffff\1\103"+
-        "\1\102\13\uffff\1\131\3\uffff\1\126\1\uffff\1\135\2\uffff\1\144"+
-        "\1\uffff\1\63\2\uffff\1\76\5\uffff\1\113\1\uffff\1\116\1\124\3\uffff"+
-        "\1\125\1\uffff\1\132\1\uffff\1\127\1\136\3\uffff\1\64\1\uffff\1"+
-        "\74\1\101\1\104\3\uffff\1\122\1\uffff\1\121\4\uffff\1\62\1\73\5"+
-        "\uffff\1\130\1\uffff\1\143\1\112\2\uffff\1\123\1\uffff\1\137\1\111"+
-        "\1\110\2\uffff\1\133";
+        "\1\2\1\27\1\1\1\17\1\3\1\uffff\1\20\1\21\1\11\1\34\1\33\1\13\1\155"+
+        "\1\156\1\12\1\15\1\16\1\14\1\150\1\22\1\44\1\43\1\25\1\uffff\1\26"+
+        "\1\40\1\30\1\31\1\42\1\41\1\36\1\35\1\57\1\56\1\61\1\60\46\uffff"+
+        "\1\145\1\uffff\1\146\2\uffff\1\55\1\54\1\53\1\52\14\uffff\1\75\7"+
+        "\uffff\1\107\32\uffff\1\147\1\6\1\5\22\uffff\1\106\4\uffff\1\114"+
+        "\2\uffff\1\117\20\uffff\1\141\7\uffff\1\66\1\67\1\uffff\1\71\4\uffff"+
+        "\1\77\1\100\10\uffff\1\115\1\uffff\1\120\13\uffff\1\134\2\uffff"+
+        "\1\140\1\142\5\uffff\1\65\1\70\1\72\4\uffff\1\102\1\uffff\1\103"+
+        "\1\105\12\uffff\1\126\2\uffff\1\131\3\uffff\1\135\2\uffff\1\144"+
+        "\1\uffff\1\63\3\uffff\1\76\3\uffff\1\113\2\uffff\1\116\3\uffff\1"+
+        "\124\1\125\1\127\1\uffff\1\132\1\uffff\1\136\3\uffff\1\64\1\uffff"+
+        "\1\74\1\101\1\104\3\uffff\1\121\1\122\5\uffff\1\62\1\73\4\uffff"+
+        "\1\130\2\uffff\1\143\2\uffff\1\112\1\123\1\uffff\1\137\1\110\1\111"+
+        "\2\uffff\1\133";
     static final String DFA28_specialS =
         "\u016f\uffff}>";
     static final String[] DFA28_transitionS = {
@@ -4270,8 +4484,8 @@ public class JavaLexer extends Lexer {
             "",
             "",
             "\1\67\17\uffff\1\70",
-            "\1\72\4\uffff\1\73\15\uffff\1\74",
-            "\1\77\3\uffff\1\76\1\uffff\12\101",
+            "\1\73\4\uffff\1\74\15\uffff\1\72",
+            "\1\76\3\uffff\1\77\1\uffff\12\101",
             "\1\102\21\uffff\1\103",
             "",
             "",
@@ -4290,20 +4504,20 @@ public class JavaLexer extends Lexer {
             "\1\121",
             "\1\123\20\uffff\1\124",
             "\1\125\2\uffff\1\126\6\uffff\1\127",
-            "\1\131\6\uffff\1\132\3\uffff\1\133\2\uffff\1\130",
-            "\1\135\11\uffff\1\134",
+            "\1\130\6\uffff\1\131\3\uffff\1\132\2\uffff\1\133",
+            "\1\134\11\uffff\1\135",
             "\1\136\1\uffff\1\137\11\uffff\1\140",
-            "\1\144\7\uffff\1\143\2\uffff\1\142\2\uffff\1\141",
-            "\1\147\6\uffff\1\146\1\145",
+            "\1\141\7\uffff\1\142\2\uffff\1\143\2\uffff\1\144",
+            "\1\145\6\uffff\1\146\1\147",
             "\1\150",
-            "\1\153\3\uffff\1\151\17\uffff\1\152",
-            "\1\156\20\uffff\1\155\2\uffff\1\154",
+            "\1\151\3\uffff\1\152\17\uffff\1\153",
+            "\1\154\20\uffff\1\155\2\uffff\1\156",
             "\1\157",
-            "\1\164\13\uffff\1\163\1\161\1\uffff\1\162\1\uffff\1\160",
+            "\1\160\13\uffff\1\161\1\162\1\uffff\1\163\1\uffff\1\164",
             "\1\165\11\uffff\1\166",
             "\1\167",
             "\1\170",
-            "\1\101\1\uffff\10\173\2\101\12\uffff\3\101\21\uffff\1\171\13"+
+            "\1\101\1\uffff\10\172\2\101\12\uffff\3\101\21\uffff\1\171\13"+
             "\uffff\3\101\21\uffff\1\171",
             "\1\101\1\uffff\12\174\12\uffff\3\101\35\uffff\3\101",
             "",
@@ -4351,15 +4565,15 @@ public class JavaLexer extends Lexer {
             "\1\u0084",
             "\1\u0085",
             "\1\u0086",
-            "\1\u0087",
-            "\1\u0089\1\u0088",
+            "\1\u0087\1\u0088",
+            "\1\u0089",
             "\1\u008a",
             "\1\u008b",
+            "\1\u008c",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\24"+
-            "\55\1\u008c\5\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08"+
+            "\55\1\u008d\5\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08"+
             "\55\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
             "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
-            "\1\u008e",
             "\1\u008f",
             "\1\u0090",
             "\1\u0091",
@@ -4367,12 +4581,12 @@ public class JavaLexer extends Lexer {
             "\1\u0093",
             "\1\u0094",
             "\1\u0095",
-            "\1\u0097\1\u0096",
-            "\1\u0098",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0097",
+            "\1\u0098\1\u0099",
             "\1\u009a",
             "\1\u009b",
             "\1\u009c",
@@ -4382,17 +4596,17 @@ public class JavaLexer extends Lexer {
             "\1\u00a1",
             "\1\u00a2",
             "\1\u00a3",
-            "\1\u00a4",
-            "\1\u00a5",
-            "\1\u00a7\20\uffff\1\u00a6",
+            "\1\u00a4\20\uffff\1\u00a5",
+            "\1\u00a6",
+            "\1\u00a7",
             "\1\u00a8",
-            "\1\u00aa\10\uffff\1\u00a9",
-            "\1\u00ad\23\uffff\1\u00ab\3\uffff\1\u00ac",
-            "\1\u00af\2\uffff\1\u00ae",
+            "\1\u00a9\10\uffff\1\u00aa",
+            "\1\u00ab\23\uffff\1\u00ac\3\uffff\1\u00ad",
+            "\1\u00ae\2\uffff\1\u00af",
             "\1\u00b0",
             "",
+            "\1\101\1\uffff\10\172\2\101\12\uffff\3\101\35\uffff\3\101",
             "",
-            "\1\101\1\uffff\10\173\2\101\12\uffff\3\101\35\uffff\3\101",
             "\1\101\1\uffff\12\174\12\uffff\3\101\35\uffff\3\101",
             "\1\u00b2",
             "",
@@ -4410,31 +4624,31 @@ public class JavaLexer extends Lexer {
             "\1\u00bc",
             "\1\u00bd",
             "\1\u00be",
-            "",
             "\1\u00bf",
+            "",
             "\1\u00c0",
             "\1\u00c1",
             "\1\u00c2",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u00c3",
             "\1\u00c4",
             "\1\u00c5",
-            "\1\u00c6",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\4\55"+
-            "\1\u00c7\25\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55"+
-            "\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
-            "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00c9",
-            "\1\u00cb\2\uffff\1\u00ca",
-            "",
-            "\1\u00cc",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00ce",
+            "",
+            "\1\u00c7\2\uffff\1\u00c8",
+            "\1\u00c9",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\4\55"+
+            "\1\u00ca\25\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55"+
+            "\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
+            "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
+            "\1\u00cc",
+            "\1\u00cd",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00cf",
             "\1\u00d0",
             "\1\u00d1",
@@ -4450,11 +4664,11 @@ public class JavaLexer extends Lexer {
             "\1\u00db",
             "\1\u00dc",
             "\1\u00dd",
+            "\1\u00de",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00df",
             "\1\u00e0",
             "\1\u00e1",
             "\1\u00e2",
@@ -4469,16 +4683,16 @@ public class JavaLexer extends Lexer {
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00e8",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00e9",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u00eb",
             "\1\u00ec",
             "\1\u00ed",
             "\1\u00ee",
@@ -4491,25 +4705,25 @@ public class JavaLexer extends Lexer {
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00f1",
-            "",
             "\1\u00f2",
             "\1\u00f3",
             "\1\u00f4",
-            "\1\u00f5",
             "",
+            "\1\u00f5",
             "\1\u00f6",
             "\1\u00f7",
             "\1\u00f8",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
             "",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u00fb",
+            "\1\u00fa",
+            "",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
             "\1\u00fc",
             "\1\u00fd",
             "\1\u00fe",
@@ -4521,22 +4735,22 @@ public class JavaLexer extends Lexer {
             "\1\u0104",
             "\1\u0105",
             "\1\u0106",
-            "\1\u0107",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0108",
+            "\1\u0109",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\u010a",
-            "\1\u010b",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u010c",
             "\1\u010d",
             "\1\u010e",
             "\1\u010f",
@@ -4546,17 +4760,17 @@ public class JavaLexer extends Lexer {
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\u0112",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
-            "",
             "",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0114",
             "\1\u0115",
             "\1\u0116",
             "",
@@ -4579,34 +4793,34 @@ public class JavaLexer extends Lexer {
             "\1\u011e",
             "\1\u011f",
             "",
-            "",
             "\1\u0120",
+            "",
             "\1\u0121",
             "\1\u0122",
             "\1\u0123",
             "\1\u0124",
             "\1\u0125",
-            "\1\u0126",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0127",
             "\1\u0128",
-            "\1\u0129",
-            "\1\u012a",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u012a",
+            "\1\u012b",
+            "",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\22"+
             "\55\1\u012c\7\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08"+
             "\55\u1040\uffff\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e"+
             "\55\u10d2\uffff\u5200\55\u5900\uffff\u0200\55",
-            "",
-            "",
             "\1\u012e",
-            "\1\u012f",
             "",
+            "",
+            "\1\u012f",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
@@ -4618,53 +4832,53 @@ public class JavaLexer extends Lexer {
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0133",
             "",
+            "",
+            "",
             "\1\u0134",
-            "",
-            "",
+            "\1\u0135",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u0136",
             "\1\u0137",
             "",
             "\1\u0138",
             "",
             "",
             "\1\u0139",
-            "\1\u013a",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u013b",
             "\1\u013c",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u013e",
             "\1\u013f",
             "\1\u0140",
-            "\1\u0141",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u0143",
-            "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u0145",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0144",
+            "",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0146",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
@@ -4680,11 +4894,11 @@ public class JavaLexer extends Lexer {
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u014c",
-            "",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
@@ -4694,25 +4908,25 @@ public class JavaLexer extends Lexer {
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "\1\u0150",
-            "\1\u0151",
             "",
+            "\1\u0151",
             "\1\u0152",
             "",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0155",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
-            "\1\u0154",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
+            "",
             "",
             "\1\u0156",
             "",
             "\1\u0157",
-            "",
             "",
             "\1\u0158",
             "\1\u0159",
@@ -4732,13 +4946,13 @@ public class JavaLexer extends Lexer {
             "\1\u015d",
             "\1\u015e",
             "",
-            "\1\u015f",
             "",
-            "\1\u0160",
+            "\1\u015f",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0161",
             "\1\u0162",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
@@ -4746,32 +4960,32 @@ public class JavaLexer extends Lexer {
             "\u5200\55\u5900\uffff\u0200\55",
             "",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\u0164",
             "\1\u0165",
-            "\1\u0166",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "",
             "\1\u0168",
-            "",
             "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
             "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
             "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
             "\u5200\55\u5900\uffff\u0200\55",
             "",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
+            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
+            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
+            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
+            "\u5200\55\u5900\uffff\u0200\55",
             "",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
-            "\1\55\13\uffff\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32"+
-            "\55\105\uffff\27\55\1\uffff\37\55\1\uffff\u1f08\55\u1040\uffff"+
-            "\u0150\55\u0170\uffff\u0080\55\u0080\uffff\u092e\55\u10d2\uffff"+
-            "\u5200\55\u5900\uffff\u0200\55",
             "",
             "\1\u016c",
             "",

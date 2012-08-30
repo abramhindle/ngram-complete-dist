@@ -80,7 +80,7 @@ int startPos=-1;
  *  the 'if-else' stuff within the approprate lexer grammar actions.
  */
 public boolean preserveWhitespacesAndComments = false;
-
+public int type = 0;
 }
 
 single_input : NEWLINE
@@ -661,7 +661,8 @@ LEADING_WS
             emit(new ClassicToken(LEADING_WS,new String(indentation)));
             }
             // kill trailing newline if present and then ignore
-            ( ('\r')? '\n' {if (token!=null) token.setChannel(HIDDEN); else $channel=HIDDEN;})*
+            //( ('\r')? '\n' {if (token!=null) token.setChannel(HIDDEN); else $channel=HIDDEN;})*
+            ( ('\r')? '\n' { $channel=HIDDEN;})*
            // {token.setChannel(99); }
         )
     ;

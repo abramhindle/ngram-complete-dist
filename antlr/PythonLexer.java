@@ -1,4 +1,4 @@
-// $ANTLR 3.0.1 Python.g 2011-07-05 22:40:21
+// $ANTLR !Unknown version! Python.g 2012-08-29 21:38:42
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class PythonLexer extends Lexer {
-    public static final int SLASHEQUAL=21;
     public static final int BACKQUOTE=55;
+    public static final int SLASHEQUAL=21;
     public static final int STAR=14;
     public static final int CIRCUMFLEXEQUAL=25;
     public static final int TRIAPOS=63;
@@ -15,51 +15,69 @@ public class PythonLexer extends Lexer {
     public static final int COMPLEX=59;
     public static final int NOT=33;
     public static final int EOF=-1;
-    public static final int NOTEQUAL=40;
     public static final int LEADING_WS=68;
-    public static final int VBAR=41;
+    public static final int NOTEQUAL=40;
+    public static final int T__93=93;
+    public static final int T__94=94;
     public static final int MINUSEQUAL=19;
+    public static final int VBAR=41;
     public static final int RPAREN=9;
+    public static final int T__91=91;
+    public static final int T__92=92;
     public static final int NAME=10;
     public static final int GREATER=35;
+    public static final int T__90=90;
     public static final int DOUBLESTAREQUAL=28;
     public static final int LESS=34;
     public static final int COMMENT=69;
+    public static final int T__97=97;
+    public static final int T__96=96;
+    public static final int T__95=95;
     public static final int RBRACK=52;
+    public static final int T__80=80;
+    public static final int T__81=81;
+    public static final int T__82=82;
+    public static final int T__83=83;
     public static final int LCURLY=53;
     public static final int INT=56;
     public static final int RIGHTSHIFT=30;
+    public static final int T__85=85;
+    public static final int T__84=84;
+    public static final int T__87=87;
+    public static final int T__86=86;
+    public static final int T__89=89;
+    public static final int T__88=88;
     public static final int DOUBLESLASHEQUAL=29;
     public static final int WS=67;
+    public static final int T__71=71;
+    public static final int T__72=72;
+    public static final int T__70=70;
     public static final int VBAREQUAL=24;
     public static final int OR=31;
     public static final int LONGINT=57;
+    public static final int T__76=76;
+    public static final int T__75=75;
+    public static final int T__74=74;
     public static final int PERCENTEQUAL=22;
     public static final int LESSEQUAL=38;
-    public static final int T75=75;
+    public static final int T__73=73;
+    public static final int T__79=79;
+    public static final int T__78=78;
+    public static final int T__77=77;
     public static final int DOUBLESLASH=49;
-    public static final int T76=76;
-    public static final int T73=73;
-    public static final int T74=74;
     public static final int CONTINUED_LINE=66;
     public static final int LBRACK=51;
-    public static final int T79=79;
-    public static final int T77=77;
-    public static final int T78=78;
     public static final int DOUBLESTAR=15;
     public static final int ESC=65;
     public static final int DIGITS=61;
     public static final int Exponent=62;
-    public static final int FLOAT=58;
     public static final int DEDENT=5;
-    public static final int AND=32;
+    public static final int FLOAT=58;
     public static final int RIGHTSHIFTEQUAL=27;
-    public static final int T72=72;
-    public static final int INDENT=4;
+    public static final int AND=32;
     public static final int LPAREN=8;
-    public static final int T71=71;
+    public static final int INDENT=4;
     public static final int PLUSEQUAL=18;
-    public static final int T70=70;
     public static final int AT=7;
     public static final int SLASH=47;
     public static final int COMMA=13;
@@ -70,34 +88,15 @@ public class PythonLexer extends Lexer {
     public static final int LEFTSHIFT=44;
     public static final int PLUS=45;
     public static final int DOT=11;
-    public static final int T97=97;
-    public static final int T95=95;
     public static final int PERCENT=48;
-    public static final int T96=96;
     public static final int MINUS=46;
-    public static final int T94=94;
-    public static final int Tokens=98;
-    public static final int T93=93;
-    public static final int T92=92;
     public static final int SEMI=17;
-    public static final int T91=91;
-    public static final int T90=90;
     public static final int TRIQUOTE=64;
     public static final int COLON=12;
-    public static final int T88=88;
-    public static final int T89=89;
-    public static final int T84=84;
-    public static final int T85=85;
     public static final int NEWLINE=6;
     public static final int AMPEREQUAL=23;
-    public static final int T86=86;
-    public static final int T87=87;
     public static final int RCURLY=54;
     public static final int ASSIGN=16;
-    public static final int T81=81;
-    public static final int T80=80;
-    public static final int T83=83;
-    public static final int T82=82;
     public static final int STAREQUAL=20;
     public static final int CIRCUMFLEX=42;
     public static final int STRING=60;
@@ -120,550 +119,615 @@ public class PythonLexer extends Lexer {
      *  the 'if-else' stuff within the approprate lexer grammar actions.
      */
     public boolean preserveWhitespacesAndComments = false;
+    public int type = 0;
 
+
+    // delegates
+    // delegators
 
     public PythonLexer() {;} 
     public PythonLexer(CharStream input) {
-        super(input);
+        this(input, new RecognizerSharedState());
+    }
+    public PythonLexer(CharStream input, RecognizerSharedState state) {
+        super(input,state);
+
     }
     public String getGrammarFileName() { return "Python.g"; }
 
-    // $ANTLR start T70
-    public final void mT70() throws RecognitionException {
+    // $ANTLR start "T__70"
+    public final void mT__70() throws RecognitionException {
         try {
-            int _type = T70;
-            // Python.g:23:5: ( 'def' )
-            // Python.g:23:7: 'def'
+            int _type = T__70;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:24:7: ( 'def' )
+            // Python.g:24:9: 'def'
             {
             match("def"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T70
+    // $ANTLR end "T__70"
 
-    // $ANTLR start T71
-    public final void mT71() throws RecognitionException {
+    // $ANTLR start "T__71"
+    public final void mT__71() throws RecognitionException {
         try {
-            int _type = T71;
-            // Python.g:24:5: ( 'print' )
-            // Python.g:24:7: 'print'
+            int _type = T__71;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:25:7: ( 'print' )
+            // Python.g:25:9: 'print'
             {
             match("print"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T71
+    // $ANTLR end "T__71"
 
-    // $ANTLR start T72
-    public final void mT72() throws RecognitionException {
+    // $ANTLR start "T__72"
+    public final void mT__72() throws RecognitionException {
         try {
-            int _type = T72;
-            // Python.g:25:5: ( 'del' )
-            // Python.g:25:7: 'del'
+            int _type = T__72;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:26:7: ( 'del' )
+            // Python.g:26:9: 'del'
             {
             match("del"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T72
+    // $ANTLR end "T__72"
 
-    // $ANTLR start T73
-    public final void mT73() throws RecognitionException {
+    // $ANTLR start "T__73"
+    public final void mT__73() throws RecognitionException {
         try {
-            int _type = T73;
-            // Python.g:26:5: ( 'pass' )
-            // Python.g:26:7: 'pass'
+            int _type = T__73;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:27:7: ( 'pass' )
+            // Python.g:27:9: 'pass'
             {
             match("pass"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T73
+    // $ANTLR end "T__73"
 
-    // $ANTLR start T74
-    public final void mT74() throws RecognitionException {
+    // $ANTLR start "T__74"
+    public final void mT__74() throws RecognitionException {
         try {
-            int _type = T74;
-            // Python.g:27:5: ( 'break' )
-            // Python.g:27:7: 'break'
+            int _type = T__74;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:28:7: ( 'break' )
+            // Python.g:28:9: 'break'
             {
             match("break"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T74
+    // $ANTLR end "T__74"
 
-    // $ANTLR start T75
-    public final void mT75() throws RecognitionException {
+    // $ANTLR start "T__75"
+    public final void mT__75() throws RecognitionException {
         try {
-            int _type = T75;
-            // Python.g:28:5: ( 'continue' )
-            // Python.g:28:7: 'continue'
+            int _type = T__75;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:29:7: ( 'continue' )
+            // Python.g:29:9: 'continue'
             {
             match("continue"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T75
+    // $ANTLR end "T__75"
 
-    // $ANTLR start T76
-    public final void mT76() throws RecognitionException {
+    // $ANTLR start "T__76"
+    public final void mT__76() throws RecognitionException {
         try {
-            int _type = T76;
-            // Python.g:29:5: ( 'return' )
-            // Python.g:29:7: 'return'
+            int _type = T__76;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:30:7: ( 'return' )
+            // Python.g:30:9: 'return'
             {
             match("return"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T76
+    // $ANTLR end "T__76"
 
-    // $ANTLR start T77
-    public final void mT77() throws RecognitionException {
+    // $ANTLR start "T__77"
+    public final void mT__77() throws RecognitionException {
         try {
-            int _type = T77;
-            // Python.g:30:5: ( 'raise' )
-            // Python.g:30:7: 'raise'
+            int _type = T__77;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:31:7: ( 'raise' )
+            // Python.g:31:9: 'raise'
             {
             match("raise"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T77
+    // $ANTLR end "T__77"
 
-    // $ANTLR start T78
-    public final void mT78() throws RecognitionException {
+    // $ANTLR start "T__78"
+    public final void mT__78() throws RecognitionException {
         try {
-            int _type = T78;
-            // Python.g:31:5: ( 'import' )
-            // Python.g:31:7: 'import'
+            int _type = T__78;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:32:7: ( 'import' )
+            // Python.g:32:9: 'import'
             {
             match("import"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T78
+    // $ANTLR end "T__78"
 
-    // $ANTLR start T79
-    public final void mT79() throws RecognitionException {
+    // $ANTLR start "T__79"
+    public final void mT__79() throws RecognitionException {
         try {
-            int _type = T79;
-            // Python.g:32:5: ( 'from' )
-            // Python.g:32:7: 'from'
+            int _type = T__79;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:33:7: ( 'from' )
+            // Python.g:33:9: 'from'
             {
             match("from"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T79
+    // $ANTLR end "T__79"
 
-    // $ANTLR start T80
-    public final void mT80() throws RecognitionException {
+    // $ANTLR start "T__80"
+    public final void mT__80() throws RecognitionException {
         try {
-            int _type = T80;
-            // Python.g:33:5: ( 'as' )
-            // Python.g:33:7: 'as'
+            int _type = T__80;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:34:7: ( 'as' )
+            // Python.g:34:9: 'as'
             {
             match("as"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T80
+    // $ANTLR end "T__80"
 
-    // $ANTLR start T81
-    public final void mT81() throws RecognitionException {
+    // $ANTLR start "T__81"
+    public final void mT__81() throws RecognitionException {
         try {
-            int _type = T81;
-            // Python.g:34:5: ( 'global' )
-            // Python.g:34:7: 'global'
+            int _type = T__81;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:35:7: ( 'global' )
+            // Python.g:35:9: 'global'
             {
             match("global"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T81
+    // $ANTLR end "T__81"
 
-    // $ANTLR start T82
-    public final void mT82() throws RecognitionException {
+    // $ANTLR start "T__82"
+    public final void mT__82() throws RecognitionException {
         try {
-            int _type = T82;
-            // Python.g:35:5: ( 'exec' )
-            // Python.g:35:7: 'exec'
+            int _type = T__82;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:36:7: ( 'exec' )
+            // Python.g:36:9: 'exec'
             {
             match("exec"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T82
+    // $ANTLR end "T__82"
 
-    // $ANTLR start T83
-    public final void mT83() throws RecognitionException {
+    // $ANTLR start "T__83"
+    public final void mT__83() throws RecognitionException {
         try {
-            int _type = T83;
-            // Python.g:36:5: ( 'in' )
-            // Python.g:36:7: 'in'
+            int _type = T__83;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:37:7: ( 'in' )
+            // Python.g:37:9: 'in'
             {
             match("in"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T83
+    // $ANTLR end "T__83"
 
-    // $ANTLR start T84
-    public final void mT84() throws RecognitionException {
+    // $ANTLR start "T__84"
+    public final void mT__84() throws RecognitionException {
         try {
-            int _type = T84;
-            // Python.g:37:5: ( 'assert' )
-            // Python.g:37:7: 'assert'
+            int _type = T__84;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:38:7: ( 'assert' )
+            // Python.g:38:9: 'assert'
             {
             match("assert"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T84
+    // $ANTLR end "T__84"
 
-    // $ANTLR start T85
-    public final void mT85() throws RecognitionException {
+    // $ANTLR start "T__85"
+    public final void mT__85() throws RecognitionException {
         try {
-            int _type = T85;
-            // Python.g:38:5: ( 'if' )
-            // Python.g:38:7: 'if'
+            int _type = T__85;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:39:7: ( 'if' )
+            // Python.g:39:9: 'if'
             {
             match("if"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T85
+    // $ANTLR end "T__85"
 
-    // $ANTLR start T86
-    public final void mT86() throws RecognitionException {
+    // $ANTLR start "T__86"
+    public final void mT__86() throws RecognitionException {
         try {
-            int _type = T86;
-            // Python.g:39:5: ( 'else' )
-            // Python.g:39:7: 'else'
+            int _type = T__86;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:40:7: ( 'else' )
+            // Python.g:40:9: 'else'
             {
             match("else"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T86
+    // $ANTLR end "T__86"
 
-    // $ANTLR start T87
-    public final void mT87() throws RecognitionException {
+    // $ANTLR start "T__87"
+    public final void mT__87() throws RecognitionException {
         try {
-            int _type = T87;
-            // Python.g:40:5: ( 'elif' )
-            // Python.g:40:7: 'elif'
+            int _type = T__87;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:41:7: ( 'elif' )
+            // Python.g:41:9: 'elif'
             {
             match("elif"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T87
+    // $ANTLR end "T__87"
 
-    // $ANTLR start T88
-    public final void mT88() throws RecognitionException {
+    // $ANTLR start "T__88"
+    public final void mT__88() throws RecognitionException {
         try {
-            int _type = T88;
-            // Python.g:41:5: ( 'while' )
-            // Python.g:41:7: 'while'
+            int _type = T__88;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:42:7: ( 'while' )
+            // Python.g:42:9: 'while'
             {
             match("while"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T88
+    // $ANTLR end "T__88"
 
-    // $ANTLR start T89
-    public final void mT89() throws RecognitionException {
+    // $ANTLR start "T__89"
+    public final void mT__89() throws RecognitionException {
         try {
-            int _type = T89;
-            // Python.g:42:5: ( 'for' )
-            // Python.g:42:7: 'for'
+            int _type = T__89;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:43:7: ( 'for' )
+            // Python.g:43:9: 'for'
             {
             match("for"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T89
+    // $ANTLR end "T__89"
 
-    // $ANTLR start T90
-    public final void mT90() throws RecognitionException {
+    // $ANTLR start "T__90"
+    public final void mT__90() throws RecognitionException {
         try {
-            int _type = T90;
-            // Python.g:43:5: ( 'try' )
-            // Python.g:43:7: 'try'
+            int _type = T__90;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:44:7: ( 'try' )
+            // Python.g:44:9: 'try'
             {
             match("try"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T90
+    // $ANTLR end "T__90"
 
-    // $ANTLR start T91
-    public final void mT91() throws RecognitionException {
+    // $ANTLR start "T__91"
+    public final void mT__91() throws RecognitionException {
         try {
-            int _type = T91;
-            // Python.g:44:5: ( 'finally' )
-            // Python.g:44:7: 'finally'
+            int _type = T__91;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:45:7: ( 'finally' )
+            // Python.g:45:9: 'finally'
             {
             match("finally"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T91
+    // $ANTLR end "T__91"
 
-    // $ANTLR start T92
-    public final void mT92() throws RecognitionException {
+    // $ANTLR start "T__92"
+    public final void mT__92() throws RecognitionException {
         try {
-            int _type = T92;
-            // Python.g:45:5: ( 'with' )
-            // Python.g:45:7: 'with'
+            int _type = T__92;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:46:7: ( 'with' )
+            // Python.g:46:9: 'with'
             {
             match("with"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T92
+    // $ANTLR end "T__92"
 
-    // $ANTLR start T93
-    public final void mT93() throws RecognitionException {
+    // $ANTLR start "T__93"
+    public final void mT__93() throws RecognitionException {
         try {
-            int _type = T93;
-            // Python.g:46:5: ( 'except' )
-            // Python.g:46:7: 'except'
+            int _type = T__93;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:47:7: ( 'except' )
+            // Python.g:47:9: 'except'
             {
             match("except"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T93
+    // $ANTLR end "T__93"
 
-    // $ANTLR start T94
-    public final void mT94() throws RecognitionException {
+    // $ANTLR start "T__94"
+    public final void mT__94() throws RecognitionException {
         try {
-            int _type = T94;
-            // Python.g:47:5: ( 'is' )
-            // Python.g:47:7: 'is'
+            int _type = T__94;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:48:7: ( 'is' )
+            // Python.g:48:9: 'is'
             {
             match("is"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T94
+    // $ANTLR end "T__94"
 
-    // $ANTLR start T95
-    public final void mT95() throws RecognitionException {
+    // $ANTLR start "T__95"
+    public final void mT__95() throws RecognitionException {
         try {
-            int _type = T95;
-            // Python.g:48:5: ( 'lambda' )
-            // Python.g:48:7: 'lambda'
+            int _type = T__95;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:49:7: ( 'lambda' )
+            // Python.g:49:9: 'lambda'
             {
             match("lambda"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T95
+    // $ANTLR end "T__95"
 
-    // $ANTLR start T96
-    public final void mT96() throws RecognitionException {
+    // $ANTLR start "T__96"
+    public final void mT__96() throws RecognitionException {
         try {
-            int _type = T96;
-            // Python.g:49:5: ( 'class' )
-            // Python.g:49:7: 'class'
+            int _type = T__96;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:50:7: ( 'class' )
+            // Python.g:50:9: 'class'
             {
             match("class"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T96
+    // $ANTLR end "T__96"
 
-    // $ANTLR start T97
-    public final void mT97() throws RecognitionException {
+    // $ANTLR start "T__97"
+    public final void mT__97() throws RecognitionException {
         try {
-            int _type = T97;
-            // Python.g:50:5: ( 'yield' )
-            // Python.g:50:7: 'yield'
+            int _type = T__97;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:51:7: ( 'yield' )
+            // Python.g:51:9: 'yield'
             {
             match("yield"); 
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end T97
+    // $ANTLR end "T__97"
 
-    // $ANTLR start LPAREN
+    // $ANTLR start "LPAREN"
     public final void mLPAREN() throws RecognitionException {
         try {
             int _type = LPAREN;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:453:11: ( '(' )
             // Python.g:453:13: '('
             {
@@ -672,17 +736,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LPAREN
+    // $ANTLR end "LPAREN"
 
-    // $ANTLR start RPAREN
+    // $ANTLR start "RPAREN"
     public final void mRPAREN() throws RecognitionException {
         try {
             int _type = RPAREN;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:455:11: ( ')' )
             // Python.g:455:13: ')'
             {
@@ -691,17 +757,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RPAREN
+    // $ANTLR end "RPAREN"
 
-    // $ANTLR start LBRACK
+    // $ANTLR start "LBRACK"
     public final void mLBRACK() throws RecognitionException {
         try {
             int _type = LBRACK;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:457:11: ( '[' )
             // Python.g:457:13: '['
             {
@@ -710,17 +778,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LBRACK
+    // $ANTLR end "LBRACK"
 
-    // $ANTLR start RBRACK
+    // $ANTLR start "RBRACK"
     public final void mRBRACK() throws RecognitionException {
         try {
             int _type = RBRACK;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:459:11: ( ']' )
             // Python.g:459:13: ']'
             {
@@ -729,17 +799,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RBRACK
+    // $ANTLR end "RBRACK"
 
-    // $ANTLR start COLON
+    // $ANTLR start "COLON"
     public final void mCOLON() throws RecognitionException {
         try {
             int _type = COLON;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:461:11: ( ':' )
             // Python.g:461:13: ':'
             {
@@ -747,17 +819,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COLON
+    // $ANTLR end "COLON"
 
-    // $ANTLR start COMMA
+    // $ANTLR start "COMMA"
     public final void mCOMMA() throws RecognitionException {
         try {
             int _type = COMMA;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:463:10: ( ',' )
             // Python.g:463:12: ','
             {
@@ -765,17 +839,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COMMA
+    // $ANTLR end "COMMA"
 
-    // $ANTLR start SEMI
+    // $ANTLR start "SEMI"
     public final void mSEMI() throws RecognitionException {
         try {
             int _type = SEMI;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:465:9: ( ';' )
             // Python.g:465:11: ';'
             {
@@ -783,17 +859,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SEMI
+    // $ANTLR end "SEMI"
 
-    // $ANTLR start PLUS
+    // $ANTLR start "PLUS"
     public final void mPLUS() throws RecognitionException {
         try {
             int _type = PLUS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:467:9: ( '+' )
             // Python.g:467:11: '+'
             {
@@ -801,17 +879,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PLUS
+    // $ANTLR end "PLUS"
 
-    // $ANTLR start MINUS
+    // $ANTLR start "MINUS"
     public final void mMINUS() throws RecognitionException {
         try {
             int _type = MINUS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:469:10: ( '-' )
             // Python.g:469:12: '-'
             {
@@ -819,17 +899,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end MINUS
+    // $ANTLR end "MINUS"
 
-    // $ANTLR start STAR
+    // $ANTLR start "STAR"
     public final void mSTAR() throws RecognitionException {
         try {
             int _type = STAR;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:471:9: ( '*' )
             // Python.g:471:11: '*'
             {
@@ -837,17 +919,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STAR
+    // $ANTLR end "STAR"
 
-    // $ANTLR start SLASH
+    // $ANTLR start "SLASH"
     public final void mSLASH() throws RecognitionException {
         try {
             int _type = SLASH;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:473:10: ( '/' )
             // Python.g:473:12: '/'
             {
@@ -855,17 +939,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SLASH
+    // $ANTLR end "SLASH"
 
-    // $ANTLR start VBAR
+    // $ANTLR start "VBAR"
     public final void mVBAR() throws RecognitionException {
         try {
             int _type = VBAR;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:475:9: ( '|' )
             // Python.g:475:11: '|'
             {
@@ -873,17 +959,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end VBAR
+    // $ANTLR end "VBAR"
 
-    // $ANTLR start AMPER
+    // $ANTLR start "AMPER"
     public final void mAMPER() throws RecognitionException {
         try {
             int _type = AMPER;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:477:10: ( '&' )
             // Python.g:477:12: '&'
             {
@@ -891,17 +979,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end AMPER
+    // $ANTLR end "AMPER"
 
-    // $ANTLR start LESS
+    // $ANTLR start "LESS"
     public final void mLESS() throws RecognitionException {
         try {
             int _type = LESS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:479:9: ( '<' )
             // Python.g:479:11: '<'
             {
@@ -909,17 +999,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LESS
+    // $ANTLR end "LESS"
 
-    // $ANTLR start GREATER
+    // $ANTLR start "GREATER"
     public final void mGREATER() throws RecognitionException {
         try {
             int _type = GREATER;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:481:12: ( '>' )
             // Python.g:481:14: '>'
             {
@@ -927,17 +1019,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end GREATER
+    // $ANTLR end "GREATER"
 
-    // $ANTLR start ASSIGN
+    // $ANTLR start "ASSIGN"
     public final void mASSIGN() throws RecognitionException {
         try {
             int _type = ASSIGN;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:483:11: ( '=' )
             // Python.g:483:13: '='
             {
@@ -945,17 +1039,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ASSIGN
+    // $ANTLR end "ASSIGN"
 
-    // $ANTLR start PERCENT
+    // $ANTLR start "PERCENT"
     public final void mPERCENT() throws RecognitionException {
         try {
             int _type = PERCENT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:485:12: ( '%' )
             // Python.g:485:14: '%'
             {
@@ -963,17 +1059,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PERCENT
+    // $ANTLR end "PERCENT"
 
-    // $ANTLR start BACKQUOTE
+    // $ANTLR start "BACKQUOTE"
     public final void mBACKQUOTE() throws RecognitionException {
         try {
             int _type = BACKQUOTE;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:487:14: ( '`' )
             // Python.g:487:16: '`'
             {
@@ -981,17 +1079,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end BACKQUOTE
+    // $ANTLR end "BACKQUOTE"
 
-    // $ANTLR start LCURLY
+    // $ANTLR start "LCURLY"
     public final void mLCURLY() throws RecognitionException {
         try {
             int _type = LCURLY;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:489:11: ( '{' )
             // Python.g:489:13: '{'
             {
@@ -1000,17 +1100,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LCURLY
+    // $ANTLR end "LCURLY"
 
-    // $ANTLR start RCURLY
+    // $ANTLR start "RCURLY"
     public final void mRCURLY() throws RecognitionException {
         try {
             int _type = RCURLY;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:491:11: ( '}' )
             // Python.g:491:13: '}'
             {
@@ -1019,17 +1121,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RCURLY
+    // $ANTLR end "RCURLY"
 
-    // $ANTLR start CIRCUMFLEX
+    // $ANTLR start "CIRCUMFLEX"
     public final void mCIRCUMFLEX() throws RecognitionException {
         try {
             int _type = CIRCUMFLEX;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:493:15: ( '^' )
             // Python.g:493:17: '^'
             {
@@ -1037,17 +1141,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CIRCUMFLEX
+    // $ANTLR end "CIRCUMFLEX"
 
-    // $ANTLR start TILDE
+    // $ANTLR start "TILDE"
     public final void mTILDE() throws RecognitionException {
         try {
             int _type = TILDE;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:495:10: ( '~' )
             // Python.g:495:12: '~'
             {
@@ -1055,17 +1161,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end TILDE
+    // $ANTLR end "TILDE"
 
-    // $ANTLR start EQUAL
+    // $ANTLR start "EQUAL"
     public final void mEQUAL() throws RecognitionException {
         try {
             int _type = EQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:497:10: ( '==' )
             // Python.g:497:12: '=='
             {
@@ -1074,17 +1182,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end EQUAL
+    // $ANTLR end "EQUAL"
 
-    // $ANTLR start NOTEQUAL
+    // $ANTLR start "NOTEQUAL"
     public final void mNOTEQUAL() throws RecognitionException {
         try {
             int _type = NOTEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:499:13: ( '!=' )
             // Python.g:499:15: '!='
             {
@@ -1093,17 +1203,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NOTEQUAL
+    // $ANTLR end "NOTEQUAL"
 
-    // $ANTLR start ALT_NOTEQUAL
+    // $ANTLR start "ALT_NOTEQUAL"
     public final void mALT_NOTEQUAL() throws RecognitionException {
         try {
             int _type = ALT_NOTEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:501:13: ( '<>' )
             // Python.g:501:15: '<>'
             {
@@ -1112,17 +1224,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end ALT_NOTEQUAL
+    // $ANTLR end "ALT_NOTEQUAL"
 
-    // $ANTLR start LESSEQUAL
+    // $ANTLR start "LESSEQUAL"
     public final void mLESSEQUAL() throws RecognitionException {
         try {
             int _type = LESSEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:503:14: ( '<=' )
             // Python.g:503:16: '<='
             {
@@ -1131,17 +1245,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LESSEQUAL
+    // $ANTLR end "LESSEQUAL"
 
-    // $ANTLR start LEFTSHIFT
+    // $ANTLR start "LEFTSHIFT"
     public final void mLEFTSHIFT() throws RecognitionException {
         try {
             int _type = LEFTSHIFT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:505:14: ( '<<' )
             // Python.g:505:16: '<<'
             {
@@ -1150,17 +1266,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LEFTSHIFT
+    // $ANTLR end "LEFTSHIFT"
 
-    // $ANTLR start GREATEREQUAL
+    // $ANTLR start "GREATEREQUAL"
     public final void mGREATEREQUAL() throws RecognitionException {
         try {
             int _type = GREATEREQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:507:17: ( '>=' )
             // Python.g:507:19: '>='
             {
@@ -1169,17 +1287,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end GREATEREQUAL
+    // $ANTLR end "GREATEREQUAL"
 
-    // $ANTLR start RIGHTSHIFT
+    // $ANTLR start "RIGHTSHIFT"
     public final void mRIGHTSHIFT() throws RecognitionException {
         try {
             int _type = RIGHTSHIFT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:509:15: ( '>>' )
             // Python.g:509:17: '>>'
             {
@@ -1188,17 +1308,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RIGHTSHIFT
+    // $ANTLR end "RIGHTSHIFT"
 
-    // $ANTLR start PLUSEQUAL
+    // $ANTLR start "PLUSEQUAL"
     public final void mPLUSEQUAL() throws RecognitionException {
         try {
             int _type = PLUSEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:511:14: ( '+=' )
             // Python.g:511:16: '+='
             {
@@ -1207,17 +1329,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PLUSEQUAL
+    // $ANTLR end "PLUSEQUAL"
 
-    // $ANTLR start MINUSEQUAL
+    // $ANTLR start "MINUSEQUAL"
     public final void mMINUSEQUAL() throws RecognitionException {
         try {
             int _type = MINUSEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:513:15: ( '-=' )
             // Python.g:513:17: '-='
             {
@@ -1226,17 +1350,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end MINUSEQUAL
+    // $ANTLR end "MINUSEQUAL"
 
-    // $ANTLR start DOUBLESTAR
+    // $ANTLR start "DOUBLESTAR"
     public final void mDOUBLESTAR() throws RecognitionException {
         try {
             int _type = DOUBLESTAR;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:515:15: ( '**' )
             // Python.g:515:17: '**'
             {
@@ -1245,17 +1371,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOUBLESTAR
+    // $ANTLR end "DOUBLESTAR"
 
-    // $ANTLR start STAREQUAL
+    // $ANTLR start "STAREQUAL"
     public final void mSTAREQUAL() throws RecognitionException {
         try {
             int _type = STAREQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:517:14: ( '*=' )
             // Python.g:517:16: '*='
             {
@@ -1264,17 +1392,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STAREQUAL
+    // $ANTLR end "STAREQUAL"
 
-    // $ANTLR start DOUBLESLASH
+    // $ANTLR start "DOUBLESLASH"
     public final void mDOUBLESLASH() throws RecognitionException {
         try {
             int _type = DOUBLESLASH;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:519:16: ( '//' )
             // Python.g:519:18: '//'
             {
@@ -1283,17 +1413,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOUBLESLASH
+    // $ANTLR end "DOUBLESLASH"
 
-    // $ANTLR start SLASHEQUAL
+    // $ANTLR start "SLASHEQUAL"
     public final void mSLASHEQUAL() throws RecognitionException {
         try {
             int _type = SLASHEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:521:15: ( '/=' )
             // Python.g:521:17: '/='
             {
@@ -1302,17 +1434,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end SLASHEQUAL
+    // $ANTLR end "SLASHEQUAL"
 
-    // $ANTLR start VBAREQUAL
+    // $ANTLR start "VBAREQUAL"
     public final void mVBAREQUAL() throws RecognitionException {
         try {
             int _type = VBAREQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:523:14: ( '|=' )
             // Python.g:523:16: '|='
             {
@@ -1321,17 +1455,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end VBAREQUAL
+    // $ANTLR end "VBAREQUAL"
 
-    // $ANTLR start PERCENTEQUAL
+    // $ANTLR start "PERCENTEQUAL"
     public final void mPERCENTEQUAL() throws RecognitionException {
         try {
             int _type = PERCENTEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:525:17: ( '%=' )
             // Python.g:525:19: '%='
             {
@@ -1340,17 +1476,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end PERCENTEQUAL
+    // $ANTLR end "PERCENTEQUAL"
 
-    // $ANTLR start AMPEREQUAL
+    // $ANTLR start "AMPEREQUAL"
     public final void mAMPEREQUAL() throws RecognitionException {
         try {
             int _type = AMPEREQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:527:15: ( '&=' )
             // Python.g:527:17: '&='
             {
@@ -1359,17 +1497,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end AMPEREQUAL
+    // $ANTLR end "AMPEREQUAL"
 
-    // $ANTLR start CIRCUMFLEXEQUAL
+    // $ANTLR start "CIRCUMFLEXEQUAL"
     public final void mCIRCUMFLEXEQUAL() throws RecognitionException {
         try {
             int _type = CIRCUMFLEXEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:529:20: ( '^=' )
             // Python.g:529:22: '^='
             {
@@ -1378,17 +1518,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CIRCUMFLEXEQUAL
+    // $ANTLR end "CIRCUMFLEXEQUAL"
 
-    // $ANTLR start LEFTSHIFTEQUAL
+    // $ANTLR start "LEFTSHIFTEQUAL"
     public final void mLEFTSHIFTEQUAL() throws RecognitionException {
         try {
             int _type = LEFTSHIFTEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:531:19: ( '<<=' )
             // Python.g:531:21: '<<='
             {
@@ -1397,17 +1539,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LEFTSHIFTEQUAL
+    // $ANTLR end "LEFTSHIFTEQUAL"
 
-    // $ANTLR start RIGHTSHIFTEQUAL
+    // $ANTLR start "RIGHTSHIFTEQUAL"
     public final void mRIGHTSHIFTEQUAL() throws RecognitionException {
         try {
             int _type = RIGHTSHIFTEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:533:20: ( '>>=' )
             // Python.g:533:22: '>>='
             {
@@ -1416,17 +1560,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end RIGHTSHIFTEQUAL
+    // $ANTLR end "RIGHTSHIFTEQUAL"
 
-    // $ANTLR start DOUBLESTAREQUAL
+    // $ANTLR start "DOUBLESTAREQUAL"
     public final void mDOUBLESTAREQUAL() throws RecognitionException {
         try {
             int _type = DOUBLESTAREQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:535:20: ( '**=' )
             // Python.g:535:22: '**='
             {
@@ -1435,17 +1581,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOUBLESTAREQUAL
+    // $ANTLR end "DOUBLESTAREQUAL"
 
-    // $ANTLR start DOUBLESLASHEQUAL
+    // $ANTLR start "DOUBLESLASHEQUAL"
     public final void mDOUBLESLASHEQUAL() throws RecognitionException {
         try {
             int _type = DOUBLESLASHEQUAL;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:537:21: ( '//=' )
             // Python.g:537:23: '//='
             {
@@ -1454,17 +1602,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOUBLESLASHEQUAL
+    // $ANTLR end "DOUBLESLASHEQUAL"
 
-    // $ANTLR start DOT
+    // $ANTLR start "DOT"
     public final void mDOT() throws RecognitionException {
         try {
             int _type = DOT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:539:5: ( '.' )
             // Python.g:539:7: '.'
             {
@@ -1472,17 +1622,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end DOT
+    // $ANTLR end "DOT"
 
-    // $ANTLR start AT
+    // $ANTLR start "AT"
     public final void mAT() throws RecognitionException {
         try {
             int _type = AT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:541:4: ( '@' )
             // Python.g:541:6: '@'
             {
@@ -1490,17 +1642,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end AT
+    // $ANTLR end "AT"
 
-    // $ANTLR start AND
+    // $ANTLR start "AND"
     public final void mAND() throws RecognitionException {
         try {
             int _type = AND;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:543:5: ( 'and' )
             // Python.g:543:7: 'and'
             {
@@ -1509,17 +1663,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end AND
+    // $ANTLR end "AND"
 
-    // $ANTLR start OR
+    // $ANTLR start "OR"
     public final void mOR() throws RecognitionException {
         try {
             int _type = OR;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:545:4: ( 'or' )
             // Python.g:545:6: 'or'
             {
@@ -1528,17 +1684,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end OR
+    // $ANTLR end "OR"
 
-    // $ANTLR start NOT
+    // $ANTLR start "NOT"
     public final void mNOT() throws RecognitionException {
         try {
             int _type = NOT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:547:5: ( 'not' )
             // Python.g:547:7: 'not'
             {
@@ -1547,17 +1705,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NOT
+    // $ANTLR end "NOT"
 
-    // $ANTLR start FLOAT
+    // $ANTLR start "FLOAT"
     public final void mFLOAT() throws RecognitionException {
         try {
             int _type = FLOAT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:550:5: ( '.' DIGITS ( Exponent )? | DIGITS '.' Exponent | DIGITS ( '.' ( DIGITS ( Exponent )? )? | Exponent ) )
             int alt5=3;
             alt5 = dfa5.predict(input);
@@ -1613,7 +1773,7 @@ public class PythonLexer extends Lexer {
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("552:16: ( '.' ( DIGITS ( Exponent )? )? | Exponent )", 4, 0, input);
+                            new NoViableAltException("", 4, 0, input);
 
                         throw nvae;
                     }
@@ -1676,17 +1836,19 @@ public class PythonLexer extends Lexer {
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end FLOAT
+    // $ANTLR end "FLOAT"
 
-    // $ANTLR start LONGINT
+    // $ANTLR start "LONGINT"
     public final void mLONGINT() throws RecognitionException {
         try {
             int _type = LONGINT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:556:5: ( INT ( 'l' | 'L' ) )
             // Python.g:556:9: INT ( 'l' | 'L' )
             {
@@ -1696,22 +1858,22 @@ public class PythonLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LONGINT
+    // $ANTLR end "LONGINT"
 
-    // $ANTLR start Exponent
+    // $ANTLR start "Exponent"
     public final void mExponent() throws RecognitionException {
         try {
             // Python.g:561:5: ( ( 'e' | 'E' ) ( '+' | '-' )? DIGITS )
@@ -1722,10 +1884,9 @@ public class PythonLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
             // Python.g:561:22: ( '+' | '-' )?
             int alt6=2;
@@ -1743,10 +1904,9 @@ public class PythonLexer extends Lexer {
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
@@ -1762,12 +1922,13 @@ public class PythonLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end Exponent
+    // $ANTLR end "Exponent"
 
-    // $ANTLR start INT
+    // $ANTLR start "INT"
     public final void mINT() throws RecognitionException {
         try {
             int _type = INT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:564:5: ( '0' ( 'x' | 'X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+ | '0' ( DIGITS )* | '1' .. '9' ( DIGITS )* )
             int alt10=3;
             int LA10_0 = input.LA(1);
@@ -1786,7 +1947,7 @@ public class PythonLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("564:1: INT : ( '0' ( 'x' | 'X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+ | '0' ( DIGITS )* | '1' .. '9' ( DIGITS )* );", 10, 0, input);
+                    new NoViableAltException("", 10, 0, input);
 
                 throw nvae;
             }
@@ -1800,10 +1961,9 @@ public class PythonLexer extends Lexer {
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
                     // Python.g:565:25: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+
                     int cnt7=0;
@@ -1826,10 +1986,9 @@ public class PythonLexer extends Lexer {
 
                     	    }
                     	    else {
-                    	        MismatchedSetException mse =
-                    	            new MismatchedSetException(null,input);
-                    	        recover(mse);    throw mse;
-                    	    }
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
                     	    }
@@ -1913,17 +2072,19 @@ public class PythonLexer extends Lexer {
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end INT
+    // $ANTLR end "INT"
 
-    // $ANTLR start COMPLEX
+    // $ANTLR start "COMPLEX"
     public final void mCOMPLEX() throws RecognitionException {
         try {
             int _type = COMPLEX;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:572:5: ( INT ( 'j' | 'J' ) | FLOAT ( 'j' | 'J' ) )
             int alt11=2;
             alt11 = dfa11.predict(input);
@@ -1937,10 +2098,9 @@ public class PythonLexer extends Lexer {
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
@@ -1954,24 +2114,24 @@ public class PythonLexer extends Lexer {
 
                     }
                     else {
-                        MismatchedSetException mse =
-                            new MismatchedSetException(null,input);
-                        recover(mse);    throw mse;
-                    }
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
                     }
                     break;
 
             }
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COMPLEX
+    // $ANTLR end "COMPLEX"
 
-    // $ANTLR start DIGITS
+    // $ANTLR start "DIGITS"
     public final void mDIGITS() throws RecognitionException {
         try {
             // Python.g:577:8: ( ( '0' .. '9' )+ )
@@ -2014,12 +2174,13 @@ public class PythonLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end DIGITS
+    // $ANTLR end "DIGITS"
 
-    // $ANTLR start NAME
+    // $ANTLR start "NAME"
     public final void mNAME() throws RecognitionException {
         try {
             int _type = NAME;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:579:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
             // Python.g:579:10: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
@@ -2028,10 +2189,9 @@ public class PythonLexer extends Lexer {
 
             }
             else {
-                MismatchedSetException mse =
-                    new MismatchedSetException(null,input);
-                recover(mse);    throw mse;
-            }
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;}
 
             // Python.g:580:9: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop13:
@@ -2053,10 +2213,9 @@ public class PythonLexer extends Lexer {
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2070,17 +2229,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NAME
+    // $ANTLR end "NAME"
 
-    // $ANTLR start STRING
+    // $ANTLR start "STRING"
     public final void mSTRING() throws RecognitionException {
         try {
             int _type = STRING;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:587:5: ( ( 'r' | 'u' | 'ur' )? ( '\\'\\'\\'' ( options {greedy=false; } : TRIAPOS )* '\\'\\'\\'' | '\"\"\"' ( options {greedy=false; } : TRIQUOTE )* '\"\"\"' | '\"' ( ESC | ~ ( '\\\\' | '\\n' | '\"' ) )* '\"' | '\\'' ( ESC | ~ ( '\\\\' | '\\n' | '\\'' ) )* '\\'' ) )
             // Python.g:587:9: ( 'r' | 'u' | 'ur' )? ( '\\'\\'\\'' ( options {greedy=false; } : TRIAPOS )* '\\'\\'\\'' | '\"\"\"' ( options {greedy=false; } : TRIQUOTE )* '\"\"\"' | '\"' ( ESC | ~ ( '\\\\' | '\\n' | '\"' ) )* '\"' | '\\'' ( ESC | ~ ( '\\\\' | '\\n' | '\\'' ) )* '\\'' )
             {
@@ -2143,12 +2304,12 @@ public class PythonLexer extends Lexer {
                     else {
                         alt19=4;}
                 }
-                else if ( ((LA19_1>='\u0000' && LA19_1<='\t')||(LA19_1>='\u000B' && LA19_1<='&')||(LA19_1>='(' && LA19_1<='\uFFFE')) ) {
+                else if ( ((LA19_1>='\u0000' && LA19_1<='\t')||(LA19_1>='\u000B' && LA19_1<='&')||(LA19_1>='(' && LA19_1<='\uFFFF')) ) {
                     alt19=4;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("588:9: ( '\\'\\'\\'' ( options {greedy=false; } : TRIAPOS )* '\\'\\'\\'' | '\"\"\"' ( options {greedy=false; } : TRIQUOTE )* '\"\"\"' | '\"' ( ESC | ~ ( '\\\\' | '\\n' | '\"' ) )* '\"' | '\\'' ( ESC | ~ ( '\\\\' | '\\n' | '\\'' ) )* '\\'' )", 19, 1, input);
+                        new NoViableAltException("", 19, 1, input);
 
                     throw nvae;
                 }
@@ -2165,19 +2326,19 @@ public class PythonLexer extends Lexer {
                     else {
                         alt19=3;}
                 }
-                else if ( ((LA19_2>='\u0000' && LA19_2<='\t')||(LA19_2>='\u000B' && LA19_2<='!')||(LA19_2>='#' && LA19_2<='\uFFFE')) ) {
+                else if ( ((LA19_2>='\u0000' && LA19_2<='\t')||(LA19_2>='\u000B' && LA19_2<='!')||(LA19_2>='#' && LA19_2<='\uFFFF')) ) {
                     alt19=3;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("588:9: ( '\\'\\'\\'' ( options {greedy=false; } : TRIAPOS )* '\\'\\'\\'' | '\"\"\"' ( options {greedy=false; } : TRIQUOTE )* '\"\"\"' | '\"' ( ESC | ~ ( '\\\\' | '\\n' | '\"' ) )* '\"' | '\\'' ( ESC | ~ ( '\\\\' | '\\n' | '\\'' ) )* '\\'' )", 19, 2, input);
+                        new NoViableAltException("", 19, 2, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("588:9: ( '\\'\\'\\'' ( options {greedy=false; } : TRIAPOS )* '\\'\\'\\'' | '\"\"\"' ( options {greedy=false; } : TRIQUOTE )* '\"\"\"' | '\"' ( ESC | ~ ( '\\\\' | '\\n' | '\"' ) )* '\"' | '\\'' ( ESC | ~ ( '\\\\' | '\\n' | '\\'' ) )* '\\'' )", 19, 0, input);
+                    new NoViableAltException("", 19, 0, input);
 
                 throw nvae;
             }
@@ -2185,7 +2346,7 @@ public class PythonLexer extends Lexer {
                 case 1 :
                     // Python.g:588:13: '\\'\\'\\'' ( options {greedy=false; } : TRIAPOS )* '\\'\\'\\''
                     {
-                    match("\'\'\'"); 
+                    match("'''"); 
 
                     // Python.g:588:22: ( options {greedy=false; } : TRIAPOS )*
                     loop15:
@@ -2202,19 +2363,19 @@ public class PythonLexer extends Lexer {
                                 if ( (LA15_3=='\'') ) {
                                     alt15=2;
                                 }
-                                else if ( ((LA15_3>='\u0000' && LA15_3<='&')||(LA15_3>='(' && LA15_3<='\uFFFE')) ) {
+                                else if ( ((LA15_3>='\u0000' && LA15_3<='&')||(LA15_3>='(' && LA15_3<='\uFFFF')) ) {
                                     alt15=1;
                                 }
 
 
                             }
-                            else if ( ((LA15_1>='\u0000' && LA15_1<='&')||(LA15_1>='(' && LA15_1<='\uFFFE')) ) {
+                            else if ( ((LA15_1>='\u0000' && LA15_1<='&')||(LA15_1>='(' && LA15_1<='\uFFFF')) ) {
                                 alt15=1;
                             }
 
 
                         }
-                        else if ( ((LA15_0>='\u0000' && LA15_0<='&')||(LA15_0>='(' && LA15_0<='\uFFFE')) ) {
+                        else if ( ((LA15_0>='\u0000' && LA15_0<='&')||(LA15_0>='(' && LA15_0<='\uFFFF')) ) {
                             alt15=1;
                         }
 
@@ -2233,7 +2394,7 @@ public class PythonLexer extends Lexer {
                         }
                     } while (true);
 
-                    match("\'\'\'"); 
+                    match("'''"); 
 
 
                     }
@@ -2258,19 +2419,19 @@ public class PythonLexer extends Lexer {
                                 if ( (LA16_3=='\"') ) {
                                     alt16=2;
                                 }
-                                else if ( ((LA16_3>='\u0000' && LA16_3<='!')||(LA16_3>='#' && LA16_3<='\uFFFE')) ) {
+                                else if ( ((LA16_3>='\u0000' && LA16_3<='!')||(LA16_3>='#' && LA16_3<='\uFFFF')) ) {
                                     alt16=1;
                                 }
 
 
                             }
-                            else if ( ((LA16_1>='\u0000' && LA16_1<='!')||(LA16_1>='#' && LA16_1<='\uFFFE')) ) {
+                            else if ( ((LA16_1>='\u0000' && LA16_1<='!')||(LA16_1>='#' && LA16_1<='\uFFFF')) ) {
                                 alt16=1;
                             }
 
 
                         }
-                        else if ( ((LA16_0>='\u0000' && LA16_0<='!')||(LA16_0>='#' && LA16_0<='\uFFFE')) ) {
+                        else if ( ((LA16_0>='\u0000' && LA16_0<='!')||(LA16_0>='#' && LA16_0<='\uFFFF')) ) {
                             alt16=1;
                         }
 
@@ -2307,7 +2468,7 @@ public class PythonLexer extends Lexer {
                         if ( (LA17_0=='\\') ) {
                             alt17=1;
                         }
-                        else if ( ((LA17_0>='\u0000' && LA17_0<='\t')||(LA17_0>='\u000B' && LA17_0<='!')||(LA17_0>='#' && LA17_0<='[')||(LA17_0>=']' && LA17_0<='\uFFFE')) ) {
+                        else if ( ((LA17_0>='\u0000' && LA17_0<='\t')||(LA17_0>='\u000B' && LA17_0<='!')||(LA17_0>='#' && LA17_0<='[')||(LA17_0>=']' && LA17_0<='\uFFFF')) ) {
                             alt17=2;
                         }
 
@@ -2323,15 +2484,14 @@ public class PythonLexer extends Lexer {
                     	case 2 :
                     	    // Python.g:590:22: ~ ( '\\\\' | '\\n' | '\"' )
                     	    {
-                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
 
                     	    }
                     	    else {
-                    	        MismatchedSetException mse =
-                    	            new MismatchedSetException(null,input);
-                    	        recover(mse);    throw mse;
-                    	    }
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
                     	    }
@@ -2359,7 +2519,7 @@ public class PythonLexer extends Lexer {
                         if ( (LA18_0=='\\') ) {
                             alt18=1;
                         }
-                        else if ( ((LA18_0>='\u0000' && LA18_0<='\t')||(LA18_0>='\u000B' && LA18_0<='&')||(LA18_0>='(' && LA18_0<='[')||(LA18_0>=']' && LA18_0<='\uFFFE')) ) {
+                        else if ( ((LA18_0>='\u0000' && LA18_0<='\t')||(LA18_0>='\u000B' && LA18_0<='&')||(LA18_0>='(' && LA18_0<='[')||(LA18_0>=']' && LA18_0<='\uFFFF')) ) {
                             alt18=2;
                         }
 
@@ -2375,15 +2535,14 @@ public class PythonLexer extends Lexer {
                     	case 2 :
                     	    // Python.g:591:23: ~ ( '\\\\' | '\\n' | '\\'' )
                     	    {
-                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
 
                     	    }
                     	    else {
-                    	        MismatchedSetException mse =
-                    	            new MismatchedSetException(null,input);
-                    	        recover(mse);    throw mse;
-                    	    }
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
                     	    }
@@ -2404,14 +2563,15 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end STRING
+    // $ANTLR end "STRING"
 
-    // $ANTLR start TRIQUOTE
+    // $ANTLR start "TRIQUOTE"
     public final void mTRIQUOTE() throws RecognitionException {
         try {
             // Python.g:598:5: ( ( '\"' )? ( '\"' )? ( ESC | ~ ( '\\\\' | '\"' ) )+ )
@@ -2463,7 +2623,7 @@ public class PythonLexer extends Lexer {
                 if ( (LA22_0=='\\') ) {
                     alt22=1;
                 }
-                else if ( ((LA22_0>='\u0000' && LA22_0<='!')||(LA22_0>='#' && LA22_0<='[')||(LA22_0>=']' && LA22_0<='\uFFFE')) ) {
+                else if ( ((LA22_0>='\u0000' && LA22_0<='!')||(LA22_0>='#' && LA22_0<='[')||(LA22_0>=']' && LA22_0<='\uFFFF')) ) {
                     alt22=2;
                 }
 
@@ -2479,15 +2639,14 @@ public class PythonLexer extends Lexer {
             	case 2 :
             	    // Python.g:598:22: ~ ( '\\\\' | '\"' )
             	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2509,9 +2668,9 @@ public class PythonLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end TRIQUOTE
+    // $ANTLR end "TRIQUOTE"
 
-    // $ANTLR start TRIAPOS
+    // $ANTLR start "TRIAPOS"
     public final void mTRIAPOS() throws RecognitionException {
         try {
             // Python.g:604:5: ( ( '\\'' )? ( '\\'' )? ( ESC | ~ ( '\\\\' | '\\'' ) )+ )
@@ -2563,7 +2722,7 @@ public class PythonLexer extends Lexer {
                 if ( (LA25_0=='\\') ) {
                     alt25=1;
                 }
-                else if ( ((LA25_0>='\u0000' && LA25_0<='&')||(LA25_0>='(' && LA25_0<='[')||(LA25_0>=']' && LA25_0<='\uFFFE')) ) {
+                else if ( ((LA25_0>='\u0000' && LA25_0<='&')||(LA25_0>='(' && LA25_0<='[')||(LA25_0>=']' && LA25_0<='\uFFFF')) ) {
                     alt25=2;
                 }
 
@@ -2579,15 +2738,14 @@ public class PythonLexer extends Lexer {
             	case 2 :
             	    // Python.g:604:24: ~ ( '\\\\' | '\\'' )
             	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
+            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2609,9 +2767,9 @@ public class PythonLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end TRIAPOS
+    // $ANTLR end "TRIAPOS"
 
-    // $ANTLR start ESC
+    // $ANTLR start "ESC"
     public final void mESC() throws RecognitionException {
         try {
             // Python.g:609:5: ( '\\\\' . )
@@ -2626,13 +2784,14 @@ public class PythonLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end ESC
+    // $ANTLR end "ESC"
 
-    // $ANTLR start CONTINUED_LINE
+    // $ANTLR start "CONTINUED_LINE"
     public final void mCONTINUED_LINE() throws RecognitionException {
         try {
             int _type = CONTINUED_LINE;
-            Token nl=null;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            CommonToken nl=null;
 
             // Python.g:617:5: ( '\\\\' ( '\\r' )? '\\n' ( ' ' | '\\t' )* (nl= NEWLINE | ) )
             // Python.g:617:10: '\\\\' ( '\\r' )? '\\n' ( ' ' | '\\t' )* (nl= NEWLINE | )
@@ -2677,10 +2836,9 @@ public class PythonLexer extends Lexer {
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2691,7 +2849,7 @@ public class PythonLexer extends Lexer {
                 }
             } while (true);
 
-             channel=HIDDEN; 
+             _channel=HIDDEN; 
             // Python.g:618:10: (nl= NEWLINE | )
             int alt28=2;
             int LA28_0 = input.LA(1);
@@ -2705,9 +2863,9 @@ public class PythonLexer extends Lexer {
                 case 1 :
                     // Python.g:618:12: nl= NEWLINE
                     {
-                    int nlStart1529 = getCharIndex();
+                    int nlStart1530 = getCharIndex();
                     mNEWLINE(); 
-                    nl = new CommonToken(input, Token.INVALID_TOKEN_TYPE, Token.DEFAULT_CHANNEL, nlStart1529, getCharIndex()-1);
+                    nl = new CommonToken(input, Token.INVALID_TOKEN_TYPE, Token.DEFAULT_CHANNEL, nlStart1530, getCharIndex()-1);
                     emit(new ClassicToken(NEWLINE,nl.getText()));
 
                     }
@@ -2723,17 +2881,19 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end CONTINUED_LINE
+    // $ANTLR end "CONTINUED_LINE"
 
-    // $ANTLR start NEWLINE
+    // $ANTLR start "NEWLINE"
     public final void mNEWLINE() throws RecognitionException {
         try {
             int _type = NEWLINE;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:630:5: ( ( ( '\\u000C' )? ( '\\r' )? '\\n' )+ )
             // Python.g:630:9: ( ( '\\u000C' )? ( '\\r' )? '\\n' )+
             {
@@ -2804,26 +2964,28 @@ public class PythonLexer extends Lexer {
             } while (true);
 
             if ( startPos==0 || implicitLineJoiningLevel>0 )
-                        channel=HIDDEN;
+                        _channel=HIDDEN;
                     
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end NEWLINE
+    // $ANTLR end "NEWLINE"
 
-    // $ANTLR start WS
+    // $ANTLR start "WS"
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
             // Python.g:636:5: ({...}? => ( ' ' | '\\t' | '\\u000C' )+ )
             // Python.g:636:10: {...}? => ( ' ' | '\\t' | '\\u000C' )+
             {
-            if ( !(startPos>0) ) {
+            if ( !((startPos>0)) ) {
                 throw new FailedPredicateException(input, "WS", "startPos>0");
             }
             // Python.g:636:26: ( ' ' | '\\t' | '\\u000C' )+
@@ -2847,10 +3009,9 @@ public class PythonLexer extends Lexer {
 
             	    }
             	    else {
-            	        MismatchedSetException mse =
-            	            new MismatchedSetException(null,input);
-            	        recover(mse);    throw mse;
-            	    }
+            	        MismatchedSetException mse = new MismatchedSetException(null,input);
+            	        recover(mse);
+            	        throw mse;}
 
 
             	    }
@@ -2865,28 +3026,30 @@ public class PythonLexer extends Lexer {
                 cnt32++;
             } while (true);
 
-            channel=HIDDEN;
+            _channel=HIDDEN;
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end WS
+    // $ANTLR end "WS"
 
-    // $ANTLR start LEADING_WS
+    // $ANTLR start "LEADING_WS"
     public final void mLEADING_WS() throws RecognitionException {
         try {
             int _type = LEADING_WS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
 
                 int spaces = 0;
 
             // Python.g:649:5: ({...}? => ({...}? ( ' ' | '\\t' )+ | ( ' ' | '\\t' )+ ( ( '\\r' )? '\\n' )* ) )
             // Python.g:649:9: {...}? => ({...}? ( ' ' | '\\t' )+ | ( ' ' | '\\t' )+ ( ( '\\r' )? '\\n' )* )
             {
-            if ( !(startPos==0) ) {
+            if ( !((startPos==0)) ) {
                 throw new FailedPredicateException(input, "LEADING_WS", "startPos==0");
             }
             // Python.g:650:9: ({...}? ( ' ' | '\\t' )+ | ( ' ' | '\\t' )+ ( ( '\\r' )? '\\n' )* )
@@ -2896,7 +3059,7 @@ public class PythonLexer extends Lexer {
             if ( (LA37_0==' ') ) {
                 int LA37_1 = input.LA(2);
 
-                if ( (implicitLineJoiningLevel>0) ) {
+                if ( ((implicitLineJoiningLevel>0)) ) {
                     alt37=1;
                 }
                 else if ( (true) ) {
@@ -2904,7 +3067,7 @@ public class PythonLexer extends Lexer {
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("650:9: ({...}? ( ' ' | '\\t' )+ | ( ' ' | '\\t' )+ ( ( '\\r' )? '\\n' )* )", 37, 1, input);
+                        new NoViableAltException("", 37, 1, input);
 
                     throw nvae;
                 }
@@ -2912,7 +3075,7 @@ public class PythonLexer extends Lexer {
             else if ( (LA37_0=='\t') ) {
                 int LA37_2 = input.LA(2);
 
-                if ( (implicitLineJoiningLevel>0) ) {
+                if ( ((implicitLineJoiningLevel>0)) ) {
                     alt37=1;
                 }
                 else if ( (true) ) {
@@ -2920,14 +3083,14 @@ public class PythonLexer extends Lexer {
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("650:9: ({...}? ( ' ' | '\\t' )+ | ( ' ' | '\\t' )+ ( ( '\\r' )? '\\n' )* )", 37, 2, input);
+                        new NoViableAltException("", 37, 2, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("650:9: ({...}? ( ' ' | '\\t' )+ | ( ' ' | '\\t' )+ ( ( '\\r' )? '\\n' )* )", 37, 0, input);
+                    new NoViableAltException("", 37, 0, input);
 
                 throw nvae;
             }
@@ -2935,7 +3098,7 @@ public class PythonLexer extends Lexer {
                 case 1 :
                     // Python.g:650:13: {...}? ( ' ' | '\\t' )+
                     {
-                    if ( !(implicitLineJoiningLevel>0) ) {
+                    if ( !((implicitLineJoiningLevel>0)) ) {
                         throw new FailedPredicateException(input, "LEADING_WS", "implicitLineJoiningLevel>0");
                     }
                     // Python.g:650:43: ( ' ' | '\\t' )+
@@ -2959,10 +3122,9 @@ public class PythonLexer extends Lexer {
 
                     	    }
                     	    else {
-                    	        MismatchedSetException mse =
-                    	            new MismatchedSetException(null,input);
-                    	        recover(mse);    throw mse;
-                    	    }
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
                     	    }
@@ -2977,7 +3139,7 @@ public class PythonLexer extends Lexer {
                         cnt33++;
                     } while (true);
 
-                    channel=HIDDEN;
+                    _channel=HIDDEN;
 
                     }
                     break;
@@ -3035,7 +3197,7 @@ public class PythonLexer extends Lexer {
                                 String s = new String(indentation);
                                 emit(new ClassicToken(LEADING_WS,new String(indentation)));
                                 
-                    // Python.g:664:13: ( ( '\\r' )? '\\n' )*
+                    // Python.g:665:13: ( ( '\\r' )? '\\n' )*
                     loop36:
                     do {
                         int alt36=2;
@@ -3048,9 +3210,9 @@ public class PythonLexer extends Lexer {
 
                         switch (alt36) {
                     	case 1 :
-                    	    // Python.g:664:15: ( '\\r' )? '\\n'
+                    	    // Python.g:665:15: ( '\\r' )? '\\n'
                     	    {
-                    	    // Python.g:664:15: ( '\\r' )?
+                    	    // Python.g:665:15: ( '\\r' )?
                     	    int alt35=2;
                     	    int LA35_0 = input.LA(1);
 
@@ -3059,7 +3221,7 @@ public class PythonLexer extends Lexer {
                     	    }
                     	    switch (alt35) {
                     	        case 1 :
-                    	            // Python.g:664:16: '\\r'
+                    	            // Python.g:665:16: '\\r'
                     	            {
                     	            match('\r'); 
 
@@ -3069,7 +3231,7 @@ public class PythonLexer extends Lexer {
                     	    }
 
                     	    match('\n'); 
-                    	    if (token!=null) token.setChannel(HIDDEN); else channel=HIDDEN;
+                    	     _channel=HIDDEN;
 
                     	    }
                     	    break;
@@ -3088,31 +3250,33 @@ public class PythonLexer extends Lexer {
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end LEADING_WS
+    // $ANTLR end "LEADING_WS"
 
-    // $ANTLR start COMMENT
+    // $ANTLR start "COMMENT"
     public final void mCOMMENT() throws RecognitionException {
         try {
             int _type = COMMENT;
-            // Python.g:687:5: ( ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* ) )
-            // Python.g:687:10: ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* )
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // Python.g:688:5: ( ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* ) )
+            // Python.g:688:10: ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* )
             {
-            // Python.g:687:10: ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* )
+            // Python.g:688:10: ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* )
             int alt42=2;
             alt42 = dfa42.predict(input);
             switch (alt42) {
                 case 1 :
-                    // Python.g:687:12: {...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+
+                    // Python.g:688:12: {...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+
                     {
-                    if ( !(startPos==0) ) {
+                    if ( !((startPos==0)) ) {
                         throw new FailedPredicateException(input, "COMMENT", "startPos==0");
                     }
-                    // Python.g:687:29: ( ' ' | '\\t' )*
+                    // Python.g:688:29: ( ' ' | '\\t' )*
                     loop38:
                     do {
                         int alt38=2;
@@ -3132,10 +3296,9 @@ public class PythonLexer extends Lexer {
 
                     	    }
                     	    else {
-                    	        MismatchedSetException mse =
-                    	            new MismatchedSetException(null,input);
-                    	        recover(mse);    throw mse;
-                    	    }
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
                     	    }
@@ -3147,30 +3310,29 @@ public class PythonLexer extends Lexer {
                     } while (true);
 
                     match('#'); 
-                    // Python.g:687:45: (~ '\\n' )*
+                    // Python.g:688:45: (~ '\\n' )*
                     loop39:
                     do {
                         int alt39=2;
                         int LA39_0 = input.LA(1);
 
-                        if ( ((LA39_0>='\u0000' && LA39_0<='\t')||(LA39_0>='\u000B' && LA39_0<='\uFFFE')) ) {
+                        if ( ((LA39_0>='\u0000' && LA39_0<='\t')||(LA39_0>='\u000B' && LA39_0<='\uFFFF')) ) {
                             alt39=1;
                         }
 
 
                         switch (alt39) {
                     	case 1 :
-                    	    // Python.g:687:46: ~ '\\n'
+                    	    // Python.g:688:46: ~ '\\n'
                     	    {
-                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\uFFFE') ) {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
 
                     	    }
                     	    else {
-                    	        MismatchedSetException mse =
-                    	            new MismatchedSetException(null,input);
-                    	        recover(mse);    throw mse;
-                    	    }
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
                     	    }
@@ -3181,7 +3343,7 @@ public class PythonLexer extends Lexer {
                         }
                     } while (true);
 
-                    // Python.g:687:54: ( '\\n' )+
+                    // Python.g:688:54: ( '\\n' )+
                     int cnt40=0;
                     loop40:
                     do {
@@ -3195,7 +3357,7 @@ public class PythonLexer extends Lexer {
 
                         switch (alt40) {
                     	case 1 :
-                    	    // Python.g:687:54: '\\n'
+                    	    // Python.g:688:54: '\\n'
                     	    {
                     	    match('\n'); 
 
@@ -3215,36 +3377,35 @@ public class PythonLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // Python.g:688:10: {...}? => '#' (~ '\\n' )*
+                    // Python.g:689:10: {...}? => '#' (~ '\\n' )*
                     {
-                    if ( !(startPos>0) ) {
+                    if ( !((startPos>0)) ) {
                         throw new FailedPredicateException(input, "COMMENT", "startPos>0");
                     }
                     match('#'); 
-                    // Python.g:688:30: (~ '\\n' )*
+                    // Python.g:689:30: (~ '\\n' )*
                     loop41:
                     do {
                         int alt41=2;
                         int LA41_0 = input.LA(1);
 
-                        if ( ((LA41_0>='\u0000' && LA41_0<='\t')||(LA41_0>='\u000B' && LA41_0<='\uFFFE')) ) {
+                        if ( ((LA41_0>='\u0000' && LA41_0<='\t')||(LA41_0>='\u000B' && LA41_0<='\uFFFF')) ) {
                             alt41=1;
                         }
 
 
                         switch (alt41) {
                     	case 1 :
-                    	    // Python.g:688:31: ~ '\\n'
+                    	    // Python.g:689:31: ~ '\\n'
                     	    {
-                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\uFFFE') ) {
+                    	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
 
                     	    }
                     	    else {
-                    	        MismatchedSetException mse =
-                    	            new MismatchedSetException(null,input);
-                    	        recover(mse);    throw mse;
-                    	    }
+                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
+                    	        recover(mse);
+                    	        throw mse;}
 
 
                     	    }
@@ -3265,628 +3426,629 @@ public class PythonLexer extends Lexer {
                         if (!preserveWhitespacesAndComments) {
                             skip();
                         } else {
-                            channel = HIDDEN;
+                            _channel = HIDDEN;
                         }
                     
 
             }
 
-            this.type = _type;
+            state.type = _type;
+            state.channel = _channel;
         }
         finally {
         }
     }
-    // $ANTLR end COMMENT
+    // $ANTLR end "COMMENT"
 
     public void mTokens() throws RecognitionException {
-        // Python.g:1:8: ( T70 | T71 | T72 | T73 | T74 | T75 | T76 | T77 | T78 | T79 | T80 | T81 | T82 | T83 | T84 | T85 | T86 | T87 | T88 | T89 | T90 | T91 | T92 | T93 | T94 | T95 | T96 | T97 | LPAREN | RPAREN | LBRACK | RBRACK | COLON | COMMA | SEMI | PLUS | MINUS | STAR | SLASH | VBAR | AMPER | LESS | GREATER | ASSIGN | PERCENT | BACKQUOTE | LCURLY | RCURLY | CIRCUMFLEX | TILDE | EQUAL | NOTEQUAL | ALT_NOTEQUAL | LESSEQUAL | LEFTSHIFT | GREATEREQUAL | RIGHTSHIFT | PLUSEQUAL | MINUSEQUAL | DOUBLESTAR | STAREQUAL | DOUBLESLASH | SLASHEQUAL | VBAREQUAL | PERCENTEQUAL | AMPEREQUAL | CIRCUMFLEXEQUAL | LEFTSHIFTEQUAL | RIGHTSHIFTEQUAL | DOUBLESTAREQUAL | DOUBLESLASHEQUAL | DOT | AT | AND | OR | NOT | FLOAT | LONGINT | INT | COMPLEX | NAME | STRING | CONTINUED_LINE | NEWLINE | WS | LEADING_WS | COMMENT )
+        // Python.g:1:8: ( T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | LPAREN | RPAREN | LBRACK | RBRACK | COLON | COMMA | SEMI | PLUS | MINUS | STAR | SLASH | VBAR | AMPER | LESS | GREATER | ASSIGN | PERCENT | BACKQUOTE | LCURLY | RCURLY | CIRCUMFLEX | TILDE | EQUAL | NOTEQUAL | ALT_NOTEQUAL | LESSEQUAL | LEFTSHIFT | GREATEREQUAL | RIGHTSHIFT | PLUSEQUAL | MINUSEQUAL | DOUBLESTAR | STAREQUAL | DOUBLESLASH | SLASHEQUAL | VBAREQUAL | PERCENTEQUAL | AMPEREQUAL | CIRCUMFLEXEQUAL | LEFTSHIFTEQUAL | RIGHTSHIFTEQUAL | DOUBLESTAREQUAL | DOUBLESLASHEQUAL | DOT | AT | AND | OR | NOT | FLOAT | LONGINT | INT | COMPLEX | NAME | STRING | CONTINUED_LINE | NEWLINE | WS | LEADING_WS | COMMENT )
         int alt43=87;
         alt43 = dfa43.predict(input);
         switch (alt43) {
             case 1 :
-                // Python.g:1:10: T70
+                // Python.g:1:10: T__70
                 {
-                mT70(); 
+                mT__70(); 
 
                 }
                 break;
             case 2 :
-                // Python.g:1:14: T71
+                // Python.g:1:16: T__71
                 {
-                mT71(); 
+                mT__71(); 
 
                 }
                 break;
             case 3 :
-                // Python.g:1:18: T72
+                // Python.g:1:22: T__72
                 {
-                mT72(); 
+                mT__72(); 
 
                 }
                 break;
             case 4 :
-                // Python.g:1:22: T73
+                // Python.g:1:28: T__73
                 {
-                mT73(); 
+                mT__73(); 
 
                 }
                 break;
             case 5 :
-                // Python.g:1:26: T74
+                // Python.g:1:34: T__74
                 {
-                mT74(); 
+                mT__74(); 
 
                 }
                 break;
             case 6 :
-                // Python.g:1:30: T75
+                // Python.g:1:40: T__75
                 {
-                mT75(); 
+                mT__75(); 
 
                 }
                 break;
             case 7 :
-                // Python.g:1:34: T76
+                // Python.g:1:46: T__76
                 {
-                mT76(); 
+                mT__76(); 
 
                 }
                 break;
             case 8 :
-                // Python.g:1:38: T77
+                // Python.g:1:52: T__77
                 {
-                mT77(); 
+                mT__77(); 
 
                 }
                 break;
             case 9 :
-                // Python.g:1:42: T78
+                // Python.g:1:58: T__78
                 {
-                mT78(); 
+                mT__78(); 
 
                 }
                 break;
             case 10 :
-                // Python.g:1:46: T79
+                // Python.g:1:64: T__79
                 {
-                mT79(); 
+                mT__79(); 
 
                 }
                 break;
             case 11 :
-                // Python.g:1:50: T80
+                // Python.g:1:70: T__80
                 {
-                mT80(); 
+                mT__80(); 
 
                 }
                 break;
             case 12 :
-                // Python.g:1:54: T81
+                // Python.g:1:76: T__81
                 {
-                mT81(); 
+                mT__81(); 
 
                 }
                 break;
             case 13 :
-                // Python.g:1:58: T82
+                // Python.g:1:82: T__82
                 {
-                mT82(); 
+                mT__82(); 
 
                 }
                 break;
             case 14 :
-                // Python.g:1:62: T83
+                // Python.g:1:88: T__83
                 {
-                mT83(); 
+                mT__83(); 
 
                 }
                 break;
             case 15 :
-                // Python.g:1:66: T84
+                // Python.g:1:94: T__84
                 {
-                mT84(); 
+                mT__84(); 
 
                 }
                 break;
             case 16 :
-                // Python.g:1:70: T85
+                // Python.g:1:100: T__85
                 {
-                mT85(); 
+                mT__85(); 
 
                 }
                 break;
             case 17 :
-                // Python.g:1:74: T86
+                // Python.g:1:106: T__86
                 {
-                mT86(); 
+                mT__86(); 
 
                 }
                 break;
             case 18 :
-                // Python.g:1:78: T87
+                // Python.g:1:112: T__87
                 {
-                mT87(); 
+                mT__87(); 
 
                 }
                 break;
             case 19 :
-                // Python.g:1:82: T88
+                // Python.g:1:118: T__88
                 {
-                mT88(); 
+                mT__88(); 
 
                 }
                 break;
             case 20 :
-                // Python.g:1:86: T89
+                // Python.g:1:124: T__89
                 {
-                mT89(); 
+                mT__89(); 
 
                 }
                 break;
             case 21 :
-                // Python.g:1:90: T90
+                // Python.g:1:130: T__90
                 {
-                mT90(); 
+                mT__90(); 
 
                 }
                 break;
             case 22 :
-                // Python.g:1:94: T91
+                // Python.g:1:136: T__91
                 {
-                mT91(); 
+                mT__91(); 
 
                 }
                 break;
             case 23 :
-                // Python.g:1:98: T92
+                // Python.g:1:142: T__92
                 {
-                mT92(); 
+                mT__92(); 
 
                 }
                 break;
             case 24 :
-                // Python.g:1:102: T93
+                // Python.g:1:148: T__93
                 {
-                mT93(); 
+                mT__93(); 
 
                 }
                 break;
             case 25 :
-                // Python.g:1:106: T94
+                // Python.g:1:154: T__94
                 {
-                mT94(); 
+                mT__94(); 
 
                 }
                 break;
             case 26 :
-                // Python.g:1:110: T95
+                // Python.g:1:160: T__95
                 {
-                mT95(); 
+                mT__95(); 
 
                 }
                 break;
             case 27 :
-                // Python.g:1:114: T96
+                // Python.g:1:166: T__96
                 {
-                mT96(); 
+                mT__96(); 
 
                 }
                 break;
             case 28 :
-                // Python.g:1:118: T97
+                // Python.g:1:172: T__97
                 {
-                mT97(); 
+                mT__97(); 
 
                 }
                 break;
             case 29 :
-                // Python.g:1:122: LPAREN
+                // Python.g:1:178: LPAREN
                 {
                 mLPAREN(); 
 
                 }
                 break;
             case 30 :
-                // Python.g:1:129: RPAREN
+                // Python.g:1:185: RPAREN
                 {
                 mRPAREN(); 
 
                 }
                 break;
             case 31 :
-                // Python.g:1:136: LBRACK
+                // Python.g:1:192: LBRACK
                 {
                 mLBRACK(); 
 
                 }
                 break;
             case 32 :
-                // Python.g:1:143: RBRACK
+                // Python.g:1:199: RBRACK
                 {
                 mRBRACK(); 
 
                 }
                 break;
             case 33 :
-                // Python.g:1:150: COLON
+                // Python.g:1:206: COLON
                 {
                 mCOLON(); 
 
                 }
                 break;
             case 34 :
-                // Python.g:1:156: COMMA
+                // Python.g:1:212: COMMA
                 {
                 mCOMMA(); 
 
                 }
                 break;
             case 35 :
-                // Python.g:1:162: SEMI
+                // Python.g:1:218: SEMI
                 {
                 mSEMI(); 
 
                 }
                 break;
             case 36 :
-                // Python.g:1:167: PLUS
+                // Python.g:1:223: PLUS
                 {
                 mPLUS(); 
 
                 }
                 break;
             case 37 :
-                // Python.g:1:172: MINUS
+                // Python.g:1:228: MINUS
                 {
                 mMINUS(); 
 
                 }
                 break;
             case 38 :
-                // Python.g:1:178: STAR
+                // Python.g:1:234: STAR
                 {
                 mSTAR(); 
 
                 }
                 break;
             case 39 :
-                // Python.g:1:183: SLASH
+                // Python.g:1:239: SLASH
                 {
                 mSLASH(); 
 
                 }
                 break;
             case 40 :
-                // Python.g:1:189: VBAR
+                // Python.g:1:245: VBAR
                 {
                 mVBAR(); 
 
                 }
                 break;
             case 41 :
-                // Python.g:1:194: AMPER
+                // Python.g:1:250: AMPER
                 {
                 mAMPER(); 
 
                 }
                 break;
             case 42 :
-                // Python.g:1:200: LESS
+                // Python.g:1:256: LESS
                 {
                 mLESS(); 
 
                 }
                 break;
             case 43 :
-                // Python.g:1:205: GREATER
+                // Python.g:1:261: GREATER
                 {
                 mGREATER(); 
 
                 }
                 break;
             case 44 :
-                // Python.g:1:213: ASSIGN
+                // Python.g:1:269: ASSIGN
                 {
                 mASSIGN(); 
 
                 }
                 break;
             case 45 :
-                // Python.g:1:220: PERCENT
+                // Python.g:1:276: PERCENT
                 {
                 mPERCENT(); 
 
                 }
                 break;
             case 46 :
-                // Python.g:1:228: BACKQUOTE
+                // Python.g:1:284: BACKQUOTE
                 {
                 mBACKQUOTE(); 
 
                 }
                 break;
             case 47 :
-                // Python.g:1:238: LCURLY
+                // Python.g:1:294: LCURLY
                 {
                 mLCURLY(); 
 
                 }
                 break;
             case 48 :
-                // Python.g:1:245: RCURLY
+                // Python.g:1:301: RCURLY
                 {
                 mRCURLY(); 
 
                 }
                 break;
             case 49 :
-                // Python.g:1:252: CIRCUMFLEX
+                // Python.g:1:308: CIRCUMFLEX
                 {
                 mCIRCUMFLEX(); 
 
                 }
                 break;
             case 50 :
-                // Python.g:1:263: TILDE
+                // Python.g:1:319: TILDE
                 {
                 mTILDE(); 
 
                 }
                 break;
             case 51 :
-                // Python.g:1:269: EQUAL
+                // Python.g:1:325: EQUAL
                 {
                 mEQUAL(); 
 
                 }
                 break;
             case 52 :
-                // Python.g:1:275: NOTEQUAL
+                // Python.g:1:331: NOTEQUAL
                 {
                 mNOTEQUAL(); 
 
                 }
                 break;
             case 53 :
-                // Python.g:1:284: ALT_NOTEQUAL
+                // Python.g:1:340: ALT_NOTEQUAL
                 {
                 mALT_NOTEQUAL(); 
 
                 }
                 break;
             case 54 :
-                // Python.g:1:297: LESSEQUAL
+                // Python.g:1:353: LESSEQUAL
                 {
                 mLESSEQUAL(); 
 
                 }
                 break;
             case 55 :
-                // Python.g:1:307: LEFTSHIFT
+                // Python.g:1:363: LEFTSHIFT
                 {
                 mLEFTSHIFT(); 
 
                 }
                 break;
             case 56 :
-                // Python.g:1:317: GREATEREQUAL
+                // Python.g:1:373: GREATEREQUAL
                 {
                 mGREATEREQUAL(); 
 
                 }
                 break;
             case 57 :
-                // Python.g:1:330: RIGHTSHIFT
+                // Python.g:1:386: RIGHTSHIFT
                 {
                 mRIGHTSHIFT(); 
 
                 }
                 break;
             case 58 :
-                // Python.g:1:341: PLUSEQUAL
+                // Python.g:1:397: PLUSEQUAL
                 {
                 mPLUSEQUAL(); 
 
                 }
                 break;
             case 59 :
-                // Python.g:1:351: MINUSEQUAL
+                // Python.g:1:407: MINUSEQUAL
                 {
                 mMINUSEQUAL(); 
 
                 }
                 break;
             case 60 :
-                // Python.g:1:362: DOUBLESTAR
+                // Python.g:1:418: DOUBLESTAR
                 {
                 mDOUBLESTAR(); 
 
                 }
                 break;
             case 61 :
-                // Python.g:1:373: STAREQUAL
+                // Python.g:1:429: STAREQUAL
                 {
                 mSTAREQUAL(); 
 
                 }
                 break;
             case 62 :
-                // Python.g:1:383: DOUBLESLASH
+                // Python.g:1:439: DOUBLESLASH
                 {
                 mDOUBLESLASH(); 
 
                 }
                 break;
             case 63 :
-                // Python.g:1:395: SLASHEQUAL
+                // Python.g:1:451: SLASHEQUAL
                 {
                 mSLASHEQUAL(); 
 
                 }
                 break;
             case 64 :
-                // Python.g:1:406: VBAREQUAL
+                // Python.g:1:462: VBAREQUAL
                 {
                 mVBAREQUAL(); 
 
                 }
                 break;
             case 65 :
-                // Python.g:1:416: PERCENTEQUAL
+                // Python.g:1:472: PERCENTEQUAL
                 {
                 mPERCENTEQUAL(); 
 
                 }
                 break;
             case 66 :
-                // Python.g:1:429: AMPEREQUAL
+                // Python.g:1:485: AMPEREQUAL
                 {
                 mAMPEREQUAL(); 
 
                 }
                 break;
             case 67 :
-                // Python.g:1:440: CIRCUMFLEXEQUAL
+                // Python.g:1:496: CIRCUMFLEXEQUAL
                 {
                 mCIRCUMFLEXEQUAL(); 
 
                 }
                 break;
             case 68 :
-                // Python.g:1:456: LEFTSHIFTEQUAL
+                // Python.g:1:512: LEFTSHIFTEQUAL
                 {
                 mLEFTSHIFTEQUAL(); 
 
                 }
                 break;
             case 69 :
-                // Python.g:1:471: RIGHTSHIFTEQUAL
+                // Python.g:1:527: RIGHTSHIFTEQUAL
                 {
                 mRIGHTSHIFTEQUAL(); 
 
                 }
                 break;
             case 70 :
-                // Python.g:1:487: DOUBLESTAREQUAL
+                // Python.g:1:543: DOUBLESTAREQUAL
                 {
                 mDOUBLESTAREQUAL(); 
 
                 }
                 break;
             case 71 :
-                // Python.g:1:503: DOUBLESLASHEQUAL
+                // Python.g:1:559: DOUBLESLASHEQUAL
                 {
                 mDOUBLESLASHEQUAL(); 
 
                 }
                 break;
             case 72 :
-                // Python.g:1:520: DOT
+                // Python.g:1:576: DOT
                 {
                 mDOT(); 
 
                 }
                 break;
             case 73 :
-                // Python.g:1:524: AT
+                // Python.g:1:580: AT
                 {
                 mAT(); 
 
                 }
                 break;
             case 74 :
-                // Python.g:1:527: AND
+                // Python.g:1:583: AND
                 {
                 mAND(); 
 
                 }
                 break;
             case 75 :
-                // Python.g:1:531: OR
+                // Python.g:1:587: OR
                 {
                 mOR(); 
 
                 }
                 break;
             case 76 :
-                // Python.g:1:534: NOT
+                // Python.g:1:590: NOT
                 {
                 mNOT(); 
 
                 }
                 break;
             case 77 :
-                // Python.g:1:538: FLOAT
+                // Python.g:1:594: FLOAT
                 {
                 mFLOAT(); 
 
                 }
                 break;
             case 78 :
-                // Python.g:1:544: LONGINT
+                // Python.g:1:600: LONGINT
                 {
                 mLONGINT(); 
 
                 }
                 break;
             case 79 :
-                // Python.g:1:552: INT
+                // Python.g:1:608: INT
                 {
                 mINT(); 
 
                 }
                 break;
             case 80 :
-                // Python.g:1:556: COMPLEX
+                // Python.g:1:612: COMPLEX
                 {
                 mCOMPLEX(); 
 
                 }
                 break;
             case 81 :
-                // Python.g:1:564: NAME
+                // Python.g:1:620: NAME
                 {
                 mNAME(); 
 
                 }
                 break;
             case 82 :
-                // Python.g:1:569: STRING
+                // Python.g:1:625: STRING
                 {
                 mSTRING(); 
 
                 }
                 break;
             case 83 :
-                // Python.g:1:576: CONTINUED_LINE
+                // Python.g:1:632: CONTINUED_LINE
                 {
                 mCONTINUED_LINE(); 
 
                 }
                 break;
             case 84 :
-                // Python.g:1:591: NEWLINE
+                // Python.g:1:647: NEWLINE
                 {
                 mNEWLINE(); 
 
                 }
                 break;
             case 85 :
-                // Python.g:1:599: WS
+                // Python.g:1:655: WS
                 {
                 mWS(); 
 
                 }
                 break;
             case 86 :
-                // Python.g:1:602: LEADING_WS
+                // Python.g:1:658: LEADING_WS
                 {
                 mLEADING_WS(); 
 
                 }
                 break;
             case 87 :
-                // Python.g:1:613: COMMENT
+                // Python.g:1:669: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -4022,16 +4184,16 @@ public class PythonLexer extends Lexer {
     static final String DFA42_minS =
         "\1\11\1\uffff\2\0\1\uffff";
     static final String DFA42_maxS =
-        "\1\43\1\uffff\2\ufffe\1\uffff";
+        "\1\43\1\uffff\2\uffff\1\uffff";
     static final String DFA42_acceptS =
         "\1\uffff\1\1\2\uffff\1\2";
     static final String DFA42_specialS =
-        "\1\1\1\uffff\1\2\1\0\1\uffff}>";
+        "\1\2\1\uffff\1\1\1\0\1\uffff}>";
     static final String[] DFA42_transitionS = {
             "\1\1\26\uffff\1\1\2\uffff\1\2",
             "",
-            "\12\3\1\1\ufff4\3",
-            "\12\3\1\1\ufff4\3",
+            "\12\3\1\1\ufff5\3",
+            "\12\3\1\1\ufff5\3",
             ""
     };
 
@@ -4065,9 +4227,10 @@ public class PythonLexer extends Lexer {
             this.transition = DFA42_transition;
         }
         public String getDescription() {
-            return "687:10: ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* )";
+            return "688:10: ({...}? => ( ' ' | '\\t' )* '#' (~ '\\n' )* ( '\\n' )+ | {...}? => '#' (~ '\\n' )* )";
         }
-        public int specialStateTransition(int s, IntStream input) throws NoViableAltException {
+        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
+            IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
@@ -4077,9 +4240,9 @@ public class PythonLexer extends Lexer {
                         int index42_3 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA42_3=='\n') && (startPos==0)) {s = 1;}
+                        if ( ((LA42_3>='\u0000' && LA42_3<='\t')||(LA42_3>='\u000B' && LA42_3<='\uFFFF')) && (((startPos==0)||(startPos>0)))) {s = 3;}
 
-                        else if ( ((LA42_3>='\u0000' && LA42_3<='\t')||(LA42_3>='\u000B' && LA42_3<='\uFFFE')) && ((startPos==0||startPos>0))) {s = 3;}
+                        else if ( (LA42_3=='\n') && ((startPos==0))) {s = 1;}
 
                         else s = 4;
 
@@ -4088,35 +4251,35 @@ public class PythonLexer extends Lexer {
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA42_0 = input.LA(1);
-
-                         
-                        int index42_0 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (LA42_0=='\t'||LA42_0==' ') && (startPos==0)) {s = 1;}
-
-                        else if ( (LA42_0=='#') && ((startPos==0||startPos>0))) {s = 2;}
-
-                         
-                        input.seek(index42_0);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
                         int LA42_2 = input.LA(1);
 
                          
                         int index42_2 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( ((LA42_2>='\u0000' && LA42_2<='\t')||(LA42_2>='\u000B' && LA42_2<='\uFFFE')) && ((startPos==0||startPos>0))) {s = 3;}
+                        if ( ((LA42_2>='\u0000' && LA42_2<='\t')||(LA42_2>='\u000B' && LA42_2<='\uFFFF')) && (((startPos==0)||(startPos>0)))) {s = 3;}
 
-                        else if ( (LA42_2=='\n') && (startPos==0)) {s = 1;}
+                        else if ( (LA42_2=='\n') && ((startPos==0))) {s = 1;}
 
                         else s = 4;
 
                          
                         input.seek(index42_2);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA42_0 = input.LA(1);
+
+                         
+                        int index42_0 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (LA42_0=='\t'||LA42_0==' ') && ((startPos==0))) {s = 1;}
+
+                        else if ( (LA42_0=='#') && (((startPos==0)||(startPos>0)))) {s = 2;}
+
+                         
+                        input.seek(index42_0);
                         if ( s>=0 ) return s;
                         break;
             }
@@ -4129,73 +4292,74 @@ public class PythonLexer extends Lexer {
     static final String DFA43_eotS =
         "\1\uffff\16\55\7\uffff\1\117\1\121\1\124\1\127\1\131\1\133\1\137"+
         "\1\142\1\144\1\146\3\uffff\1\150\2\uffff\1\151\1\uffff\2\55\2\157"+
-        "\1\55\3\uffff\1\166\1\uffff\1\167\1\172\1\uffff\10\55\1\u0084\1"+
-        "\55\1\u0086\1\u0087\3\55\1\u008c\11\55\4\uffff\1\u0099\2\uffff\1"+
-        "\u009b\7\uffff\1\u009d\3\uffff\1\u009f\10\uffff\1\u00a0\1\u00a2"+
-        "\1\55\1\uffff\1\157\2\uffff\1\u00a0\2\uffff\1\157\1\55\5\uffff\1"+
-        "\u00a9\1\u00aa\7\55\1\uffff\1\55\2\uffff\1\u00b3\3\55\1\uffff\1"+
-        "\u00b7\7\55\1\u00bf\2\55\13\uffff\1\u00c4\1\157\1\uffff\1\u00a0"+
-        "\1\uffff\1\u00a0\2\uffff\1\u00c8\7\55\1\uffff\1\55\1\u00d1\1\55"+
-        "\1\uffff\1\55\1\u00d4\1\u00d5\1\u00d6\2\55\1\u00d9\1\uffff\2\55"+
-        "\1\uffff\1\u00a0\2\uffff\1\u00a0\2\uffff\1\u00de\1\u00df\1\55\1"+
-        "\u00e1\1\u00e2\3\55\1\uffff\2\55\3\uffff\1\55\1\u00e9\1\uffff\1"+
-        "\55\1\u00eb\1\uffff\1\u00a0\2\uffff\1\55\2\uffff\1\u00ed\1\u00ee"+
-        "\1\55\1\u00f0\1\u00f1\1\u00f2\1\uffff\1\u00f3\1\uffff\1\55\2\uffff"+
-        "\1\u00f5\4\uffff\1\u00f6\2\uffff";
+        "\1\55\3\uffff\1\166\1\uffff\1\170\1\172\1\uffff\11\55\1\u0085\1"+
+        "\u0086\1\u0087\3\55\1\u008c\11\55\4\uffff\1\u0099\2\uffff\1\u009b"+
+        "\10\uffff\1\u009d\2\uffff\1\u009f\10\uffff\1\u00a0\1\u00a2\1\55"+
+        "\1\uffff\1\157\2\uffff\1\u00a0\2\uffff\1\157\1\55\5\uffff\1\u00a9"+
+        "\1\u00aa\10\55\3\uffff\1\55\1\u00b4\2\55\1\uffff\1\u00b7\7\55\1"+
+        "\u00bf\2\55\13\uffff\1\u00c4\1\157\1\uffff\1\u00a0\1\uffff\1\u00a0"+
+        "\2\uffff\1\55\1\u00c9\6\55\1\u00d0\1\uffff\2\55\1\uffff\1\55\1\u00d4"+
+        "\1\55\1\u00d6\1\u00d7\1\55\1\u00d9\1\uffff\2\55\1\uffff\1\u00a0"+
+        "\2\uffff\1\u00a0\1\uffff\1\u00de\1\uffff\1\u00df\1\55\1\u00e1\1"+
+        "\55\1\u00e3\1\55\1\uffff\3\55\1\uffff\1\55\2\uffff\1\u00e9\1\uffff"+
+        "\1\55\1\u00eb\1\uffff\1\u00a0\2\uffff\1\55\1\uffff\1\u00ed\1\uffff"+
+        "\1\u00ee\1\55\1\u00f0\1\u00f1\1\u00f2\1\uffff\1\u00f3\1\uffff\1"+
+        "\55\2\uffff\1\u00f5\4\uffff\1\u00f6\2\uffff";
     static final String DFA43_eofS =
         "\u00f7\uffff";
     static final String DFA43_minS =
         "\1\11\1\145\1\141\1\162\1\154\1\42\1\146\1\151\1\156\2\154\1\150"+
         "\1\162\1\141\1\151\7\uffff\2\75\1\52\1\57\2\75\1\74\3\75\3\uffff"+
         "\1\75\2\uffff\1\60\1\uffff\1\162\1\157\2\56\1\42\3\uffff\1\12\1"+
-        "\uffff\2\11\1\uffff\1\146\1\163\1\151\1\145\1\156\1\141\1\151\1"+
-        "\164\1\60\1\160\2\60\1\162\1\156\1\157\1\60\1\144\1\157\1\151\1"+
-        "\143\1\151\1\164\1\171\1\155\1\145\4\uffff\1\75\2\uffff\1\75\7\uffff"+
-        "\1\75\3\uffff\1\75\10\uffff\2\60\1\164\1\60\1\56\2\uffff\1\60\1"+
-        "\53\1\uffff\1\56\1\42\1\uffff\1\0\2\uffff\1\0\2\60\1\163\1\156\1"+
-        "\141\1\164\2\163\1\165\1\uffff\1\157\2\uffff\1\60\1\141\1\155\1"+
-        "\145\1\uffff\1\60\1\142\1\145\1\146\1\143\1\145\1\154\1\150\1\60"+
-        "\1\142\1\154\11\uffff\1\53\1\uffff\2\60\1\53\3\60\2\uffff\1\60\1"+
-        "\164\1\153\1\151\1\163\1\145\2\162\1\uffff\1\154\1\60\1\162\1\uffff"+
-        "\1\141\3\60\1\160\1\145\1\60\1\uffff\2\144\2\60\1\uffff\2\60\1\53"+
-        "\1\uffff\2\60\1\156\2\60\1\156\1\164\1\154\1\uffff\1\164\1\154\3"+
-        "\uffff\1\164\1\60\1\uffff\1\141\3\60\2\uffff\1\165\2\uffff\2\60"+
-        "\1\171\3\60\1\uffff\1\60\1\uffff\1\145\2\uffff\1\60\4\uffff\1\60"+
-        "\2\uffff";
+        "\uffff\2\11\1\uffff\1\146\1\151\1\163\1\145\1\156\1\141\1\164\1"+
+        "\151\1\160\3\60\1\157\1\162\1\156\1\60\1\144\1\157\1\143\2\151\1"+
+        "\164\1\171\1\155\1\145\4\uffff\1\75\2\uffff\1\75\10\uffff\1\75\2"+
+        "\uffff\1\75\10\uffff\2\60\1\164\1\60\1\56\2\uffff\1\60\1\uffff\1"+
+        "\53\1\56\1\42\2\uffff\1\0\1\uffff\1\0\2\60\1\156\1\163\1\141\1\164"+
+        "\1\163\1\165\1\163\1\157\3\uffff\1\155\1\60\1\141\1\145\1\uffff"+
+        "\1\60\1\142\1\143\2\145\1\146\1\154\1\150\1\60\1\142\1\154\11\uffff"+
+        "\1\53\1\uffff\2\60\1\53\3\60\2\uffff\1\164\1\60\1\153\1\151\1\163"+
+        "\1\162\1\145\1\162\1\60\1\uffff\1\154\1\162\1\uffff\1\141\1\60\1"+
+        "\160\2\60\1\145\1\60\1\uffff\2\144\2\60\1\uffff\2\60\1\53\1\60\1"+
+        "\uffff\1\60\1\156\1\60\1\156\1\60\1\164\1\uffff\1\154\1\164\1\154"+
+        "\1\uffff\1\164\2\uffff\1\60\1\uffff\1\141\3\60\2\uffff\1\165\1\uffff"+
+        "\1\60\1\uffff\1\60\1\171\3\60\1\uffff\1\60\1\uffff\1\145\2\uffff"+
+        "\1\60\4\uffff\1\60\2\uffff";
     static final String DFA43_maxS =
         "\1\176\1\145\2\162\1\157\1\145\1\163\1\162\1\163\1\154\1\170\1\151"+
         "\1\162\1\141\1\151\7\uffff\6\75\2\76\2\75\3\uffff\1\75\2\uffff\1"+
         "\71\1\uffff\1\162\1\157\1\170\1\154\1\162\3\uffff\1\15\1\uffff\2"+
-        "\43\1\uffff\1\154\1\163\1\151\1\145\1\156\1\141\1\151\1\164\1\172"+
-        "\1\160\2\172\1\162\1\156\1\157\1\172\1\144\1\157\1\163\1\145\1\151"+
-        "\1\164\1\171\1\155\1\145\4\uffff\1\75\2\uffff\1\75\7\uffff\1\75"+
-        "\3\uffff\1\75\10\uffff\1\152\1\172\1\164\1\146\1\154\2\uffff\1\152"+
-        "\1\71\1\uffff\1\154\1\47\1\uffff\1\0\2\uffff\1\0\2\172\1\163\1\156"+
-        "\1\141\1\164\2\163\1\165\1\uffff\1\157\2\uffff\1\172\1\141\1\155"+
-        "\1\145\1\uffff\1\172\1\142\1\145\1\146\1\143\1\145\1\154\1\150\1"+
-        "\172\1\142\1\154\11\uffff\1\71\1\uffff\1\172\1\154\1\71\1\152\1"+
-        "\71\1\152\2\uffff\1\172\1\164\1\153\1\151\1\163\1\145\2\162\1\uffff"+
-        "\1\154\1\172\1\162\1\uffff\1\141\3\172\1\160\1\145\1\172\1\uffff"+
-        "\2\144\1\71\1\152\1\uffff\1\71\1\152\1\71\1\uffff\2\172\1\156\2"+
-        "\172\1\156\1\164\1\154\1\uffff\1\164\1\154\3\uffff\1\164\1\172\1"+
-        "\uffff\1\141\1\172\1\71\1\152\2\uffff\1\165\2\uffff\2\172\1\171"+
-        "\3\172\1\uffff\1\172\1\uffff\1\145\2\uffff\1\172\4\uffff\1\172\2"+
-        "\uffff";
+        "\43\1\uffff\1\154\1\151\1\163\1\145\1\156\1\141\1\164\1\151\1\160"+
+        "\3\172\1\157\1\162\1\156\1\172\1\144\1\157\1\145\1\163\1\151\1\164"+
+        "\1\171\1\155\1\145\4\uffff\1\75\2\uffff\1\75\10\uffff\1\75\2\uffff"+
+        "\1\75\10\uffff\1\152\1\172\1\164\1\146\1\154\2\uffff\1\152\1\uffff"+
+        "\1\71\1\154\1\47\2\uffff\1\0\1\uffff\1\0\2\172\1\156\1\163\1\141"+
+        "\1\164\1\163\1\165\1\163\1\157\3\uffff\1\155\1\172\1\141\1\145\1"+
+        "\uffff\1\172\1\142\1\143\2\145\1\146\1\154\1\150\1\172\1\142\1\154"+
+        "\11\uffff\1\71\1\uffff\1\172\1\154\1\71\1\152\1\71\1\152\2\uffff"+
+        "\1\164\1\172\1\153\1\151\1\163\1\162\1\145\1\162\1\172\1\uffff\1"+
+        "\154\1\162\1\uffff\1\141\1\172\1\160\2\172\1\145\1\172\1\uffff\2"+
+        "\144\1\71\1\152\1\uffff\1\71\1\152\1\71\1\172\1\uffff\1\172\1\156"+
+        "\1\172\1\156\1\172\1\164\1\uffff\1\154\1\164\1\154\1\uffff\1\164"+
+        "\2\uffff\1\172\1\uffff\1\141\1\172\1\71\1\152\2\uffff\1\165\1\uffff"+
+        "\1\172\1\uffff\1\172\1\171\3\172\1\uffff\1\172\1\uffff\1\145\2\uffff"+
+        "\1\172\4\uffff\1\172\2\uffff";
     static final String DFA43_acceptS =
         "\17\uffff\1\35\1\36\1\37\1\40\1\41\1\42\1\43\12\uffff\1\56\1\57"+
         "\1\60\1\uffff\1\62\1\64\1\uffff\1\111\5\uffff\1\121\1\122\1\123"+
         "\1\uffff\1\124\2\uffff\1\127\31\uffff\1\72\1\44\1\73\1\45\1\uffff"+
-        "\1\75\1\46\1\uffff\1\77\1\47\1\100\1\50\1\102\1\51\1\65\1\uffff"+
-        "\1\66\1\52\1\70\1\uffff\1\53\1\63\1\54\1\101\1\55\1\103\1\61\1\110"+
-        "\5\uffff\1\117\1\116\2\uffff\1\120\2\uffff\1\125\1\uffff\1\126\1"+
-        "\127\12\uffff\1\20\1\uffff\1\16\1\31\4\uffff\1\13\13\uffff\1\106"+
-        "\1\74\1\107\1\76\1\104\1\67\1\105\1\71\1\115\1\uffff\1\113\6\uffff"+
-        "\1\3\1\1\10\uffff\1\24\3\uffff\1\112\7\uffff\1\25\4\uffff\1\114"+
-        "\3\uffff\1\4\10\uffff\1\12\2\uffff\1\21\1\22\1\15\2\uffff\1\27\4"+
-        "\uffff\1\2\1\5\1\uffff\1\33\1\10\6\uffff\1\23\1\uffff\1\34\1\uffff"+
-        "\1\7\1\11\1\uffff\1\17\1\14\1\30\1\32\1\uffff\1\26\1\6";
+        "\1\75\1\46\1\uffff\1\77\1\47\1\100\1\50\1\102\1\51\1\65\1\66\1\uffff"+
+        "\1\52\1\70\1\uffff\1\53\1\63\1\54\1\101\1\55\1\103\1\61\1\110\5"+
+        "\uffff\1\117\1\120\1\uffff\1\116\3\uffff\1\125\1\126\1\uffff\1\127"+
+        "\13\uffff\1\16\1\20\1\31\4\uffff\1\13\13\uffff\1\106\1\74\1\107"+
+        "\1\76\1\104\1\67\1\105\1\71\1\115\1\uffff\1\113\6\uffff\1\1\1\3"+
+        "\11\uffff\1\24\2\uffff\1\112\7\uffff\1\25\4\uffff\1\114\4\uffff"+
+        "\1\4\6\uffff\1\12\3\uffff\1\15\1\uffff\1\21\1\22\1\uffff\1\27\4"+
+        "\uffff\1\2\1\5\1\uffff\1\33\1\uffff\1\10\5\uffff\1\23\1\uffff\1"+
+        "\34\1\uffff\1\7\1\11\1\uffff\1\17\1\14\1\30\1\32\1\uffff\1\26\1"+
+        "\6";
     static final String DFA43_specialS =
-        "\1\1\57\uffff\1\0\1\uffff\1\4\1\5\103\uffff\1\2\2\uffff\1\3\174"+
+        "\1\0\57\uffff\1\5\1\uffff\1\2\1\1\104\uffff\1\3\1\uffff\1\4\174"+
         "\uffff}>";
     static final String[] DFA43_transitionS = {
             "\1\63\1\61\1\uffff\1\60\1\61\22\uffff\1\62\1\45\1\56\1\64\1"+
@@ -4205,15 +4369,15 @@ public class PythonLexer extends Lexer {
             "\1\6\2\55\1\15\1\55\1\51\1\50\1\2\1\55\1\5\1\55\1\14\1\54\1"+
             "\55\1\13\1\55\1\16\1\55\1\41\1\32\1\42\1\44",
             "\1\65",
-            "\1\66\20\uffff\1\67",
+            "\1\67\20\uffff\1\66",
             "\1\70",
             "\1\72\2\uffff\1\71",
-            "\1\56\4\uffff\1\56\71\uffff\1\73\3\uffff\1\74",
-            "\1\75\6\uffff\1\76\1\77\4\uffff\1\100",
-            "\1\102\5\uffff\1\101\2\uffff\1\103",
+            "\1\56\4\uffff\1\56\71\uffff\1\74\3\uffff\1\73",
+            "\1\77\6\uffff\1\75\1\76\4\uffff\1\100",
+            "\1\103\5\uffff\1\102\2\uffff\1\101",
             "\1\105\4\uffff\1\104",
             "\1\106",
-            "\1\107\13\uffff\1\110",
+            "\1\110\13\uffff\1\107",
             "\1\111\1\112",
             "\1\113",
             "\1\114",
@@ -4231,7 +4395,7 @@ public class PythonLexer extends Lexer {
             "\1\125\15\uffff\1\126",
             "\1\130",
             "\1\132",
-            "\1\135\1\136\1\134",
+            "\1\136\1\135\1\134",
             "\1\140\1\141",
             "\1\143",
             "\1\145",
@@ -4245,21 +4409,21 @@ public class PythonLexer extends Lexer {
             "",
             "\1\153",
             "\1\154",
-            "\1\161\1\uffff\12\156\13\uffff\1\162\4\uffff\1\163\1\uffff"+
-            "\1\160\13\uffff\1\155\14\uffff\1\162\4\uffff\1\163\1\uffff\1"+
-            "\160\13\uffff\1\155",
-            "\1\161\1\uffff\12\164\13\uffff\1\162\4\uffff\1\163\1\uffff"+
-            "\1\160\30\uffff\1\162\4\uffff\1\163\1\uffff\1\160",
+            "\1\161\1\uffff\12\156\13\uffff\1\163\4\uffff\1\160\1\uffff"+
+            "\1\162\13\uffff\1\155\14\uffff\1\163\4\uffff\1\160\1\uffff\1"+
+            "\162\13\uffff\1\155",
+            "\1\161\1\uffff\12\164\13\uffff\1\163\4\uffff\1\160\1\uffff"+
+            "\1\162\30\uffff\1\163\4\uffff\1\160\1\uffff\1\162",
             "\1\56\4\uffff\1\56\112\uffff\1\165",
             "",
             "",
             "",
             "\1\61\2\uffff\1\61",
             "",
-            "\1\63\1\170\1\uffff\1\166\1\170\22\uffff\1\62\2\uffff\1\171",
-            "\1\63\1\170\1\uffff\1\166\1\170\22\uffff\1\62\2\uffff\1\171",
+            "\1\63\1\167\1\uffff\1\166\1\167\22\uffff\1\62\2\uffff\1\171",
+            "\1\63\1\167\1\uffff\1\166\1\167\22\uffff\1\62\2\uffff\1\171",
             "",
-            "\1\174\5\uffff\1\173",
+            "\1\173\5\uffff\1\174",
             "\1\175",
             "\1\176",
             "\1\177",
@@ -4267,8 +4431,8 @@ public class PythonLexer extends Lexer {
             "\1\u0081",
             "\1\u0082",
             "\1\u0083",
+            "\1\u0084",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
-            "\1\u0085",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\u0088",
@@ -4277,8 +4441,8 @@ public class PythonLexer extends Lexer {
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\22\55\1\u008b\7\55",
             "\1\u008d",
             "\1\u008e",
-            "\1\u0090\11\uffff\1\u008f",
-            "\1\u0092\1\uffff\1\u0091",
+            "\1\u0090\1\uffff\1\u008f",
+            "\1\u0092\11\uffff\1\u0091",
             "\1\u0093",
             "\1\u0094",
             "\1\u0095",
@@ -4299,8 +4463,8 @@ public class PythonLexer extends Lexer {
             "",
             "",
             "",
-            "\1\u009c",
             "",
+            "\1\u009c",
             "",
             "",
             "\1\u009e",
@@ -4312,25 +4476,25 @@ public class PythonLexer extends Lexer {
             "",
             "",
             "",
-            "\12\152\13\uffff\1\u00a1\4\uffff\1\163\32\uffff\1\u00a1\4\uffff"+
-            "\1\163",
+            "\12\152\13\uffff\1\u00a1\4\uffff\1\160\32\uffff\1\u00a1\4\uffff"+
+            "\1\160",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\u00a3",
             "\12\u00a4\7\uffff\6\u00a4\32\uffff\6\u00a4",
-            "\1\161\1\uffff\12\156\13\uffff\1\162\4\uffff\1\163\1\uffff"+
-            "\1\160\30\uffff\1\162\4\uffff\1\163\1\uffff\1\160",
+            "\1\161\1\uffff\12\156\13\uffff\1\163\4\uffff\1\160\1\uffff"+
+            "\1\162\30\uffff\1\163\4\uffff\1\160\1\uffff\1\162",
             "",
             "",
-            "\12\u00a6\13\uffff\1\u00a5\4\uffff\1\163\32\uffff\1\u00a5\4"+
-            "\uffff\1\163",
+            "\12\u00a6\13\uffff\1\u00a5\4\uffff\1\160\32\uffff\1\u00a5\4"+
+            "\uffff\1\160",
+            "",
             "\1\u00a7\1\uffff\1\u00a7\2\uffff\12\u00a8",
-            "",
-            "\1\161\1\uffff\12\164\13\uffff\1\162\4\uffff\1\163\1\uffff"+
-            "\1\160\30\uffff\1\162\4\uffff\1\163\1\uffff\1\160",
+            "\1\161\1\uffff\12\164\13\uffff\1\163\4\uffff\1\160\1\uffff"+
+            "\1\162\30\uffff\1\163\4\uffff\1\160\1\uffff\1\162",
             "\1\56\4\uffff\1\56",
             "",
-            "\1\uffff",
             "",
+            "\1\uffff",
             "",
             "\1\uffff",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
@@ -4342,12 +4506,12 @@ public class PythonLexer extends Lexer {
             "\1\u00af",
             "\1\u00b0",
             "\1\u00b1",
-            "",
             "\1\u00b2",
             "",
             "",
+            "",
+            "\1\u00b3",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
-            "\1\u00b4",
             "\1\u00b5",
             "\1\u00b6",
             "",
@@ -4374,72 +4538,72 @@ public class PythonLexer extends Lexer {
             "\1\u00c2\1\uffff\1\u00c2\2\uffff\12\u00c3",
             "",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
-            "\12\u00a4\7\uffff\6\u00a4\3\uffff\1\163\1\uffff\1\160\24\uffff"+
-            "\6\u00a4\3\uffff\1\163\1\uffff\1\160",
+            "\12\u00a4\7\uffff\6\u00a4\3\uffff\1\160\1\uffff\1\162\24\uffff"+
+            "\6\u00a4\3\uffff\1\160\1\uffff\1\162",
             "\1\u00c5\1\uffff\1\u00c5\2\uffff\12\u00c6",
-            "\12\u00a6\13\uffff\1\u00c7\4\uffff\1\163\32\uffff\1\u00c7\4"+
-            "\uffff\1\163",
+            "\12\u00a6\13\uffff\1\u00c7\4\uffff\1\160\32\uffff\1\u00c7\4"+
+            "\uffff\1\160",
             "\12\u00a8",
-            "\12\u00a8\20\uffff\1\163\37\uffff\1\163",
+            "\12\u00a8\20\uffff\1\160\37\uffff\1\160",
             "",
             "",
+            "\1\u00c8",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
-            "\1\u00c9",
             "\1\u00ca",
             "\1\u00cb",
             "\1\u00cc",
             "\1\u00cd",
             "\1\u00ce",
             "\1\u00cf",
-            "",
-            "\1\u00d0",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "",
+            "\1\u00d1",
             "\1\u00d2",
             "",
             "\1\u00d3",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\1\u00d5",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
-            "\1\u00d7",
             "\1\u00d8",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "\1\u00da",
             "\1\u00db",
             "\12\u00c3",
-            "\12\u00c3\20\uffff\1\163\37\uffff\1\163",
+            "\12\u00c3\20\uffff\1\160\37\uffff\1\160",
             "",
             "\12\u00c6",
-            "\12\u00c6\20\uffff\1\163\37\uffff\1\163",
+            "\12\u00c6\20\uffff\1\160\37\uffff\1\160",
             "\1\u00dc\1\uffff\1\u00dc\2\uffff\12\u00dd",
-            "",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\u00e0",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "\1\u00e2",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
-            "\1\u00e3",
             "\1\u00e4",
-            "\1\u00e5",
             "",
+            "\1\u00e5",
             "\1\u00e6",
             "\1\u00e7",
             "",
-            "",
-            "",
             "\1\u00e8",
+            "",
+            "",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "",
             "\1\u00ea",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\12\u00dd",
-            "\12\u00dd\20\uffff\1\163\37\uffff\1\163",
+            "\12\u00dd\20\uffff\1\160\37\uffff\1\160",
             "",
             "",
             "\1\u00ec",
             "",
-            "",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
+            "",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
             "\1\u00ef",
             "\12\55\7\uffff\32\55\4\uffff\1\55\1\uffff\32\55",
@@ -4491,27 +4655,13 @@ public class PythonLexer extends Lexer {
             this.transition = DFA43_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T70 | T71 | T72 | T73 | T74 | T75 | T76 | T77 | T78 | T79 | T80 | T81 | T82 | T83 | T84 | T85 | T86 | T87 | T88 | T89 | T90 | T91 | T92 | T93 | T94 | T95 | T96 | T97 | LPAREN | RPAREN | LBRACK | RBRACK | COLON | COMMA | SEMI | PLUS | MINUS | STAR | SLASH | VBAR | AMPER | LESS | GREATER | ASSIGN | PERCENT | BACKQUOTE | LCURLY | RCURLY | CIRCUMFLEX | TILDE | EQUAL | NOTEQUAL | ALT_NOTEQUAL | LESSEQUAL | LEFTSHIFT | GREATEREQUAL | RIGHTSHIFT | PLUSEQUAL | MINUSEQUAL | DOUBLESTAR | STAREQUAL | DOUBLESLASH | SLASHEQUAL | VBAREQUAL | PERCENTEQUAL | AMPEREQUAL | CIRCUMFLEXEQUAL | LEFTSHIFTEQUAL | RIGHTSHIFTEQUAL | DOUBLESTAREQUAL | DOUBLESLASHEQUAL | DOT | AT | AND | OR | NOT | FLOAT | LONGINT | INT | COMPLEX | NAME | STRING | CONTINUED_LINE | NEWLINE | WS | LEADING_WS | COMMENT );";
+            return "1:1: Tokens : ( T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | LPAREN | RPAREN | LBRACK | RBRACK | COLON | COMMA | SEMI | PLUS | MINUS | STAR | SLASH | VBAR | AMPER | LESS | GREATER | ASSIGN | PERCENT | BACKQUOTE | LCURLY | RCURLY | CIRCUMFLEX | TILDE | EQUAL | NOTEQUAL | ALT_NOTEQUAL | LESSEQUAL | LEFTSHIFT | GREATEREQUAL | RIGHTSHIFT | PLUSEQUAL | MINUSEQUAL | DOUBLESTAR | STAREQUAL | DOUBLESLASH | SLASHEQUAL | VBAREQUAL | PERCENTEQUAL | AMPEREQUAL | CIRCUMFLEXEQUAL | LEFTSHIFTEQUAL | RIGHTSHIFTEQUAL | DOUBLESTAREQUAL | DOUBLESLASHEQUAL | DOT | AT | AND | OR | NOT | FLOAT | LONGINT | INT | COMPLEX | NAME | STRING | CONTINUED_LINE | NEWLINE | WS | LEADING_WS | COMMENT );";
         }
-        public int specialStateTransition(int s, IntStream input) throws NoViableAltException {
+        public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
+            IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA43_48 = input.LA(1);
-
-                         
-                        int index43_48 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (LA43_48=='\n'||LA43_48=='\r') ) {s = 49;}
-
-                        else s = 118;
-
-                         
-                        input.seek(index43_48);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
                         int LA43_0 = input.LA(1);
 
                          
@@ -4616,90 +4766,105 @@ public class PythonLexer extends Lexer {
 
                         else if ( (LA43_0=='\n'||LA43_0=='\r') ) {s = 49;}
 
-                        else if ( (LA43_0==' ') && ((startPos==0||startPos>0))) {s = 50;}
+                        else if ( (LA43_0==' ') && (((startPos==0)||(startPos>0)))) {s = 50;}
 
-                        else if ( (LA43_0=='\t') && ((startPos==0||startPos>0))) {s = 51;}
+                        else if ( (LA43_0=='\t') && (((startPos==0)||(startPos>0)))) {s = 51;}
 
-                        else if ( (LA43_0=='#') && ((startPos==0||startPos>0))) {s = 52;}
+                        else if ( (LA43_0=='#') && (((startPos==0)||(startPos>0)))) {s = 52;}
 
                          
                         input.seek(index43_0);
                         if ( s>=0 ) return s;
                         break;
-                    case 2 : 
-                        int LA43_119 = input.LA(1);
-
-                         
-                        int index43_119 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (startPos>0) ) {s = 118;}
-
-                        else if ( (((startPos==0&&implicitLineJoiningLevel>0)||startPos==0)) ) {s = 120;}
-
-                         
-                        input.seek(index43_119);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 3 : 
-                        int LA43_122 = input.LA(1);
-
-                         
-                        int index43_122 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (startPos>0) ) {s = 118;}
-
-                        else if ( (((startPos==0&&implicitLineJoiningLevel>0)||startPos==0)) ) {s = 120;}
-
-                         
-                        input.seek(index43_122);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA43_50 = input.LA(1);
-
-                         
-                        int index43_50 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (LA43_50==' ') && ((startPos==0||startPos>0))) {s = 50;}
-
-                        else if ( (LA43_50=='\n'||LA43_50=='\r') && (startPos==0)) {s = 120;}
-
-                        else if ( (LA43_50=='\t') && ((startPos==0||startPos>0))) {s = 51;}
-
-                        else if ( (LA43_50=='#') && (startPos==0)) {s = 121;}
-
-                        else if ( (LA43_50=='\f') && (startPos>0)) {s = 118;}
-
-                        else s = 119;
-
-                         
-                        input.seek(index43_50);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
+                    case 1 : 
                         int LA43_51 = input.LA(1);
 
                          
                         int index43_51 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA43_51==' ') && ((startPos==0||startPos>0))) {s = 50;}
+                        if ( (LA43_51=='#') && ((startPos==0))) {s = 121;}
 
-                        else if ( (LA43_51=='\n'||LA43_51=='\r') && (startPos==0)) {s = 120;}
+                        else if ( (LA43_51==' ') && (((startPos==0)||(startPos>0)))) {s = 50;}
 
-                        else if ( (LA43_51=='\t') && ((startPos==0||startPos>0))) {s = 51;}
+                        else if ( (LA43_51=='\n'||LA43_51=='\r') && ((startPos==0))) {s = 119;}
 
-                        else if ( (LA43_51=='#') && (startPos==0)) {s = 121;}
+                        else if ( (LA43_51=='\t') && (((startPos==0)||(startPos>0)))) {s = 51;}
 
-                        else if ( (LA43_51=='\f') && (startPos>0)) {s = 118;}
+                        else if ( (LA43_51=='\f') && ((startPos>0))) {s = 118;}
 
                         else s = 122;
 
                          
                         input.seek(index43_51);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA43_50 = input.LA(1);
+
+                         
+                        int index43_50 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (LA43_50=='\n'||LA43_50=='\r') && ((startPos==0))) {s = 119;}
+
+                        else if ( (LA43_50==' ') && (((startPos==0)||(startPos>0)))) {s = 50;}
+
+                        else if ( (LA43_50=='\t') && (((startPos==0)||(startPos>0)))) {s = 51;}
+
+                        else if ( (LA43_50=='#') && ((startPos==0))) {s = 121;}
+
+                        else if ( (LA43_50=='\f') && ((startPos>0))) {s = 118;}
+
+                        else s = 120;
+
+                         
+                        input.seek(index43_50);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 3 : 
+                        int LA43_120 = input.LA(1);
+
+                         
+                        int index43_120 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( ((startPos>0)) ) {s = 118;}
+
+                        else if ( ((((startPos==0)&&(implicitLineJoiningLevel>0))||(startPos==0))) ) {s = 119;}
+
+                         
+                        input.seek(index43_120);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA43_122 = input.LA(1);
+
+                         
+                        int index43_122 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( ((startPos>0)) ) {s = 118;}
+
+                        else if ( ((((startPos==0)&&(implicitLineJoiningLevel>0))||(startPos==0))) ) {s = 119;}
+
+                         
+                        input.seek(index43_122);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA43_48 = input.LA(1);
+
+                         
+                        int index43_48 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (LA43_48=='\n'||LA43_48=='\r') ) {s = 49;}
+
+                        else s = 118;
+
+                         
+                        input.seek(index43_48);
                         if ( s>=0 ) return s;
                         break;
             }

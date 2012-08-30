@@ -84,13 +84,13 @@ class PythonLangLexer implements LangLexer {
 
 }
 class FortranLangLexer implements LangLexer {
-    FortranLexerLexer lexer;
+    FortranLexer lexer;
     // call me first
-    public int COMMENT() { return FortranLexerLexer.LINE_COMMENT; }
-    public int LINE_COMMENT() { return FortranLexerLexer.LINE_COMMENT; }
+    public int COMMENT() { return FortranLexer.LINE_COMMENT; }
+    public int LINE_COMMENT() { return FortranLexer.LINE_COMMENT; }
 
     public void setStream( CharStream in ) {
-        lexer = new FortranLexerLexer(in);
+        lexer = new FortranLexer(in);
         lexer.preserveWhitespacesAndComments = true;
     }
     public Token nextToken() {

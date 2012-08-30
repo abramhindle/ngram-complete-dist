@@ -40,11 +40,7 @@ import java.util.Stack;
 
 
 
-
-
-
-
-@members {
+@lexer::members {
 /** 
  *  Determines if whitespaces and comments should be preserved or thrown away.
  *
@@ -56,7 +52,7 @@ import java.util.Stack;
  */
     public boolean preserveWhitespacesAndComments = false;
 
-
+    public int type = 0;
 
      private Token prevToken;
      private boolean continueFlag;

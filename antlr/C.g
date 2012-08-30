@@ -57,7 +57,7 @@ import java.util.HashSet;
  *  the 'if-else' stuff within the approprate lexer grammar actions.
  */
     public boolean preserveWhitespacesAndComments = false;
-
+    public int type = 0;
 }
 
 @members {

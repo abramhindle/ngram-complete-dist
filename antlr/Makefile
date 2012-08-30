@@ -11,10 +11,10 @@ CLexer.java: C.g
 	antlr3 C.g
 PythonLexer.java: Python.g
 	antlr3 Python.g
-FortranLexerLexer.java: FortranLexer.g
+FortranLexer.java: FortranLexer.g
 	antlr3 FortranLexer.g
 
-LexJava.class: JavaLexer.class Halstead.class HalsteadCounter.class CLexer.class PythonLexer.class FortranLexerLexer.class
+LexJava.class: JavaLexer.class Halstead.class HalsteadCounter.class CLexer.class PythonLexer.class FortranLexer.class
 
 LexJavaMQ.class: LexJava.class LexJavaMQ.java
 
