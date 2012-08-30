@@ -32,7 +32,7 @@
              (insert str)
              (mark-whole-buffer)
              (goto-char (point-min))                      
-             (shell-command-on-region (point-min) (point-max) "~/projects/ngrams/emacs/ngram-completer -client" nil t)
+             (shell-command-on-region (point-min) (point-max) "~/projects/ngrams-complete-dist/emacs/ngram-completer -client" nil t)
              (buffer-substring (point-min) (point-max))))))
 
 (defun ngram-updater (str)

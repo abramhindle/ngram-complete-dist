@@ -1,7 +1,7 @@
 LUCENE=$(HOME)/projects/data/lucene-3.0.3.txt
 XERCES=$(HOME)/projects/data/xerces-2_11_0.txt
 DATADIR=$(HOME)/projects/data/
-LEXJAVA=$(HOME)/projects/ngrams/antlr/LexJava
+LEXJAVA=$(HOME)/projects/ngram-complete-dist/antlr/LexJava
 ANT=$(DATADIR)/ant-git.txt
 BATIK=$(DATADIR)/batik-git.txt
 CASSANDRA=$(DATADIR)/cassandra-git.txt

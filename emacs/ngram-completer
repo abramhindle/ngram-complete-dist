@@ -5,7 +5,7 @@ use ZeroMQ qw/:all/;
 use Getopt::Long;
 
 
-my $corpus = "$ENV{HOME}/projects/ngrams/data/lucene-split";
+my $corpus = "$ENV{HOME}/projects/ngram-complete-dist/data/lucene-split";
 
 my $SERVER_PORT = 28673;
 
